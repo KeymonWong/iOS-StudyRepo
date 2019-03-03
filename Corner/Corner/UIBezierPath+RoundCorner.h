@@ -23,7 +23,7 @@
  * @param radiusArray 4个圆角半径数组,长度必须为4,顺序分别为[左上角、左下角、右下角、右上角]
  * @return 四个角的圆角半径不相同的路径
  */
-+ (UIBezierPath *)kw_bezierPathWithRoundRect:(CGRect)rect
++ (UIBezierPath *)ok_bezierPathWithRoundRect:(CGRect)rect
                                  borderWidth:(CGFloat)borderWidth
                                  borderColor:(UIColor *)borderColor
                                  radiusArray:(NSArray<NSNumber *> *)radiusArray;

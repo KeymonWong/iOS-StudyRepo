@@ -20,7 +20,7 @@
  * @param cornerRadius 圆角半径
  * @param cornerTypes UIRectCorner枚举类型的圆角type
  */
-- (void)kw_addRoundCornersWithRect:(CGRect)rect
+- (void)ok_addRoundCornersWithRect:(CGRect)rect
                    backgroundColor:(UIColor *)backgroundColor
                        borderColor:(UIColor *)borderColor
                        borderWidth:(CGFloat)borderWidth

@@ -36,15 +36,15 @@
 //    self.imgV3.layer.cornerRadius = 20.;
 //    self.imgV3.layer.masksToBounds = YES;
     
-    [self.avatarImgV kw_addRoundCornerWithRadius:50*0.5];
-    [self.imgV2 kw_addRoundCornerWithRadius:10.];
-    [self.imgV3 kw_addRoundCornerWithRadius:20.];
+    [self.avatarImgV ok_addRoundCornerWithRadius:50*0.5];
+    [self.imgV2 ok_addRoundCornerWithRadius:10.];
+    [self.imgV3 ok_addRoundCornerWithRadius:20.];
     
     
 //    self.bgV.layer.cornerRadius = 10.;
 //    self.bgV.layer.masksToBounds = YES;
     
-    [self.bgV kw_addRoundCornersWithRect:CGRectMake(0, 0, self.bgV.frame.size.width, 100) backgroundColor:[UIColor whiteColor] borderColor:nil borderWidth:0 cornerRadius:10 roundCornerTypes:UIRectCornerTopLeft|UIRectCornerBottomRight];
+    [self.bgV ok_addRoundCornersWithRect:CGRectMake(0, 0, self.bgV.frame.size.width, 100) backgroundColor:[UIColor whiteColor] borderColor:nil borderWidth:0 cornerRadius:10 roundCornerTypes:UIRectCornerTopLeft|UIRectCornerBottomRight];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

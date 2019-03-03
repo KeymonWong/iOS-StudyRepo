@@ -10,7 +10,7 @@
 
 @implementation UIBezierPath (RoundCorner)
 
-+ (UIBezierPath *)kw_bezierPathWithRoundRect:(CGRect)rect borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor radiusArray:(NSArray<NSNumber *> *)radiusArray {
++ (UIBezierPath *)ok_bezierPathWithRoundRect:(CGRect)rect borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor radiusArray:(NSArray<NSNumber *> *)radiusArray {
     CGFloat topLeftCornerRadius = radiusArray[0].floatValue;
     CGFloat bottomLeftCornerRadius = radiusArray[1].floatValue;
     CGFloat bottomRightCornerRadius = radiusArray[2].floatValue;

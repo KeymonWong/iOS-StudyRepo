@@ -15,6 +15,6 @@
  *
  * @param radius 半径
  */
-- (void)kw_addRoundCornerWithRadius:(CGFloat)radius;
+- (void)ok_addRoundCornerWithRadius:(CGFloat)radius;
 
 @end

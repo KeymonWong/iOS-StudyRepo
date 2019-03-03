@@ -28,7 +28,7 @@
     
     CGRect frame = CGRectMake(60, 60, self.view.frame.size.width-60*2, 400);
     UIView *bgView = [[UIView alloc] initWithFrame:frame];
-    [bgView kw_addRoundCornersWithRect:frame backgroundColor:[UIColor whiteColor] borderColor:[UIColor redColor] borderWidth:0 cornerRadius:10 roundCornerTypes:UIRectCornerTopLeft|UIRectCornerTopRight];
+    [bgView ok_addRoundCornersWithRect:frame backgroundColor:[UIColor whiteColor] borderColor:[UIColor redColor] borderWidth:0 cornerRadius:10 roundCornerTypes:UIRectCornerTopLeft|UIRectCornerTopRight];
     
 //    [self.view addSubview:bgView];
     
@@ -45,7 +45,7 @@
     imgV.contentMode = UIViewContentModeScaleAspectFill;
 //    imgV.backgroundColor = [UIColor grayColor];
     imgV.image = [UIImage imageNamed:@"xiaobandriver1024"];
-    [imgV kw_addRoundCornerWithRadius:20*0.5];
+    [imgV ok_addRoundCornerWithRadius:20*0.5];
     [bgView addSubview:imgV];
     
     

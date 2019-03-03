@@ -14,7 +14,7 @@
 @implementation PathView
 
 - (void)drawRect:(CGRect)rect {
-    UIBezierPath *path = [UIBezierPath kw_bezierPathWithRoundRect:rect borderWidth:0 borderColor:[UIColor redColor] radiusArray:@[@10,@20,@6,@0]];
+    UIBezierPath *path = [UIBezierPath ok_bezierPathWithRoundRect:rect borderWidth:0 borderColor:[UIColor redColor] radiusArray:@[@10,@20,@6,@0]];
     
     //先设置填充颜色
     UIColor *fillColor = [UIColor purpleColor];

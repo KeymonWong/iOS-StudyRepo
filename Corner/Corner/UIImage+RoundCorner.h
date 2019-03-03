@@ -17,6 +17,6 @@
  * @param size size
  * @return 返回圆角图片
  */
-- (UIImage *)kw_addRoundCornerWithRadius:(CGFloat)radius size:(CGSize)size;
+- (UIImage *)ok_addRoundCornerWithRadius:(CGFloat)radius size:(CGSize)size;
 
 @end

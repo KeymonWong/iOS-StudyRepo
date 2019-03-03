@@ -11,8 +11,8 @@
 
 @implementation UIImageView (RoundCorner)
 
-- (void)kw_addRoundCornerWithRadius:(CGFloat)radius {
-    self.image = [self.image kw_addRoundCornerWithRadius:radius size:self.frame.size];
+- (void)ok_addRoundCornerWithRadius:(CGFloat)radius {
+    self.image = [self.image ok_addRoundCornerWithRadius:radius size:self.frame.size];
 }
 
 @end

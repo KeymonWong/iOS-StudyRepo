@@ -12,7 +12,7 @@
 
 #pragma mark - 圆角图片绘制
 
-- (UIImage *)kw_addRoundCornerWithRadius:(CGFloat)radius size:(CGSize)size {
+- (UIImage *)ok_addRoundCornerWithRadius:(CGFloat)radius size:(CGSize)size {
     CGRect rect = CGRectMake(2, 2, size.width-4, size.height-4);
     
     UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);

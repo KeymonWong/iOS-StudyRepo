@@ -10,7 +10,7 @@
 
 @implementation UIView (RoundCorner)
 
-- (void)kw_addRoundCornersWithRect:(CGRect)rect
+- (void)ok_addRoundCornersWithRect:(CGRect)rect
                    backgroundColor:(UIColor *)backgroundColor
                        borderColor:(UIColor *)borderColor
                        borderWidth:(CGFloat)borderWidth
