@@ -44,6 +44,8 @@ class PulseAnimationView: UIView {
     
 
     func startAnimation() -> Void {
+        self.stopAnimation();
+        
         //透明度动画
         let opacityAnimation = CABasicAnimation(keyPath: "opacity")
         opacityAnimation.fromValue = 1.0 //起始值
