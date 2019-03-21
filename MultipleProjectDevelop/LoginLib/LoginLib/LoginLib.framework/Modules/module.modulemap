@@ -1,0 +1,6 @@
+framework module LoginLib {
+  umbrella header "LoginLib.h"
+
+  export *
+  module * { export * }
+}
