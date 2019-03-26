@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         
         //将动画view添加到按钮下面
         self.view.insertSubview(pulseView, belowSubview: self.pulseBtn)
+        
+        let n = "lll"
+        
     }
 
     

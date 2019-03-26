@@ -10,7 +10,7 @@
 
 @implementation OKSingletonB
 
-+ (OKSingletonB *)sharedInstance {
++ (instancetype)sharedInstance {
     static OKSingletonB *_instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

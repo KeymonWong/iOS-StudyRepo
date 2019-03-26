@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OKSingletonB : NSObject
-+ (OKSingletonB *)sharedInstance;
++ (instancetype)sharedInstance;
 @end
 
 NS_ASSUME_NONNULL_END

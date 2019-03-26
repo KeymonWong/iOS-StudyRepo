@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OKSingleton : NSObject
 
-+ (OKSingleton *)sharedInstance;
++ (instancetype)sharedInstance;
 
 /** 1.温柔派：直接告诉外面，alloc，new，copy，mutableCopy方法不可以直接调用。否则编译不过 */
 + (instancetype)alloc OBJC_UNAVAILABLE("call sharedInstance instead");

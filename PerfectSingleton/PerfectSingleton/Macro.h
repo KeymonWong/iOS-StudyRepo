@@ -10,19 +10,19 @@
 #define Macro_h
 
 //单利定义 .h
-#define OK_SINGLETON_DEF(_type_) + (_type_ *)sharedInstance;\
+#define OK_SINGLETON_DEF(_type_) + (instancetype)sharedInstance;\
 + (instancetype)alloc __attribute__((unavailable("call sharedInstance instead")));\
 + (instancetype)new __attribute__((unavailable("call sharedInstance instead")));\
 - (id)copy __attribute__((unavailable("call sharedInstance instead")));\
 - (id)mutableCopy __attribute__((unavailable("call sharedInstance instead")));\
 //单利实现 .m
-#define OK_SINGLETON_IMP(_type_) + (_type_ *)sharedInstance {\
-static _type_ *theInstance = nil;\
+#define OK_SINGLETON_IMP(_type_) + (instancetype)sharedInstance {\
+static _type_ *_instance = nil;\
 static dispatch_once_t onceToken;\
 dispatch_once(&onceToken, ^{\
-theInstance = [[super alloc] init];\
+_instance = [[super alloc] init];\
 });\
-return theInstance;\
+return _instance;\
 }
 
 #endif /* Macro_h */
