@@ -9,10 +9,8 @@
 import UIKit
 
 class PulseAnimationView: UIView {
-    
     //定义脉冲图层
     var pulseLayer: CAShapeLayer!
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
