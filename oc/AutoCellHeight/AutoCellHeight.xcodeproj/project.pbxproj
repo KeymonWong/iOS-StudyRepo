@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		167800012202EA880071DADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167800002202EA880071DADD /* Assets.xcassets */; };
+		167800042202EA880071DADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167800022202EA880071DADD /* LaunchScreen.storyboard */; };
+		167800072202EA880071DADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 167800062202EA880071DADD /* main.m */; };
+		167800112202EA890071DADD /* AutoCellHeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 167800102202EA890071DADD /* AutoCellHeightTests.m */; };
+		1678001C2202EA890071DADD /* AutoCellHeightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678001B2202EA890071DADD /* AutoCellHeightUITests.m */; };
+		1678002B220306E50071DADD /* AutoChangeHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678002A220306E50071DADD /* AutoChangeHeightCell.m */; };
+		1678FFF92202EA870071DADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678FFF82202EA870071DADD /* AppDelegate.m */; };
+		1678FFFC2202EA870071DADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678FFFB2202EA870071DADD /* ViewController.m */; };
+		1678FFFF2202EA870071DADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678FFFD2202EA870071DADD /* Main.storyboard */; };
+		1690965C2204134B00AA2B10 /* AutoHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690965A2204134B00AA2B10 /* AutoHeightCell.m */; };
+		1690965D2204134B00AA2B10 /* AutoHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1690965B2204134B00AA2B10 /* AutoHeightCell.xib */; };
+		16909660220428E200AA2B10 /* InputInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690965F220428E200AA2B10 /* InputInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1678000D2202EA890071DADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1678FFEC2202EA870071DADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1678FFF32202EA870071DADD;
+			remoteInfo = AutoCellHeight;
+		};
+		167800182202EA890071DADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1678FFEC2202EA870071DADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1678FFF32202EA870071DADD;
+			remoteInfo = AutoCellHeight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		167800002202EA880071DADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		167800032202EA880071DADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		167800052202EA880071DADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167800062202EA880071DADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1678000C2202EA890071DADD /* AutoCellHeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCellHeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		167800102202EA890071DADD /* AutoCellHeightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCellHeightTests.m; sourceTree = "<group>"; };
+		167800122202EA890071DADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167800172202EA890071DADD /* AutoCellHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCellHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1678001B2202EA890071DADD /* AutoCellHeightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCellHeightUITests.m; sourceTree = "<group>"; };
+		1678001D2202EA890071DADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16780029220306E50071DADD /* AutoChangeHeightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoChangeHeightCell.h; sourceTree = "<group>"; };
+		1678002A220306E50071DADD /* AutoChangeHeightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoChangeHeightCell.m; sourceTree = "<group>"; };
+		1678FFF42202EA870071DADD /* AutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1678FFF72202EA870071DADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1678FFF82202EA870071DADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1678FFFA2202EA870071DADD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1678FFFB2202EA870071DADD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1678FFFE2202EA870071DADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		169096592204134B00AA2B10 /* AutoHeightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoHeightCell.h; sourceTree = "<group>"; };
+		1690965A2204134B00AA2B10 /* AutoHeightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoHeightCell.m; sourceTree = "<group>"; };
+		1690965B2204134B00AA2B10 /* AutoHeightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoHeightCell.xib; sourceTree = "<group>"; };
+		1690965E220428E200AA2B10 /* InputInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputInfo.h; sourceTree = "<group>"; };
+		1690965F220428E200AA2B10 /* InputInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		167800092202EA890071DADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167800142202EA890071DADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1678FFF12202EA870071DADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1678000F2202EA890071DADD /* AutoCellHeightTests */ = {
+			isa = PBXGroup;
+			children = (
+				167800102202EA890071DADD /* AutoCellHeightTests.m */,
+				167800122202EA890071DADD /* Info.plist */,
+			);
+			path = AutoCellHeightTests;
+			sourceTree = "<group>";
+		};
+		1678001A2202EA890071DADD /* AutoCellHeightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1678001B2202EA890071DADD /* AutoCellHeightUITests.m */,
+				1678001D2202EA890071DADD /* Info.plist */,
+			);
+			path = AutoCellHeightUITests;
+			sourceTree = "<group>";
+		};
+		1678FFEB2202EA870071DADD = {
+			isa = PBXGroup;
+			children = (
+				1678FFF62202EA870071DADD /* AutoCellHeight */,
+				1678000F2202EA890071DADD /* AutoCellHeightTests */,
+				1678001A2202EA890071DADD /* AutoCellHeightUITests */,
+				1678FFF52202EA870071DADD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1678FFF52202EA870071DADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1678FFF42202EA870071DADD /* AutoCellHeight.app */,
+				1678000C2202EA890071DADD /* AutoCellHeightTests.xctest */,
+				167800172202EA890071DADD /* AutoCellHeightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1678FFF62202EA870071DADD /* AutoCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				1678FFF72202EA870071DADD /* AppDelegate.h */,
+				1678FFF82202EA870071DADD /* AppDelegate.m */,
+				1678FFFA2202EA870071DADD /* ViewController.h */,
+				1678FFFB2202EA870071DADD /* ViewController.m */,
+				16873DA2223632EC00FCDE50 /* Sources */,
+				169096592204134B00AA2B10 /* AutoHeightCell.h */,
+				1690965A2204134B00AA2B10 /* AutoHeightCell.m */,
+				1690965B2204134B00AA2B10 /* AutoHeightCell.xib */,
+				1678FFFD2202EA870071DADD /* Main.storyboard */,
+				167800002202EA880071DADD /* Assets.xcassets */,
+				167800022202EA880071DADD /* LaunchScreen.storyboard */,
+				167800052202EA880071DADD /* Info.plist */,
+				167800062202EA880071DADD /* main.m */,
+			);
+			path = AutoCellHeight;
+			sourceTree = "<group>";
+		};
+		16873DA2223632EC00FCDE50 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				16780029220306E50071DADD /* AutoChangeHeightCell.h */,
+				1678002A220306E50071DADD /* AutoChangeHeightCell.m */,
+				1690965E220428E200AA2B10 /* InputInfo.h */,
+				1690965F220428E200AA2B10 /* InputInfo.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1678000B2202EA890071DADD /* AutoCellHeightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167800232202EA890071DADD /* Build configuration list for PBXNativeTarget "AutoCellHeightTests" */;
+			buildPhases = (
+				167800082202EA890071DADD /* Sources */,
+				167800092202EA890071DADD /* Frameworks */,
+				1678000A2202EA890071DADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1678000E2202EA890071DADD /* PBXTargetDependency */,
+			);
+			name = AutoCellHeightTests;
+			productName = AutoCellHeightTests;
+			productReference = 1678000C2202EA890071DADD /* AutoCellHeightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		167800162202EA890071DADD /* AutoCellHeightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167800262202EA890071DADD /* Build configuration list for PBXNativeTarget "AutoCellHeightUITests" */;
+			buildPhases = (
+				167800132202EA890071DADD /* Sources */,
+				167800142202EA890071DADD /* Frameworks */,
+				167800152202EA890071DADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167800192202EA890071DADD /* PBXTargetDependency */,
+			);
+			name = AutoCellHeightUITests;
+			productName = AutoCellHeightUITests;
+			productReference = 167800172202EA890071DADD /* AutoCellHeightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1678FFF32202EA870071DADD /* AutoCellHeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167800202202EA890071DADD /* Build configuration list for PBXNativeTarget "AutoCellHeight" */;
+			buildPhases = (
+				1678FFF02202EA870071DADD /* Sources */,
+				1678FFF12202EA870071DADD /* Frameworks */,
+				1678FFF22202EA870071DADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoCellHeight;
+			productName = AutoCellHeight;
+			productReference = 1678FFF42202EA870071DADD /* AutoCellHeight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1678FFEC2202EA870071DADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ola;
+				TargetAttributes = {
+					1678000B2202EA890071DADD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1678FFF32202EA870071DADD;
+					};
+					167800162202EA890071DADD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1678FFF32202EA870071DADD;
+					};
+					1678FFF32202EA870071DADD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1678FFEF2202EA870071DADD /* Build configuration list for PBXProject "AutoCellHeight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1678FFEB2202EA870071DADD;
+			productRefGroup = 1678FFF52202EA870071DADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1678FFF32202EA870071DADD /* AutoCellHeight */,
+				1678000B2202EA890071DADD /* AutoCellHeightTests */,
+				167800162202EA890071DADD /* AutoCellHeightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1678000A2202EA890071DADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167800152202EA890071DADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1678FFF22202EA870071DADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167800042202EA880071DADD /* LaunchScreen.storyboard in Resources */,
+				1690965D2204134B00AA2B10 /* AutoHeightCell.xib in Resources */,
+				167800012202EA880071DADD /* Assets.xcassets in Resources */,
+				1678FFFF2202EA870071DADD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		167800082202EA890071DADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167800112202EA890071DADD /* AutoCellHeightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167800132202EA890071DADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1678001C2202EA890071DADD /* AutoCellHeightUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1678FFF02202EA870071DADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16909660220428E200AA2B10 /* InputInfo.m in Sources */,
+				1678FFFC2202EA870071DADD /* ViewController.m in Sources */,
+				1678002B220306E50071DADD /* AutoChangeHeightCell.m in Sources */,
+				1690965C2204134B00AA2B10 /* AutoHeightCell.m in Sources */,
+				167800072202EA880071DADD /* main.m in Sources */,
+				1678FFF92202EA870071DADD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1678000E2202EA890071DADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1678FFF32202EA870071DADD /* AutoCellHeight */;
+			targetProxy = 1678000D2202EA890071DADD /* PBXContainerItemProxy */;
+		};
+		167800192202EA890071DADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1678FFF32202EA870071DADD /* AutoCellHeight */;
+			targetProxy = 167800182202EA890071DADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		167800022202EA880071DADD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				167800032202EA880071DADD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1678FFFD2202EA870071DADD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1678FFFE2202EA870071DADD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1678001E2202EA890071DADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1678001F2202EA890071DADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		167800212202EA890071DADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = AutoCellHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hqm.AutoCellHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		167800222202EA890071DADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = AutoCellHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hqm.AutoCellHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		167800242202EA890071DADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoCellHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hqm.AutoCellHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCellHeight.app/AutoCellHeight";
+			};
+			name = Debug;
+		};
+		167800252202EA890071DADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoCellHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hqm.AutoCellHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCellHeight.app/AutoCellHeight";
+			};
+			name = Release;
+		};
+		167800272202EA890071DADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoCellHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hqm.AutoCellHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoCellHeight;
+			};
+			name = Debug;
+		};
+		167800282202EA890071DADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoCellHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hqm.AutoCellHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoCellHeight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		167800202202EA890071DADD /* Build configuration list for PBXNativeTarget "AutoCellHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167800212202EA890071DADD /* Debug */,
+				167800222202EA890071DADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		167800232202EA890071DADD /* Build configuration list for PBXNativeTarget "AutoCellHeightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167800242202EA890071DADD /* Debug */,
+				167800252202EA890071DADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		167800262202EA890071DADD /* Build configuration list for PBXNativeTarget "AutoCellHeightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167800272202EA890071DADD /* Debug */,
+				167800282202EA890071DADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1678FFEF2202EA870071DADD /* Build configuration list for PBXProject "AutoCellHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1678001E2202EA890071DADD /* Debug */,
+				1678001F2202EA890071DADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1678FFEC2202EA870071DADD /* Project object */;
+}

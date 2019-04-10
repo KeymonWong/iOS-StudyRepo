@@ -14,7 +14,7 @@
     static OKSingletonB *_instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _instance = [[super allocWithZone:nil] init];
+        _instance = [[super allocWithZone:NULL] init];
     });
     return _instance;
 }
