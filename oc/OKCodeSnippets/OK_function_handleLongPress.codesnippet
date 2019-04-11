@@ -18,8 +18,10 @@
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>longPress手势事件回调</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建longPress手势事件回调</string>
+	<string>longPress action</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

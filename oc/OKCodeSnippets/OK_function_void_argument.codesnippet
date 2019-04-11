@@ -16,8 +16,10 @@
 	<string>36A99A40-AF77-4CCA-8FF3-E1587F48F239</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetTitle</key>
+	<key>IDECodeSnippetSummary</key>
 	<string>创建一个返回值为空并且带参数的方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>-(void)function:(){}</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

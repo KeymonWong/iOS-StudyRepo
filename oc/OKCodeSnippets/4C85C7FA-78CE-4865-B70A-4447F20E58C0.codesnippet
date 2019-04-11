@@ -3,28 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>fnv_pan</string>
+	<string>yy-modelCustomTransformFromDictionary</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer {
-    &lt;#code#&gt;
+	<string>/*!
+ * 2.下面的两个方法 `字典里值`与`模型的值`类型不一样`需要转换`而重写的方法
+ * NSDate *time     dic[@"t"]是double类型的的秒数
+ */
+/// Dic -&gt; model
+- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic {
+    
+    //    self.time = (NSDate *)[NSDate dateWithTimeIntervalSince1970:[dic[@"t"] doubleValue]/1000];
+    
+    return YES;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>85908275-A2F1-49FA-8188-739CC7FF1BF5</string>
+	<string>4C85C7FA-78CE-4865-B70A-4447F20E58C0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>pan手势事件回调</string>
+	<string>`字典里值`与`模型的值`类型不一样`需要转换`而重写的方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pan action</string>
+	<string>yy-modelCustomTransformFromDictionary</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

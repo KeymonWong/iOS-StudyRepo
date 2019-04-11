@@ -3,28 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>fnv_pan</string>
+	<string>yy-modelContainerPropertyGenericClass</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer {
-    &lt;#code#&gt;
+	<string>// 把数组里面带有对象的类型专门按照这个方法，这个格式写出来
++ (nullable NSDictionary&lt;NSString *, id&gt; *)modelContainerPropertyGenericClass {
+    return @{
+             @"&lt;#model-property-name#&gt;" : [&lt;#Class#&gt; class]
+             };
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>85908275-A2F1-49FA-8188-739CC7FF1BF5</string>
+	<string>A00D59C5-A144-4D75-94A6-F5E668F0EA93</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>pan手势事件回调</string>
+	<string>把数组里面带有对象的类型按照这个方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pan action</string>
+	<string>yy-modelContainerPropertyGenericClass</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
