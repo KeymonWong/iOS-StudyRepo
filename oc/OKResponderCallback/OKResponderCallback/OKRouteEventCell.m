@@ -33,8 +33,9 @@
     !self.routeBlock ?: self.routeBlock();
 }
 
+// 触发事件时
 - (void)callbackViaResponder {
-    [self routerEventWithSelector:NSStringFromSelector(@selector(route:)) object:nil userInfo:@{@"key" : @"success"}];
+    [self routerEventWithName:@"router" userInfo:@{@"key" : @"success"}];
 }
 
 @end

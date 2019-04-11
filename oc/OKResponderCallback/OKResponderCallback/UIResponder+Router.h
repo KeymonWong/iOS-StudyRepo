@@ -12,7 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIResponder (Router)
 
-- (void)routerEventWithSelector:(NSString *)selector object:(id)object userInfo:(NSDictionary *)userInfo;
+/*!
+ * 基于响应链的事件交互方式
+ * @param eventName 事件名
+ * @param userInfo 交互可传递的数据
+ */
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
 
 @end
 

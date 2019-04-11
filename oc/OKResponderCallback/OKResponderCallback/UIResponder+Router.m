@@ -10,9 +10,9 @@
 
 @implementation UIResponder (Router)
 
-- (void)routerEventWithSelector:(NSString *)selector object:(id)object userInfo:(NSDictionary *)userInfo
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
 {
-    [[self nextResponder] routerEventWithSelector:selector object:object userInfo:userInfo];
+    [[self nextResponder] routerEventWithName:eventName userInfo:userInfo];
 }
 
 @end

@@ -12,8 +12,13 @@
 
 #import "UIResponder+Router.h"
 
+#import "OKSchedule.h"
+
+#import "OKEventProxy.h"
+
 @interface ViewController ()
 @property(nonatomic, strong) OKRouteEventView *routeEventV;
+@property(nonatomic, strong) OKEventProxy *eventProxy;
 @end
 
 @implementation ViewController
@@ -23,20 +28,34 @@
     
     [self.view addSubview:self.routeEventV];
     
-    // block一层一层传递事件
+    // block一层一层向上传递事件
     [self.routeEventV setRouterEventBlock:^{
         NSLog(@"\n>>>>>>\n通过block回调事件\n<<<<<<");
     }];
+    
+    OKSchedule *sch = [[OKSchedule alloc] init];
+    [sch doWithTime:@"9:10-11:30" userInfo:@{@"happy" : @"代码使我快乐"}];
 }
 
-#pragma mark - event response
+#pragma mark - event response based on UIResponder chain
 
-- (void)routerEventWithSelector:(NSString *)selector object:(id)object userInfo:(NSDictionary *)userInfo
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
 {
-    NSLog(@"\n>>>>>>\n通过UIResponder回调事件\n<<<<<<");
-    NSLog(@"\n>>>>>>\nwow..., 太神奇了\n<<<<<<\n\n>>>>>>\n%@\n<<<<<<\n\n>>>>>>\n%@\n<<<<<<", object, userInfo);
+    NSLog(@"\n>>>>>>\n通过 responder chain 回调事件\n<<<<<<");
+    NSLog(@"\n>>>>>>\nwow..., 太神奇了\n<<<<<<\n\n>>>>>>\n%@\n<<<<<<", userInfo);
+    
+    /*
+     * do whatever u want to do
+     */
+    
+    // 如果需要让事件继续往上传递，则调用下面的语句
+    // [super routerEventWithName:eventName userInfo:userInfo];
+    
+    // 可以把事件统一传到一个类里面做统一处理
+    [self.eventProxy handleEvent:eventName userInfo:userInfo];
 }
 
+#pragma mark - lazy load
 
 - (OKRouteEventView *)routeEventV {
     if (!_routeEventV) {
@@ -45,5 +64,11 @@
     return _routeEventV;
 }
 
+- (OKEventProxy *)eventProxy {
+    if (!_eventProxy) {
+        _eventProxy = [[OKEventProxy alloc] init];
+    }
+    return _eventProxy;
+}
 
 @end
