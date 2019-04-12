@@ -8,6 +8,8 @@
 
 #import "OKSchedule.h"
 
+#import "OKEventName.h"
+
 @interface OKSchedule ()
 @property(nonatomic, strong) NSDictionary *strategy;
 @end
@@ -45,23 +47,23 @@
 #pragma mark -
 
 - (void)haveBreakfast:(NSDictionary *)useInfo {
-    NSLog(@"早餐");
+    NSLog(@"\n早餐\n");
 }
 
 - (void)code:(NSDictionary *)useInfo {
-    NSLog(@"写代码-%@", useInfo);
+    NSLog(@"\n写代码-\n%@\n", useInfo);
 }
 
 - (void)haveLunch:(NSDictionary *)useInfo {
-    NSLog(@"午饭");
+    NSLog(@"\n午饭\n");
 }
 
 - (void)haveRest:(NSDictionary *)useInfo {
-    NSLog(@"午休");
+    NSLog(@"\n午休\n");
 }
 
 - (void)paint:(NSDictionary *)useInfo {
-    NSLog(@"绘画");
+    NSLog(@"\n绘画\n");
 }
 
 #pragma mark - lazy load
@@ -69,11 +71,11 @@
 - (NSDictionary *)strategy {
     if (!_strategy) {
         _strategy = @{
-                      @"8:30-9:00": [self createInvocationWithSelector:@selector(haveBreakfast:)],
-                      @"9:10-11:30": [self createInvocationWithSelector:@selector(code:)],
-                      @"12:00-13:00": [self createInvocationWithSelector:@selector(haveLunch:)],
-                      @"13:20-14:00": [self createInvocationWithSelector:@selector(haveRest:)],
-                      @"14:10-15:30": [self createInvocationWithSelector:@selector(paint:)]
+                      kHaveBreakfastName : [self createInvocationWithSelector:@selector(haveBreakfast:)],
+                      kCodeName : [self createInvocationWithSelector:@selector(code:)],
+                      kHaveLunchName : [self createInvocationWithSelector:@selector(haveLunch:)],
+                      kHaveRestName : [self createInvocationWithSelector:@selector(haveRest:)],
+                      kPaintName : [self createInvocationWithSelector:@selector(paint:)]
                       };
     }
     return _strategy;

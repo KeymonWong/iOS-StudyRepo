@@ -8,6 +8,8 @@
 
 #import "OKEventProxy.h"
 
+#import "OKEventName.h"
+
 @interface OKEventProxy ()
 @property(nonatomic, strong) NSDictionary<NSString *, NSInvocation *> *eventStrategy;
 @end
@@ -38,19 +40,19 @@
     return inv;
 }
 
-- (void)ticketEvent:(NSDictionary *)userInfo {
-    NSLog(@"%@", userInfo);
+- (void)haveBreakfastEvent:(NSDictionary *)userInfo {
+    NSLog(@"\nhaveBreakfastEvent:\n%@\n", userInfo);
 }
 
-- (void)serviceEvent:(NSDictionary *)userInfo {
-    NSLog(@"%@", userInfo);
+- (void)codeEvent:(NSDictionary *)userInfo {
+    NSLog(@"\ncodeEvent:\n%@\n", userInfo);
 }
 
 - (NSDictionary<NSString *,NSInvocation *> *)eventStrategy {
     if (!_eventStrategy) {
         _eventStrategy = @{
-                           @"ticketEvent" : [self createInvocationWithSelector:@selector(ticketEvent:)],
-                           @"serviceEvent" : [self createInvocationWithSelector:@selector(serviceEvent:)]
+                           kHaveBreakfastName : [self createInvocationWithSelector:@selector(haveBreakfastEvent:)],
+                           kCodeName : [self createInvocationWithSelector:@selector(codeEvent:)]
                            };
     }
     return _eventStrategy;

@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  OKSnippet
+//  OKResponderCallback
 //
 //  Created by keymon on 2019/4/9.
 //  Copyright © 2019 ok. All rights reserved.
@@ -15,6 +15,8 @@
 #import "OKSchedule.h"
 
 #import "OKEventProxy.h"
+
+#import "OKEventName.h"
 
 @interface ViewController ()
 @property(nonatomic, strong) OKRouteEventView *routeEventV;
@@ -34,7 +36,7 @@
     }];
     
     OKSchedule *sch = [[OKSchedule alloc] init];
-    [sch doWithTime:@"9:10-11:30" userInfo:@{@"happy" : @"代码使我快乐"}];
+    [sch doWithTime:kCodeName userInfo:@{@"happy" : @"代码使我快乐"}];
 }
 
 #pragma mark - event response based on UIResponder chain

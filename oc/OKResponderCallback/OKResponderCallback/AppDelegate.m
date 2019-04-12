@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  OKSnippet
+//  OKResponderCallback
 //
 //  Created by keymon on 2019/4/9.
 //  Copyright © 2019 ok. All rights reserved.
