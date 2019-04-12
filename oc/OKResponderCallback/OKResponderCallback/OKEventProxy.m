@@ -10,6 +10,10 @@
 
 #import "OKEventName.h"
 
+#import "OKHaveBreakfastViewController.h"
+#import "OKCodeViewController.h"
+#import "OKHaveLunchViewController.h"
+
 @interface OKEventProxy ()
 @property(nonatomic, strong) NSDictionary<NSString *, NSInvocation *> *eventStrategy;
 @end
@@ -42,17 +46,34 @@
 
 - (void)haveBreakfastEvent:(NSDictionary *)userInfo {
     NSLog(@"\nhaveBreakfastEvent:\n%@\n", userInfo);
+    
+    OKHaveBreakfastViewController *jumpVC = [[OKHaveBreakfastViewController alloc] init];
+    UIViewController *currentVC = userInfo[@"currentVC"];
+    [currentVC.navigationController pushViewController:jumpVC animated:YES];
 }
 
 - (void)codeEvent:(NSDictionary *)userInfo {
     NSLog(@"\ncodeEvent:\n%@\n", userInfo);
+    
+    OKCodeViewController *jumpVC = [[OKCodeViewController alloc] init];
+    UIViewController *currentVC = userInfo[@"currentVC"];
+    [currentVC.navigationController pushViewController:jumpVC animated:YES];
+}
+
+- (void)haveLunchEvent:(NSDictionary *)userInfo {
+    NSLog(@"\nhaveLunchEvent:\n%@\n", userInfo);
+    
+    OKHaveLunchViewController *jumpVC = [[OKHaveLunchViewController alloc] init];
+    UIViewController *currentVC = userInfo[@"currentVC"];
+    [currentVC.navigationController pushViewController:jumpVC animated:YES];
 }
 
 - (NSDictionary<NSString *,NSInvocation *> *)eventStrategy {
     if (!_eventStrategy) {
         _eventStrategy = @{
                            kHaveBreakfastName : [self createInvocationWithSelector:@selector(haveBreakfastEvent:)],
-                           kCodeName : [self createInvocationWithSelector:@selector(codeEvent:)]
+                           kCodeName : [self createInvocationWithSelector:@selector(codeEvent:)],
+                           kHaveLunchName : [self createInvocationWithSelector:@selector(haveLunchEvent:)]
                            };
     }
     return _eventStrategy;

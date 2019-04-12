@@ -66,10 +66,12 @@
 {
     OKRouteEventCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([OKRouteEventCell class]) forIndexPath:indexPath];
     
+    // 策略模式场景化到 cell, 点击不同的 cell 处理不同的事件
     if (indexPath.row < self.datas.count) {
         [cell configureCellWithData:self.datas[indexPath.row] indexPath:indexPath];
     }
     
+    // 方式1：采用block回调的方式交互
     [cell setRouteBlock:^{
         !self.routerEventBlock ?: self.routerEventBlock();
     }];

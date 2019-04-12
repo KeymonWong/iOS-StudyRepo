@@ -31,10 +31,12 @@
     [self.view addSubview:self.routeEventV];
     
     // block一层一层向上传递事件
+    // 方式1：采用block回调的方式交互
     [self.routeEventV setRouterEventBlock:^{
         NSLog(@"\n>>>>>>\n通过block回调事件\n<<<<<<");
     }];
     
+    // 策略模式
     OKSchedule *sch = [[OKSchedule alloc] init];
     [sch doWithTime:kCodeName userInfo:@{@"happy" : @"代码使我快乐"}];
 }

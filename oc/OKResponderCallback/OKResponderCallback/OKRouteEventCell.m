@@ -40,8 +40,10 @@
 }
 
 - (IBAction)handleRouteEvent:(UIButton *)sender {
+    // 方式1：采用block回调的方式交互
     [self callbackViaBlock];
     
+    // 方式2：采用基于响应链的方式交互
     [self callbackViaResponder];
 }
 
@@ -51,7 +53,24 @@
 
 // 触发事件时
 - (void)callbackViaResponder {
-    [self routerEventWithName:self.currentDict[@"eventName"] userInfo:@{@"indexPath" : self.currentIndexPath}];
+    UIViewController *vc = [self viewController];
+    NSDictionary *userInfo = @{
+                               @"indexPath" : self.currentIndexPath,
+                               @"currentVC" : vc
+                               };
+    
+    [self routerEventWithName:self.currentDict[@"eventName"] userInfo:userInfo];
+}
+
+// 这个可以写到 UIView 的分类里面
+- (UIViewController *)viewController {
+    for (UIView *next = [self superview]; next; next = [next superview]) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
 }
 
 @end
