@@ -44,6 +44,8 @@
     return inv;
 }
 
+#pragma mark - 统一管理事件交互
+
 - (void)haveBreakfastEvent:(NSDictionary *)userInfo {
     NSLog(@"\nhaveBreakfastEvent:\n%@\n", userInfo);
     
@@ -67,6 +69,8 @@
     UIViewController *currentVC = userInfo[@"currentVC"];
     [currentVC.navigationController pushViewController:jumpVC animated:YES];
 }
+
+#pragma mark - lazy load
 
 - (NSDictionary<NSString *,NSInvocation *> *)eventStrategy {
     if (!_eventStrategy) {

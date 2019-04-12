@@ -26,19 +26,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		160CDDC2225EE58B006B59AA /* OKRouteEventCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKRouteEventCell.h; sourceTree = "<group>"; };
-		160CDDC3225EE58B006B59AA /* OKRouteEventCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKRouteEventCell.m; sourceTree = "<group>"; };
-		160CDDC4225EE58B006B59AA /* OKRouteEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OKRouteEventCell.xib; sourceTree = "<group>"; };
-		160CDDC7225EE63C006B59AA /* OKRouteEventView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKRouteEventView.h; sourceTree = "<group>"; };
-		160CDDC8225EE63C006B59AA /* OKRouteEventView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKRouteEventView.m; sourceTree = "<group>"; };
+		160CDDC2225EE58B006B59AA /* OKRouteEventCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OKRouteEventCell.h; path = ../../OKRouteEventCell.h; sourceTree = "<group>"; };
+		160CDDC3225EE58B006B59AA /* OKRouteEventCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OKRouteEventCell.m; path = ../../OKRouteEventCell.m; sourceTree = "<group>"; };
+		160CDDC4225EE58B006B59AA /* OKRouteEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OKRouteEventCell.xib; path = ../../OKRouteEventCell.xib; sourceTree = "<group>"; };
+		160CDDC7225EE63C006B59AA /* OKRouteEventView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OKRouteEventView.h; path = ../../OKRouteEventView.h; sourceTree = "<group>"; };
+		160CDDC8225EE63C006B59AA /* OKRouteEventView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OKRouteEventView.m; path = ../../OKRouteEventView.m; sourceTree = "<group>"; };
 		160CDDCA225F0489006B59AA /* UIResponder+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
 		160CDDCB225F0489006B59AA /* UIResponder+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
 		160CDDCD225F68CC006B59AA /* OKSchedule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKSchedule.h; sourceTree = "<group>"; };
 		160CDDCE225F68CC006B59AA /* OKSchedule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKSchedule.m; sourceTree = "<group>"; };
-		160CDDD0225F71FB006B59AA /* OKEventProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKEventProxy.h; sourceTree = "<group>"; };
-		160CDDD1225F71FB006B59AA /* OKEventProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKEventProxy.m; sourceTree = "<group>"; };
-		160CDDD322602D7E006B59AA /* OKEventName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKEventName.h; sourceTree = "<group>"; };
-		160CDDD422602D7E006B59AA /* OKEventName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKEventName.m; sourceTree = "<group>"; };
+		160CDDD0225F71FB006B59AA /* OKEventProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OKEventProxy.h; path = ../../OKEventProxy.h; sourceTree = "<group>"; };
+		160CDDD1225F71FB006B59AA /* OKEventProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OKEventProxy.m; path = ../../OKEventProxy.m; sourceTree = "<group>"; };
+		160CDDD322602D7E006B59AA /* OKEventName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OKEventName.h; path = ../../OKEventName.h; sourceTree = "<group>"; };
+		160CDDD422602D7E006B59AA /* OKEventName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OKEventName.m; path = ../../OKEventName.m; sourceTree = "<group>"; };
 		160CDDD622603F4D006B59AA /* OKHaveBreakfastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHaveBreakfastViewController.h; sourceTree = "<group>"; };
 		160CDDD722603F4D006B59AA /* OKHaveBreakfastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHaveBreakfastViewController.m; sourceTree = "<group>"; };
 		160CDDD922603F57006B59AA /* OKCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKCodeViewController.h; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		16876CE7225C951C00798F3C /* OKResponderCallback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKResponderCallback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16876CEA225C951C00798F3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16876CEB225C951C00798F3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		16876CED225C951C00798F3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		16876CED225C951C00798F3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
 		16876CEE225C951C00798F3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		16876CF1225C951C00798F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16876CF3225C951E00798F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +68,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160CDDDF22607C0C006B59AA /* Strategy_Responder */ = {
+			isa = PBXGroup;
+			children = (
+				160CDDE422607C54006B59AA /* Helper */,
+				160CDDE322607C4D006B59AA /* Controller */,
+				160CDDE222607C48006B59AA /* View */,
+				160CDDE122607C3D006B59AA /* Model */,
+			);
+			path = Strategy_Responder;
+			sourceTree = "<group>";
+		};
+		160CDDE022607C36006B59AA /* OtherModule */ = {
+			isa = PBXGroup;
+			children = (
+				160CDDE522607CA1006B59AA /* Controller */,
+			);
+			path = OtherModule;
+			sourceTree = "<group>";
+		};
+		160CDDE122607C3D006B59AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				160CDDCD225F68CC006B59AA /* OKSchedule.h */,
+				160CDDCE225F68CC006B59AA /* OKSchedule.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		160CDDE222607C48006B59AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				160CDDC7225EE63C006B59AA /* OKRouteEventView.h */,
+				160CDDC8225EE63C006B59AA /* OKRouteEventView.m */,
+				160CDDC2225EE58B006B59AA /* OKRouteEventCell.h */,
+				160CDDC3225EE58B006B59AA /* OKRouteEventCell.m */,
+				160CDDC4225EE58B006B59AA /* OKRouteEventCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		160CDDE322607C4D006B59AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16876CED225C951C00798F3C /* ViewController.h */,
+				16876CEE225C951C00798F3C /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		160CDDE422607C54006B59AA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				160CDDD322602D7E006B59AA /* OKEventName.h */,
+				160CDDD422602D7E006B59AA /* OKEventName.m */,
+				160CDDD0225F71FB006B59AA /* OKEventProxy.h */,
+				160CDDD1225F71FB006B59AA /* OKEventProxy.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		160CDDE522607CA1006B59AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				160CDDD622603F4D006B59AA /* OKHaveBreakfastViewController.h */,
+				160CDDD722603F4D006B59AA /* OKHaveBreakfastViewController.m */,
+				160CDDD922603F57006B59AA /* OKCodeViewController.h */,
+				160CDDDA22603F57006B59AA /* OKCodeViewController.m */,
+				160CDDDC2260422D006B59AA /* OKHaveLunchViewController.h */,
+				160CDDDD2260422D006B59AA /* OKHaveLunchViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		16876CDE225C951C00798F3C = {
 			isa = PBXGroup;
 			children = (
@@ -87,29 +160,12 @@
 		16876CE9225C951C00798F3C /* OKResponderCallback */ = {
 			isa = PBXGroup;
 			children = (
+				160CDDE022607C36006B59AA /* OtherModule */,
+				160CDDDF22607C0C006B59AA /* Strategy_Responder */,
 				16876CEA225C951C00798F3C /* AppDelegate.h */,
 				16876CEB225C951C00798F3C /* AppDelegate.m */,
-				160CDDD322602D7E006B59AA /* OKEventName.h */,
-				160CDDD422602D7E006B59AA /* OKEventName.m */,
 				160CDDCA225F0489006B59AA /* UIResponder+Router.h */,
 				160CDDCB225F0489006B59AA /* UIResponder+Router.m */,
-				16876CED225C951C00798F3C /* ViewController.h */,
-				16876CEE225C951C00798F3C /* ViewController.m */,
-				160CDDD622603F4D006B59AA /* OKHaveBreakfastViewController.h */,
-				160CDDD722603F4D006B59AA /* OKHaveBreakfastViewController.m */,
-				160CDDD922603F57006B59AA /* OKCodeViewController.h */,
-				160CDDDA22603F57006B59AA /* OKCodeViewController.m */,
-				160CDDDC2260422D006B59AA /* OKHaveLunchViewController.h */,
-				160CDDDD2260422D006B59AA /* OKHaveLunchViewController.m */,
-				160CDDCD225F68CC006B59AA /* OKSchedule.h */,
-				160CDDCE225F68CC006B59AA /* OKSchedule.m */,
-				160CDDD0225F71FB006B59AA /* OKEventProxy.h */,
-				160CDDD1225F71FB006B59AA /* OKEventProxy.m */,
-				160CDDC7225EE63C006B59AA /* OKRouteEventView.h */,
-				160CDDC8225EE63C006B59AA /* OKRouteEventView.m */,
-				160CDDC2225EE58B006B59AA /* OKRouteEventCell.h */,
-				160CDDC3225EE58B006B59AA /* OKRouteEventCell.m */,
-				160CDDC4225EE58B006B59AA /* OKRouteEventCell.xib */,
 				16876CF0225C951C00798F3C /* Main.storyboard */,
 				16876CF3225C951E00798F3C /* Assets.xcassets */,
 				16876CF5225C951E00798F3C /* LaunchScreen.storyboard */,

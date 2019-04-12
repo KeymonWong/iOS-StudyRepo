@@ -44,7 +44,7 @@
     return inv;
 }
 
-#pragma mark -
+#pragma mark - 统一管理事件交互
 
 - (void)haveBreakfast:(NSDictionary *)useInfo {
     NSLog(@"\n早餐\n");

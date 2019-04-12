@@ -33,6 +33,11 @@
 
 - (void)setupViews {
     [self addSubview:self.tableView];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.tableView.frame = self.bounds;
 }
 
@@ -54,7 +59,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -94,6 +99,12 @@
         _tableView.estimatedSectionFooterHeight = 0;
         
         _tableView.rowHeight = 80;
+        
+#ifdef __IPHONE_11_0
+        if (@available(iOS 11.0, *)){
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+#endif
         
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([OKRouteEventCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([OKRouteEventCell class])];
     }

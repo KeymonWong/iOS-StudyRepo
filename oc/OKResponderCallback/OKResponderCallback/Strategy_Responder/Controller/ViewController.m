@@ -41,8 +41,15 @@
     [sch doWithTime:kCodeName userInfo:@{@"happy" : @"代码使我快乐"}];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    self.routeEventV.frame = self.view.bounds;
+}
+
 #pragma mark - event response based on UIResponder chain
 
+// 方式2：采用基于响应链的方式交互
 - (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
 {
     NSLog(@"\n>>>>>>\n通过 responder chain 回调事件\n<<<<<<");
@@ -52,11 +59,11 @@
      * do whatever u want to do
      */
     
-    // 如果需要让事件继续往上传递，则调用下面的语句
-    // [super routerEventWithName:eventName userInfo:userInfo];
-    
     // 可以把事件统一传到一个类里面做统一处理
     [self.eventProxy handleEvent:eventName userInfo:userInfo];
+    
+    // 如果需要让事件继续往上传递，则调用下面的语句
+    // [super routerEventWithName:eventName userInfo:userInfo];
 }
 
 #pragma mark - lazy load
