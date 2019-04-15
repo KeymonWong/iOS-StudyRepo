@@ -1,5 +1,13 @@
 ## iOSDevRepo
 
+####  2019/04/15
+    
+    1. 把之前16年自定义的 CustomAnnotationView 至 iOSDevRepo/oc 里面，链接如下
+
+[高德地图自定义标注AnnotationView，滑动防止数据混乱](https://www.jianshu.com/p/a3b57ee2a095)
+
+
+
 ####  2019/04/12
     
     1. 添加完善的OKResponderCallback demo (基于策略模式和响应链的事件交互)
