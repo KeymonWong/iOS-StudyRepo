@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>touch_podfile</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string># 一个复杂的podfile:
+# Uncomment this line to define a global platform for your project
+platform :ios, '&lt;#9.0#&gt;' #系统版本
+# Uncomment thisline if you're using Swift or would like to use dynamic frameworks
+#use_frameworks! # swift
+
+# Pods for khb
+
+# '~&gt; 0.1.2'  0.2以下(不含0.2)，0.1.2以上（含0.1.2）
+# '~&gt; 0.1'    1.0以下(不含1.0)，0.1以上（含0.1）
+# '~&gt; 0'      0和以上，等于没有此约束
+# '1.0'       指定具体的版本号
+
+# 公共依赖，相当于一个模块
+def common_dependencies
+    pod 'Alamofire', '~&gt; 4.8'
+    pod 'SnapKit', '~&gt; 4.0'
+    # There are 4 subspecs available now: Core, MapKit, GIF and WebP (this means you can install only some of the SDWebImage modules. By default, you get just Core, so if you need WebP, you need to specify it).
+    pod 'SDWebImage', '~&gt; 4.0' # 默认是Core
+    pod 'SDWebImage/GIF', '~&gt; 4.0'
+    pod 'iOS-Echarts'
+end
+
+# 正式环境
+target "&lt;#OLA_DataBrain#&gt;" do #工程名字
+    common_dependencies
+end
+
+# dev 环境
+target "&lt;#OLA_DataBrain#&gt; DEV" do
+    common_dependencies
+end
+
+# test 环境
+target "&lt;#OLA_DataBrain#&gt; TEST" do
+    common_dependencies
+end
+
+# uat 环境
+target "&lt;#OLA_DataBrain#&gt; UAT" do
+    common_dependencies
+end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1AAF1B9B-22E7-4205-BCDA-96759DB2ACD6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Ruby</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建一个 Podfile</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Podfile</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

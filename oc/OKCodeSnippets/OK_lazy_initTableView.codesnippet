@@ -21,6 +21,8 @@
         _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.estimatedSectionFooterHeight = 0;
         
+        _tableView.rowHeight = &lt;#100#&gt;;
+        
         [_tableView registerClass:[&lt;#OKRouteEventCell#&gt; class] forCellReuseIdentifier:NSStringFromClass([&lt;#OKRouteEventCell#&gt; class])];
     }
     return _tableView;
@@ -38,6 +40,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
