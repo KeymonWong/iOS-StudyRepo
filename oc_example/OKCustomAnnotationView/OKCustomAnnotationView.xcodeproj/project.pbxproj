@@ -162,9 +162,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162F9FD62265F2DD00928DEB /* GroupAnimationImg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroupAnimationImg;
+			sourceTree = "<group>";
+		};
 		420103811DDEA74C0086931B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				162F9FD62265F2DD00928DEB /* GroupAnimationImg */,
 				420103A81DDEE04C0086931B /* duolaa.jpg */,
 				420103A91DDEE04C0086931B /* gou.jpg */,
 				420103AA1DDEE04C0086931B /* smile.jpg */,
