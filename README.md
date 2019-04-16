@@ -2,7 +2,7 @@
 
 ####  2019/04/15
     
-    1. 把之前16年自定义的 CustomAnnotationView 至 iOSDevRepo/oc 里面，链接如下
+    1. 把之前16年自定义的 CustomAnnotationView 至 iOSDevRepo/oc_example 里面，链接如下
 
 [高德地图自定义标注AnnotationView，滑动防止数据混乱](https://www.jianshu.com/p/a3b57ee2a095)
 
