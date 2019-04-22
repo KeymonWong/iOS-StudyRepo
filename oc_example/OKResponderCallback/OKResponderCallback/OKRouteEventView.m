@@ -10,6 +10,7 @@
 #import "OKRouteEventCell.h"
 
 #import "OKEventName.h"
+#import "UIResponder+Router.h"
 
 @interface OKRouteEventView ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView *tableView;
@@ -82,6 +83,11 @@
     }];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    [self routerEventWithName:self.datas[indexPath.row][@"eventName"] userInfo:@{@"indexPath":indexPath}];
 }
 
 #pragma mark - lazy load

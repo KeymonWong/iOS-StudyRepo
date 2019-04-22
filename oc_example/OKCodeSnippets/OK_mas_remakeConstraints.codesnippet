@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pw_nullable</string>
+	<string>mas_remakeConstraints</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nullable, nonatomic, weak) &lt;#type#&gt; &lt;#name#&gt;;</string>
+	<string> [&lt;#uiview#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
+     &lt;#code#&gt;
+    }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>28AF54AA-DD3F-4CA9-8A2F-076192984985</string>
+	<string>2868FC0A-68AF-4498-B36D-48DD72B01F34</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>property for weak(有nullable)</string>
+	<string>masonry 修改约束(移除旧约束,重新添加新约束)</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Property For Weak</string>
+	<string>mas_remakeConstraints</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
