@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160754552280042300FBEB3B /* OKNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160754542280042300FBEB3B /* OKNextViewController.m */; };
 		160B462222649EE6004CAE11 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426BFF851DDDFF1A00F916F7 /* AMapFoundationKit.framework */; };
 		160B462322649EEF004CAE11 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426BFF861DDDFF1A00F916F7 /* MAMapKit.framework */; };
 		420103881DDEA8230086931B /* xh_dq_zb_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420103861DDEA8230086931B /* xh_dq_zb_bg@2x.png */; };
@@ -68,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160754532280042300FBEB3B /* OKNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKNextViewController.h; sourceTree = "<group>"; };
+		160754542280042300FBEB3B /* OKNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKNextViewController.m; sourceTree = "<group>"; };
 		420103861DDEA8230086931B /* xh_dq_zb_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xh_dq_zb_bg@2x.png"; sourceTree = "<group>"; };
 		420103871DDEA8230086931B /* xh_dq_zb_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xh_dq_zb_bg@3x.png"; sourceTree = "<group>"; };
 		4201038A1DDEA8350086931B /* xh_dw_ic_az_pr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xh_dw_ic_az_pr@2x.png"; sourceTree = "<group>"; };
@@ -293,6 +296,8 @@
 			children = (
 				426BFF8C1DDDFFF400F916F7 /* OKMapViewController.h */,
 				426BFF8D1DDDFFF400F916F7 /* OKMapViewController.m */,
+				160754532280042300FBEB3B /* OKNextViewController.h */,
+				160754542280042300FBEB3B /* OKNextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				426BFFA61DDE05BC00F916F7 /* JSBadgeView.m in Sources */,
+				160754552280042300FBEB3B /* OKNextViewController.m in Sources */,
 				426BFF901DDDFFF400F916F7 /* OKMapViewController.m in Sources */,
 				426BFF9C1DDE028B00F916F7 /* UIView+AddBadgeView.m in Sources */,
 				426BFF601DDDFDD200F916F7 /* AppDelegate.m in Sources */,
@@ -646,7 +652,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OKCustomAnnotationView/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianshu.my1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelone.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -667,7 +673,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OKCustomAnnotationView/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianshu.my1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travelone.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};

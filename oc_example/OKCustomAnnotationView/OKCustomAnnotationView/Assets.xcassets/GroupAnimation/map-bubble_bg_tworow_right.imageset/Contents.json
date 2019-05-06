@@ -5,6 +5,10 @@
       "scale" : "1x"
     },
     {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
       "resizing" : {
         "mode" : "3-part-horizontal",
         "center" : {
@@ -12,16 +16,18 @@
           "width" : 1
         },
         "cap-insets" : {
-          "right" : 15,
-          "left" : 57
+          "right" : 86,
+          "left" : 16
         }
       },
       "idiom" : "universal",
-      "filename" : "dg_bubble_left_bg_map@2x.png",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
+      "filename" : "map-bubble_bg_tworow_right@3x.png",
+      "alignment-insets" : {
+        "top" : 10,
+        "left" : 10,
+        "bottom" : 10,
+        "right" : 10
+      },
       "scale" : "3x"
     }
   ],
