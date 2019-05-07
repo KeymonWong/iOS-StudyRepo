@@ -13,6 +13,7 @@
 #import "OKCustomAnnotation.h"
 
 #import "OKCustomAnnotationView.h"
+#import "OKMapBubbleView.h"
 
 #import "OKNextViewController.h"
 
@@ -37,6 +38,9 @@
     [self setupSubviews];
 
     [self setupModels];
+    
+    OKMapBubbleView *v = [[OKMapBubbleView alloc] initWithFrame:CGRectMake(100, 300, 200, 46)];
+    [self.view addSubview:v];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,47 +65,6 @@
     [resetBtn setFrame:CGRectMake(30, self.view.bounds.size.height-70, resetBtn.currentBackgroundImage.size.width, resetBtn.currentBackgroundImage.size.height)];
     [self.view addSubview:resetBtn];
     [resetBtn addTarget:self action:@selector(locateCenterAction) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIView *cardV = [[UIView alloc] init];
-//    cardV.backgroundColor = [UIColor greenColor];
-    
-    UIImageView *leftImgV = [[UIImageView alloc] init];
-    leftImgV.frame = CGRectMake(0, 0, 100, 64);
-    leftImgV.image = [UIImage imageNamed:@"map-bubble_bg_tworow_left"];
-    [cardV addSubview:leftImgV];
-    
-    UIImageView *rightImgV = [[UIImageView alloc] init];
-    rightImgV.frame = CGRectMake(100, 0, 100, 64);
-    rightImgV.image = [UIImage imageNamed:@"map-bubble_bg_tworow_right"];
-    [cardV addSubview:rightImgV];
-    
-    UIImageView *timerImgV = [[UIImageView alloc] init];
-    timerImgV.frame = CGRectMake(6, 6.5, 46, 46);
-    timerImgV.image = [UIImage imageNamed:@"map-bubble_timer_bg"];
-    [leftImgV addSubview:timerImgV];
-    
-    UIImageView *dotImgV = [[UIImageView alloc] init];
-    dotImgV.frame = CGRectMake(-1, -1, 50, 50);
-    dotImgV.image = [UIImage imageNamed:@"map-bubble_timer_ball1"];
-    [timerImgV addSubview:dotImgV];
-    [self addRotationAnimatorForView:dotImgV];
-    
-    cardV.frame = CGRectMake(100, 300, 200, 64);
-    [self.view addSubview:cardV];
-    
-}
-
-- (void)addRotationAnimatorForView:(UIImageView *)view {
-    CABasicAnimation *ani = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    ani.toValue = @(M_PI * 2);
-    ani.cumulative = YES;
-    ani.duration = 1;
-    ani.repeatCount = MAXFLOAT;
-    ani.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    ani.removedOnCompletion = YES;
-    
-    [view.layer addAnimation:ani forKey:@"rotationAni"];
-    [view.layer removeAnimationForKey:@"rotationAni"];
 }
 
 - (void)locateCenterAction {
