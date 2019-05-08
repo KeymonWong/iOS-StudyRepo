@@ -19,7 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        self.pulseBtn.layer.cornerRadius = 40 * 0.5;
         
-        pulseView = PulseAnimationView(frame: CGRect(x: (self.view.frame.size.width-300)*0.5, y: (self.view.frame.size.height-300)*0.5, width: 300, height: 300))
+        // width height 不等即为椭圆形脉冲动画，相等即为圆形脉冲动画
+        pulseView = PulseAnimationView(frame: CGRect(x: (self.view.frame.size.width-300)*0.5, y: (self.view.frame.size.height-100)*0.5, width: 300, height: 100))
         
         //将动画view添加到按钮下面
         self.view.insertSubview(pulseView, belowSubview: self.pulseBtn)
