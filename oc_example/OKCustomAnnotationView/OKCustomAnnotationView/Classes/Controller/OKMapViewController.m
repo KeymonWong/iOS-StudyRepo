@@ -11,7 +11,12 @@
 #import <MAMapKit/MAMapKit.h>
 
 #import "OKCustomAnnotation.h"
+
 #import "OKCustomAnnotationView.h"
+#import "OKMapBubbleView.h"
+
+#import "OKNextViewController.h"
+
 
 @interface OKMapViewController ()<MAMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
@@ -33,6 +38,9 @@
     [self setupSubviews];
 
     [self setupModels];
+    
+    OKMapBubbleView *v = [[OKMapBubbleView alloc] initWithFrame:CGRectMake(100, 300, 200, 46)];
+    [self.view addSubview:v];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -126,11 +134,9 @@
     return nil;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)next:(UIBarButtonItem *)sender {
+    OKNextViewController *vc = [[OKNextViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-
 
 @end

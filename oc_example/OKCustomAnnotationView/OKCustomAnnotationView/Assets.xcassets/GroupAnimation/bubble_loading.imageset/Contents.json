@@ -5,6 +5,20 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 59,
+          "top" : 58,
+          "right" : 170,
+          "left" : 54
+        }
+      },
       "idiom" : "universal",
       "filename" : "bubble_loading@2x.png",
       "scale" : "2x"
