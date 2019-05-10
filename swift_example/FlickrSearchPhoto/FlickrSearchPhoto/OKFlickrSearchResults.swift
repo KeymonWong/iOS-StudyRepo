@@ -9,10 +9,6 @@
 import UIKit
 
 class OKFlickrSearchResults: NSObject {
-    
-    var searchResults: OKFlickrSearchResults!
-    
-    override init() {
-        super.init()
-    }
+    let searchTerm: String
+    let searchResults: [OKFlickrPhoto]
 }

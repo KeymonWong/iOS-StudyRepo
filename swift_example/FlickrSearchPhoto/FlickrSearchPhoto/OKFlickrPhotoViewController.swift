@@ -14,6 +14,8 @@ private let sectionInset = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, rig
 private let searches: [OKFlickrSearchResults] = []
 private let flickr = OKFlickr()
 
+private let itemsPerRow: CGFloat = 3.0
+
 class OKFlickrPhotoViewController: UICollectionViewController {
 
     override func viewDidLoad() {
@@ -30,19 +32,22 @@ class OKFlickrPhotoViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return searches.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return searches[section].searchResults.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! OKFlickrPhotoCell
+        
+        let flickrPhoto = photo(for: indexPath)
+        cell.backgroundColor = .white
+        
+        cell.photoImgV.image = flickrPhoto.thumbnail
     
         // Configure the cell
     
@@ -86,6 +91,55 @@ class OKFlickrPhotoViewController: UICollectionViewController {
 // MARK: - private
 private extension OKFlickrPhotoViewController {
     func photo(for indexPath: IndexPath) -> OKFlickrPhoto {
-        return searches[indexPath.section].searchResults![indexPath.row]
+        return searches[indexPath.section].searchResults?[indexPath.row]
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension OKFlickrPhotoViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // 1
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        activityIndicator.frame = textField.bounds
+        textField.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        
+        flickr.searchFlickr(for: textField.text) {
+            
+        }
+        
+        
+    }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+extension OKFlickrPhotoViewController: UICollectionViewDelegateFlowLayout {
+    // 1
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        // 2
+        let paddingSpace = sectionInset.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    // 3
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets
+    {
+        return sectionInset
+    }
+    
+    // 4
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+        return sectionInset.left
     }
 }

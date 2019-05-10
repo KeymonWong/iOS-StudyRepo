@@ -22,11 +22,11 @@
     [super viewDidLoad];
     
     //温柔派
-    OKSingleton *a1 = [[OKSingleton alloc] init];
-    OKSingleton *a2 = [OKSingleton new];
-    OKSingleton *a3 = [OKSingleton sharedInstance];
-    [a3 copy];
-    [a3 mutableCopy];
+//    OKSingleton *a1 = [[OKSingleton alloc] init];
+//    OKSingleton *a2 = [OKSingleton new];
+//    OKSingleton *a3 = [OKSingleton sharedInstance];
+//    [a3 copy];
+//    [a3 mutableCopy];
     
     OKSingletonC *c1 = [OKSingletonC sharedInstance];
     

@@ -12,4 +12,8 @@ import UIKit
 
 class OKFlickr: NSObject {
     let apiKey = "7f22612064a99b5e842b561bd2288808"
+    
+    open func searchFlickr(for: String!) -> Void {
+        
+    }
 }

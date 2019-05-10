@@ -18,19 +18,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L9u-oN-6hc">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OKFlickrPhotoCell" id="CNz-ql-BXE">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OKFlickrPhotoCell" id="CNz-ql-BXE" customClass="OKFlickrPhotoCell" customModule="FlickrSearchPhoto" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OOn-Nx-dwE">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="OOn-Nx-dwE" firstAttribute="leading" secondItem="CNz-ql-BXE" secondAttribute="leading" id="JIi-Gm-KTR"/>
+                                    <constraint firstItem="OOn-Nx-dwE" firstAttribute="top" secondItem="CNz-ql-BXE" secondAttribute="top" id="dQi-I4-N0L"/>
+                                    <constraint firstAttribute="bottom" secondItem="OOn-Nx-dwE" secondAttribute="bottom" id="jk8-TG-kOf"/>
+                                    <constraint firstAttribute="trailing" secondItem="OOn-Nx-dwE" secondAttribute="trailing" id="pOv-6a-BJm"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="photoImgV" destination="OOn-Nx-dwE" id="Tzr-gg-j0w"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -44,6 +59,7 @@
                             <rect key="frame" x="57.5" y="7" width="260" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <textInputTraits key="textInputTraits" returnKeyType="search"/>
                             <connections>
                                 <outlet property="delegate" destination="CyI-hR-tUp" id="NdV-8T-xjH"/>
