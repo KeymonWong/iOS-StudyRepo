@@ -9,6 +9,7 @@
 import UIKit
 
 class OKFlickrPhoto: NSObject {
+    
     override init() {
         super.init()
     }
