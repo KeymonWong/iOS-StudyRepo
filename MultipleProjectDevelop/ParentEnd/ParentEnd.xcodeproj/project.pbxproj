@@ -28,6 +28,7 @@
 		163349742243789F00E24F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		163349752243789F00E24F02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		163349AF22438D3D00E24F02 /* LoginLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoginLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1662D8C52247833000B56BD2 /* MenuComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				163349672243789E00E24F02 /* AppDelegate.m */,
 				163349692243789E00E24F02 /* ViewController.h */,
 				1633496A2243789E00E24F02 /* ViewController.m */,
+				1662D8C52247833000B56BD2 /* MenuComponent.h */,
 				1633496C2243789E00E24F02 /* Main.storyboard */,
 				1633496F2243789F00E24F02 /* Assets.xcassets */,
 				163349712243789F00E24F02 /* LaunchScreen.storyboard */,
