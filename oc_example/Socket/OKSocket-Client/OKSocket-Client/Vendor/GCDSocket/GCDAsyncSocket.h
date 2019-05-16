@@ -16,49 +16,49 @@
 
 #include <sys/socket.h> // AF_INET, AF_INET6
 
-@class GCDAsyncReadPacket;
-@class GCDAsyncWritePacket;
-@class GCDAsyncSocketPreBuffer;
-@protocol GCDAsyncSocketDelegate;
+@class GCDAsyncReadPacket; ///< 读数据包
+@class GCDAsyncWritePacket; ///< 写数据包
+@class GCDAsyncSocketPreBuffer; ///< 数据缓冲区
+@protocol GCDAsyncSocketDelegate; ///< socket 代理
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString *const GCDAsyncSocketException;
-extern NSString *const GCDAsyncSocketErrorDomain;
+extern NSString *const GCDAsyncSocketException; ///< socket 异常
+extern NSString *const GCDAsyncSocketErrorDomain; ///< socket 错误域
 
-extern NSString *const GCDAsyncSocketQueueName;
-extern NSString *const GCDAsyncSocketThreadName;
+extern NSString *const GCDAsyncSocketQueueName; ///< socket 队列名字
+extern NSString *const GCDAsyncSocketThreadName; ///< socket 线程名字
 
-extern NSString *const GCDAsyncSocketManuallyEvaluateTrust;
+extern NSString *const GCDAsyncSocketManuallyEvaluateTrust;  ///< socket 手动评估信任度
 #if TARGET_OS_IPHONE
-extern NSString *const GCDAsyncSocketUseCFStreamForTLS;
+extern NSString *const GCDAsyncSocketUseCFStreamForTLS;  ///< 针对 TLS 使用 CFStream
 #endif
 #define GCDAsyncSocketSSLPeerName     (NSString *)kCFStreamSSLPeerName
 #define GCDAsyncSocketSSLCertificates (NSString *)kCFStreamSSLCertificates
 #define GCDAsyncSocketSSLIsServer     (NSString *)kCFStreamSSLIsServer
 extern NSString *const GCDAsyncSocketSSLPeerID;
-extern NSString *const GCDAsyncSocketSSLProtocolVersionMin;
-extern NSString *const GCDAsyncSocketSSLProtocolVersionMax;
+extern NSString *const GCDAsyncSocketSSLProtocolVersionMin; ///< 最低 SSL 协议版本号
+extern NSString *const GCDAsyncSocketSSLProtocolVersionMax; ///< 最高 SSL 协议版本号
 extern NSString *const GCDAsyncSocketSSLSessionOptionFalseStart;
 extern NSString *const GCDAsyncSocketSSLSessionOptionSendOneByteRecord;
-extern NSString *const GCDAsyncSocketSSLCipherSuites;
+extern NSString *const GCDAsyncSocketSSLCipherSuites; ///< SSL 密码套件
 #if !TARGET_OS_IPHONE
-extern NSString *const GCDAsyncSocketSSLDiffieHellmanParameters;
+extern NSString *const GCDAsyncSocketSSLDiffieHellmanParameters; ///< 迪菲-赫尔曼参数，一种密钥，加密用的。参见维基百科
 #endif
 
 #define GCDAsyncSocketLoggingContext 65535
 
-
+///< 枚举
 typedef NS_ERROR_ENUM(GCDAsyncSocketErrorDomain, GCDAsyncSocketError) {
-	GCDAsyncSocketNoError = 0,           // Never used
-	GCDAsyncSocketBadConfigError,        // Invalid configuration
-	GCDAsyncSocketBadParamError,         // Invalid parameter was passed
-	GCDAsyncSocketConnectTimeoutError,   // A connect operation timed out
-	GCDAsyncSocketReadTimeoutError,      // A read operation timed out
-	GCDAsyncSocketWriteTimeoutError,     // A write operation timed out
-	GCDAsyncSocketReadMaxedOutError,     // Reached set maxLength without completing
-	GCDAsyncSocketClosedError,           // The remote peer closed the connection
-	GCDAsyncSocketOtherError,            // Description provided in userInfo
+	GCDAsyncSocketNoError = 0,           // Never used —> 无错误，从来不使用
+	GCDAsyncSocketBadConfigError,        // Invalid configuration —> 配置无效
+	GCDAsyncSocketBadParamError,         // Invalid parameter was passed —> 传递了无效的参数
+	GCDAsyncSocketConnectTimeoutError,   // A connect operation timed out —> 连接操作 超时
+	GCDAsyncSocketReadTimeoutError,      // A read operation timed out —> 读取数据操作 超时
+	GCDAsyncSocketWriteTimeoutError,     // A write operation timed out —> 写数据操作 超时
+	GCDAsyncSocketReadMaxedOutError,     // Reached set maxLength without completing —> 读取数据时，达到了设置的最大读取长度，但还是没有读取完
+	GCDAsyncSocketClosedError,           // The remote peer closed the connection —> 远程对等方关闭连接
+	GCDAsyncSocketOtherError,            // Description provided in userInfo —> userInfo 里面提供的一些其他错误信息
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,20 +69,21 @@ typedef NS_ERROR_ENUM(GCDAsyncSocketErrorDomain, GCDAsyncSocketError) {
 @interface GCDAsyncSocket : NSObject
 
 /**
- * GCDAsyncSocket uses the standard delegate paradigm,
- * but executes all delegate callbacks on a given delegate dispatch queue.
- * This allows for maximum concurrency, while at the same time providing easy thread safety.
+ * GCDAsyncSocket uses the standard delegate paradigm, -> GCDAsyncSocket 使用标准的代理模式
+ * but executes all delegate callbacks on a given delegate dispatch queue. -> 但是在一个给定的代理分发队列里面处理所有的代理回调
+ * This allows for maximum concurrency, while at the same time providing easy thread safety. -> 这允许了最大并发，同时也提供了简单的线程安全。
  * 
  * You MUST set a delegate AND delegate dispatch queue before attempting to
  * use the socket, or you will get an error.
+ * 使用 socket 前，你必须设置好代理和代理分发队列，否则会出错。
  * 
- * The socket queue is optional.
- * If you pass NULL, GCDAsyncSocket will automatically create it's own socket queue.
- * If you choose to provide a socket queue, the socket queue must not be a concurrent queue.
- * If you choose to provide a socket queue, and the socket queue has a configured target queue,
- * then please see the discussion for the method markSocketQueueTargetQueue.
+ * The socket queue is optional. -> socket 队列是可选的
+ * If you pass NULL, GCDAsyncSocket will automatically create it's own socket queue. -> 如果传 null，GCDAsyncSocket 将会自动创建它自己的 socket 队列
+ * If you choose to provide a socket queue, the socket queue must not be a concurrent queue. -> 如果自己提供一个 socket 队列，这个 socket 队列一定不能是并发队列
+ * If you choose to provide a socket queue, and the socket queue has a configured target queue, -> 自己提供的 socket 队列，要对这个 socket 队列配置好目标队列
+ * then please see the discussion for the method markSocketQueueTargetQueue. -> 参见方法 markSocketQueueTargetQueue 的讨论
  * 
- * The delegate queue and socket queue can optionally be the same.
+ * The delegate queue and socket queue can optionally be the same. -> 代理队列和 socket 队列可以选择相同的队列
 **/
 - (instancetype)init;
 - (instancetype)initWithSocketQueue:(nullable dispatch_queue_t)sq;
@@ -91,6 +92,8 @@ typedef NS_ERROR_ENUM(GCDAsyncSocketErrorDomain, GCDAsyncSocketError) {
 
 /**
  * Create GCDAsyncSocket from already connect BSD socket file descriptor
+ * BSD（英语：Berkeley Software Distribution，缩写：BSD；也被称为伯克利Unix或Berkeley Unix）是一个派生自Unix（类Unix）的操作系统。参见维基百科
+ * 基于一个已经连接的 BSD socket 文件描述符，创建 GCDAsyncSocket 的实例
 **/
 + (nullable instancetype)socketFromConnectedSocketFD:(int)socketFD socketQueue:(nullable dispatch_queue_t)sq error:(NSError**)error;
 
@@ -98,110 +101,127 @@ typedef NS_ERROR_ENUM(GCDAsyncSocketErrorDomain, GCDAsyncSocketError) {
 
 + (nullable instancetype)socketFromConnectedSocketFD:(int)socketFD delegate:(nullable id<GCDAsyncSocketDelegate>)aDelegate delegateQueue:(nullable dispatch_queue_t)dq socketQueue:(nullable dispatch_queue_t)sq error:(NSError **)error;
 
-#pragma mark Configuration
+#pragma mark Configuration -> 配置
 
-@property (atomic, weak, readwrite, nullable) id<GCDAsyncSocketDelegate> delegate;
+@property (atomic, weak, readwrite, nullable) id<GCDAsyncSocketDelegate> delegate; ///< socket 代理是原子性的
 #if OS_OBJECT_USE_OBJC
 @property (atomic, strong, readwrite, nullable) dispatch_queue_t delegateQueue;
 #else
 @property (atomic, assign, readwrite, nullable) dispatch_queue_t delegateQueue;
 #endif
 
+/** 获得代理、代理队列 */
 - (void)getDelegate:(id<GCDAsyncSocketDelegate> __nullable * __nullable)delegatePtr delegateQueue:(dispatch_queue_t __nullable * __nullable)delegateQueuePtr;
+/** 设置代理、代理队列 */
 - (void)setDelegate:(nullable id<GCDAsyncSocketDelegate>)delegate delegateQueue:(nullable dispatch_queue_t)delegateQueue;
 
 /**
- * If you are setting the delegate to nil within the delegate's dealloc method,
- * you may need to use the synchronous versions below.
+ * If you are setting the delegate to nil within the delegate's dealloc method, -> 如果你在代理的 dealloc 方法中，把代理置为 nil
+ * you may need to use the synchronous versions below. -> 你可能会需要使用下面的同步设置的版本
 **/
 - (void)synchronouslySetDelegate:(nullable id<GCDAsyncSocketDelegate>)delegate;
 - (void)synchronouslySetDelegateQueue:(nullable dispatch_queue_t)delegateQueue;
 - (void)synchronouslySetDelegate:(nullable id<GCDAsyncSocketDelegate>)delegate delegateQueue:(nullable dispatch_queue_t)delegateQueue;
 
 /**
- * By default, both IPv4 and IPv6 are enabled.
+ * By default, both IPv4 and IPv6 are enabled. -> 默认 IPv4 和 IPv6 都是 enabled(开启的)
  * 
  * For accepting incoming connections, this means GCDAsyncSocket automatically supports both protocols,
+ * 对于输入连接，这意味着 GCDAsyncSocket 自动支持这俩协议
  * and can simulataneously accept incoming connections on either protocol.
+ * 并且均能接受这些建立在任何协议之上的输入连接
  * 
  * For outgoing connections, this means GCDAsyncSocket can connect to remote hosts running either protocol.
+ * 对于输出连接，这意味着 GCDAsyncSocket 可以连接到运行在任何协议上的远程主机。
  * If a DNS lookup returns only IPv4 results, GCDAsyncSocket will automatically use IPv4.
+ * 如果 DNS 寻址(查找)仅仅返回了 IPv4 的结果，则 GCDAsyncSocket 将会自动使用 IPv4。
  * If a DNS lookup returns only IPv6 results, GCDAsyncSocket will automatically use IPv6.
+ * 如果 DNS 寻址(查找)仅仅返回了 IPv6 的结果，则 GCDAsyncSocket 将会自动使用 IPv6。
  * If a DNS lookup returns both IPv4 and IPv6 results, the preferred protocol will be chosen.
+ * 如果 DNS 寻址(查找)都返回了 IPv4 和 IPv6 的结果，则 GCDAsyncSocket 将会选择首选协议。
  * By default, the preferred protocol is IPv4, but may be configured as desired.
+ * 默认首选协议是 IPv4（即优先使用的协议为 IPv4），但是也可以配置为期望要用的协议。
 **/
 
 @property (atomic, assign, readwrite, getter=isIPv4Enabled) BOOL IPv4Enabled;
 @property (atomic, assign, readwrite, getter=isIPv6Enabled) BOOL IPv6Enabled;
 
-@property (atomic, assign, readwrite, getter=isIPv4PreferredOverIPv6) BOOL IPv4PreferredOverIPv6;
+@property (atomic, assign, readwrite, getter=isIPv4PreferredOverIPv6) BOOL IPv4PreferredOverIPv6; ///< 默认优先使用 IPv4
 
 /** 
  * When connecting to both IPv4 and IPv6 using Happy Eyeballs (RFC 6555) https://tools.ietf.org/html/rfc6555
+ * 当使用 Happy Eyeballs 算法同时连接到 IPv4 和 IPv6时，
  * this is the delay between connecting to the preferred protocol and the fallback protocol.
+ * 这个属性代表连接到首选协议和后备协议之间的延迟
  *
- * Defaults to 300ms.
+ * Defaults to 300ms. -> 默认 300 毫秒
 **/
 @property (atomic, assign, readwrite) NSTimeInterval alternateAddressDelay;
 
 /**
- * User data allows you to associate arbitrary information with the socket.
- * This data is not used internally by socket in any way.
+ * User data allows you to associate arbitrary information with the socket. -> userData 允许你将任意信息和 socket 关联。
+ * This data is not used internally by socket in any way. -> socket 不能以任何方式在内部使用 userData。
 **/
 @property (atomic, strong, readwrite, nullable) id userData;
 
-#pragma mark Accepting
+#pragma mark Accepting -> 接受
 
 /**
- * Tells the socket to begin listening and accepting connections on the given port.
- * When a connection is accepted, a new instance of GCDAsyncSocket will be spawned to handle it,
- * and the socket:didAcceptNewSocket: delegate method will be invoked.
+ * Tells the socket to begin listening and accepting connections on the given port. -> 告知 socket 开始监听并接受指定端口的连接
+ * When a connection is accepted, a new instance of GCDAsyncSocket will be spawned to handle it, -> 当连接被接受时，就会催生一个新的 GCDAsyncSocket 实例来处理它，
+ * and the socket:didAcceptNewSocket: delegate method will be invoked. -> 并会触发方法 socket:didAcceptNewSocket:
  * 
- * The socket will listen on all available interfaces (e.g. wifi, ethernet, etc)
+ * The socket will listen on all available interfaces (e.g. wifi, ethernet, etc) -> socket 会监听所有可用的接口(比如 WiFi，以太网等等)
 **/
 - (BOOL)acceptOnPort:(uint16_t)port error:(NSError **)errPtr;
 
 /**
  * This method is the same as acceptOnPort:error: with the
  * additional option of specifying which interface to listen on.
+ * 这个方法和上述 acceptOnPort:error: 一样，只不过此方法指定了要监听的接口
  * 
  * For example, you could specify that the socket should only accept connections over ethernet,
  * and not other interfaces such as wifi.
+ * 比如，你可以规定 socket 只接受以太网的连接，其他接口例如 WiFi 不接受。
  * 
  * The interface may be specified by name (e.g. "en1" or "lo0") or by IP address (e.g. "192.168.4.34").
  * You may also use the special strings "localhost" or "loopback" to specify that
  * the socket only accept connections from the local machine.
+ * interface 参数可以使用 name 或者 IP 地址。你也可以使用特殊的字符串 "localhost" 或 "loopback" 规定 socket 只能接受来自本机的连接。
  * 
  * You can see the list of interfaces via the command line utility "ifconfig",
  * or programmatically via the getifaddrs() function.
+ * 你可以使用命令行 "ifconfig" 或者使用函数 getifaddrs() 查看接口列表。
  * 
  * To accept connections on any interface pass nil, or simply use the acceptOnPort:error: method.
+ * interface 传 nil，可以接受任何接口，或者使用方法 acceptOnPort:error: 接受任何接口
 **/
 - (BOOL)acceptOnInterface:(nullable NSString *)interface port:(uint16_t)port error:(NSError **)errPtr;
 
 /**
- * Tells the socket to begin listening and accepting connections on the unix domain at the given url.
- * When a connection is accepted, a new instance of GCDAsyncSocket will be spawned to handle it,
- * and the socket:didAcceptNewSocket: delegate method will be invoked.
+ * Tells the socket to begin listening and accepting connections on the unix domain at the given url. -> 告知 socket 开始监听并接受在给定 url 的 unix 域名上的连接
+ * When a connection is accepted, a new instance of GCDAsyncSocket will be spawned to handle it, -> 当连接被接受时，就会催生一个新的 GCDAsyncSocket 实例来处理它，
+ * and the socket:didAcceptNewSocket: delegate method will be invoked. -> 并会触发方法 socket:didAcceptNewSocket:
  *
- * The socket will listen on all available interfaces (e.g. wifi, ethernet, etc)
+ * The socket will listen on all available interfaces (e.g. wifi, ethernet, etc) -> socket 会监听所有可用的接口(比如 WiFi，以太网等等)
  **/
 - (BOOL)acceptOnUrl:(NSURL *)url error:(NSError **)errPtr;
 
-#pragma mark Connecting
+#pragma mark Connecting -> 连接
 
 /**
- * Connects to the given host and port.
+ * Connects to the given host and port. -> 连接到给定的主机和端口
  * 
- * This method invokes connectToHost:onPort:viaInterface:withTimeout:error:
- * and uses the default interface, and no timeout.
+ * This method invokes connectToHost:onPort:viaInterface:withTimeout:error: -> 这个方法会触发 connectToHost:onPort:viaInterface:withTimeout:error:
+ * and uses the default interface, and no timeout. -> 并且使用默认的接口，并且没有设置超时时间
 **/
 - (BOOL)connectToHost:(NSString *)host onPort:(uint16_t)port error:(NSError **)errPtr;
 
 /**
- * Connects to the given host and port with an optional timeout.
+ * Connects to the given host and port with an optional timeout. -> 连接到给定的主机和端口，可以设置超时时间
  * 
  * This method invokes connectToHost:onPort:viaInterface:withTimeout:error: and uses the default interface.
+ * 这个方法会触发 connectToHost:onPort:viaInterface:withTimeout:error: 并且使用默认的接口。
 **/
 - (BOOL)connectToHost:(NSString *)host
                onPort:(uint16_t)port
@@ -210,15 +230,20 @@ typedef NS_ERROR_ENUM(GCDAsyncSocketErrorDomain, GCDAsyncSocketError) {
 
 /**
  * Connects to the given host & port, via the optional interface, with an optional timeout.
+ * 连接到给定的主机和端口，可以设置接口，可以设置超时时间。
  * 
  * The host may be a domain name (e.g. "deusty.com") or an IP address string (e.g. "192.168.0.2").
+ * 主机可以为域名，也可以为 IP 地址。
  * The host may also be the special strings "localhost" or "loopback" to specify connecting
  * to a service on the local machine.
+ * 主机也可以为特殊字符串 "localhost" 或 "loopback" 来规定只能连接到本机的服务。
  * 
  * The interface may be a name (e.g. "en1" or "lo0") or the corresponding IP address (e.g. "192.168.4.35").
+ * 接口可以为 name，也可以是相关的 IP 地址
  * The interface may also be used to specify the local port (see below).
+ * 接口也可以被用来规定本地端口号(见下文)。
  * 
- * To not time out use a negative time interval.
+ * To not time out use a negative time interval. -> 使用 负值 代表没有设置超时
  * 
  * This method will return NO if an error is detected, and set the error pointer (if one was given).
  * Possible errors would be a nil host, invalid interface, or socket is already connected.
