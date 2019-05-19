@@ -1,0 +1,24 @@
+# 一个复杂的podfile:
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.0' #系统版本
+# Uncomment thisline if you're using Swift or would like to use dynamic frameworks
+#use_frameworks! # swift
+
+# Pods for khb
+
+# '~> 0.1.2'  0.2以下(不含0.2)，0.1.2以上（含0.1.2）
+# '~> 0.1'    1.0以下(不含1.0)，0.1以上（含0.1）
+# '~> 0'      0和以上，等于没有此约束
+# '1.0'       指定具体的版本号
+
+# 公共依赖，相当于一个模块
+def common_dependencies
+    # There are 4 subspecs available now: Core, MapKit, GIF and WebP (this means you can install only some of the SDWebImage modules. By default, you get just Core, so if you need WebP, you need to specify it).
+    pod 'SDWebImage', '~> 4.0' # 默认是Core
+    pod 'SDWebImage/GIF', '~> 4.0'
+end
+
+# 一个环境
+target "oclint-demo" do #工程名字
+    common_dependencies
+end
