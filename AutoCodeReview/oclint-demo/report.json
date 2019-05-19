@@ -1,0 +1,11 @@
+
+
+OCLint Report
+
+Summary: TotalFiles=6 FilesWithViolations=1 P1=0 P2=0 P3=3 
+
+/Users/keymon/Documents/GithubRepo/iOSDevRepo/AutoCodeReview/oclint-demo/oclint-demo/AppDelegate.m:25:1: long line [size|P3] Line with 281 characters exceeds limit of 160
+/Users/keymon/Documents/GithubRepo/iOSDevRepo/AutoCodeReview/oclint-demo/oclint-demo/AppDelegate.m:31:1: long line [size|P3] Line with 214 characters exceeds limit of 160
+/Users/keymon/Documents/GithubRepo/iOSDevRepo/AutoCodeReview/oclint-demo/oclint-demo/AppDelegate.m:42:1: long line [size|P3] Line with 190 characters exceeds limit of 160
+
+[OCLint (http://oclint.org) v0.13]
