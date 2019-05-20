@@ -66,7 +66,7 @@ echo "all well done!"
 #FRAMEWORK_DIR="${PROJECT_DIR}/../${FRAMEWORK_NAME}/"
 #if [ -d "$FRAMEWORK_DIR" ]; then
 #echo "Compiling Framework Project..."
-#cd "${PROJECT_DIR}/../${FRAMEWORK_NAME}/"
+#cd FRAMEWORK_DIR
 #xcodebuild -project "${FRAMEWORK_NAME}.xcodeproj" -target ${FRAMEWORK_NAME} -configuration ${CONFIGURATION} -sdk ${SDK_DIR}
 #fi
 # 这样每次在编译Demo项目之前，都会编译一次Framework项目，并更新Framework。
