@@ -15,6 +15,7 @@
 		16A60CE8228AB96F001C41CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A60CE7228AB96F001C41CF /* main.m */; };
 		16A60CF4228ABD50001C41CF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A60CF0228ABD50001C41CF /* GCDAsyncSocket.m */; };
 		16A60CF5228ABD50001C41CF /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A60CF2228ABD50001C41CF /* GCDAsyncUdpSocket.m */; };
+		16A60CF8228AC499001C41CF /* OKTcpSocketProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A60CF7228AC499001C41CF /* OKTcpSocketProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		16A60CF1228ABD50001C41CF /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		16A60CF2228ABD50001C41CF /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		16A60CF3228ABD50001C41CF /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		16A60CF6228AC499001C41CF /* OKTcpSocketProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKTcpSocketProvider.h; sourceTree = "<group>"; };
+		16A60CF7228AC499001C41CF /* OKTcpSocketProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKTcpSocketProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				16A60CD9228AB96E001C41CF /* AppDelegate.m */,
 				16A60CDB228AB96E001C41CF /* ViewController.h */,
 				16A60CDC228AB96E001C41CF /* ViewController.m */,
+				16A60CF6228AC499001C41CF /* OKTcpSocketProvider.h */,
+				16A60CF7228AC499001C41CF /* OKTcpSocketProvider.m */,
 				16A60CEE228AB9D1001C41CF /* Vendor */,
 				16A60CDE228AB96E001C41CF /* Main.storyboard */,
 				16A60CE1228AB96F001C41CF /* Assets.xcassets */,
@@ -168,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A60CF4228ABD50001C41CF /* GCDAsyncSocket.m in Sources */,
+				16A60CF8228AC499001C41CF /* OKTcpSocketProvider.m in Sources */,
 				16A60CF5228ABD50001C41CF /* GCDAsyncUdpSocket.m in Sources */,
 				16A60CDD228AB96E001C41CF /* ViewController.m in Sources */,
 				16A60CE8228AB96F001C41CF /* main.m in Sources */,
