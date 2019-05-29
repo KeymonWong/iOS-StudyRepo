@@ -13,6 +13,7 @@
 		161F4B092292B0DA0035F9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161F4B082292B0DA0035F9A7 /* Assets.xcassets */; };
 		161F4B0C2292B0DA0035F9A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161F4B0A2292B0DA0035F9A7 /* LaunchScreen.storyboard */; };
 		161F4B0F2292B0DA0035F9A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 161F4B0E2292B0DA0035F9A7 /* main.m */; };
+		16C82E872293F12C001D5629 /* DrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C82E862293F12C001D5629 /* DrawImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		161F4B0B2292B0DA0035F9A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		161F4B0D2292B0DA0035F9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161F4B0E2292B0DA0035F9A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16C82E852293F12C001D5629 /* DrawImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawImage.h; sourceTree = "<group>"; };
+		16C82E862293F12C001D5629 /* DrawImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				161F4B002292B0D80035F9A7 /* AppDelegate.m */,
 				161F4B022292B0D80035F9A7 /* ViewController.h */,
 				161F4B032292B0D80035F9A7 /* ViewController.m */,
+				16C82E852293F12C001D5629 /* DrawImage.h */,
+				16C82E862293F12C001D5629 /* DrawImage.m */,
 				161F4B052292B0D80035F9A7 /* Main.storyboard */,
 				161F4B082292B0DA0035F9A7 /* Assets.xcassets */,
 				161F4B0A2292B0DA0035F9A7 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 				161F4B042292B0D80035F9A7 /* ViewController.m in Sources */,
 				161F4B0F2292B0DA0035F9A7 /* main.m in Sources */,
 				161F4B012292B0D80035F9A7 /* AppDelegate.m in Sources */,
+				16C82E872293F12C001D5629 /* DrawImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

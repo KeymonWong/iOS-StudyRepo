@@ -10,7 +10,7 @@
 		160754552280042300FBEB3B /* OKNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160754542280042300FBEB3B /* OKNextViewController.m */; };
 		160B462222649EE6004CAE11 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426BFF851DDDFF1A00F916F7 /* AMapFoundationKit.framework */; };
 		160B462322649EEF004CAE11 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426BFF861DDDFF1A00F916F7 /* MAMapKit.framework */; };
-		1646B020228D89BB0005B529 /* OKAnchorPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1646B01F228D89BB0005B529 /* OKAnchorPinView.m */; };
+		1646B020228D89BB0005B529 /* OKMapAnchorPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1646B01F228D89BB0005B529 /* OKMapAnchorPinView.m */; };
 		16B484252281845800D0C9DB /* OKMapBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B484242281845800D0C9DB /* OKMapBubbleView.m */; };
 		420103881DDEA8230086931B /* xh_dq_zb_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420103861DDEA8230086931B /* xh_dq_zb_bg@2x.png */; };
 		420103891DDEA8230086931B /* xh_dq_zb_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420103871DDEA8230086931B /* xh_dq_zb_bg@3x.png */; };
@@ -73,8 +73,8 @@
 /* Begin PBXFileReference section */
 		160754532280042300FBEB3B /* OKNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKNextViewController.h; sourceTree = "<group>"; };
 		160754542280042300FBEB3B /* OKNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKNextViewController.m; sourceTree = "<group>"; };
-		1646B01E228D89BB0005B529 /* OKAnchorPinView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKAnchorPinView.h; sourceTree = "<group>"; };
-		1646B01F228D89BB0005B529 /* OKAnchorPinView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKAnchorPinView.m; sourceTree = "<group>"; };
+		1646B01E228D89BB0005B529 /* OKMapAnchorPinView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKMapAnchorPinView.h; sourceTree = "<group>"; };
+		1646B01F228D89BB0005B529 /* OKMapAnchorPinView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKMapAnchorPinView.m; sourceTree = "<group>"; };
 		16B484232281845800D0C9DB /* OKMapBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKMapBubbleView.h; sourceTree = "<group>"; };
 		16B484242281845800D0C9DB /* OKMapBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKMapBubbleView.m; sourceTree = "<group>"; };
 		420103861DDEA8230086931B /* xh_dq_zb_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xh_dq_zb_bg@2x.png"; sourceTree = "<group>"; };
@@ -324,8 +324,8 @@
 				426BFF951DDE00A700F916F7 /* OKCustomAnnotationView.m */,
 				16B484232281845800D0C9DB /* OKMapBubbleView.h */,
 				16B484242281845800D0C9DB /* OKMapBubbleView.m */,
-				1646B01E228D89BB0005B529 /* OKAnchorPinView.h */,
-				1646B01F228D89BB0005B529 /* OKAnchorPinView.m */,
+				1646B01E228D89BB0005B529 /* OKMapAnchorPinView.h */,
+				1646B01F228D89BB0005B529 /* OKMapAnchorPinView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,7 +506,7 @@
 				426BFF9C1DDE028B00F916F7 /* UIView+AddBadgeView.m in Sources */,
 				426BFF601DDDFDD200F916F7 /* AppDelegate.m in Sources */,
 				426BFF281DDDFD1700F916F7 /* main.m in Sources */,
-				1646B020228D89BB0005B529 /* OKAnchorPinView.m in Sources */,
+				1646B020228D89BB0005B529 /* OKMapAnchorPinView.m in Sources */,
 				426BFF991DDE00F700F916F7 /* OKCustomAnnotation.m in Sources */,
 				426BFF961DDE00A700F916F7 /* OKCustomAnnotationView.m in Sources */,
 			);
