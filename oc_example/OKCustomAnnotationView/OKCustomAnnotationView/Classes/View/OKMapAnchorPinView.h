@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OKMapAnchorPinView : UIView
 
+- (void)startAnimation;
+- (void)stopAnimation;
+
 @end
 
 NS_ASSUME_NONNULL_END

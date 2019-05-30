@@ -15,6 +15,8 @@
 #import "OKCustomAnnotationView.h"
 #import "OKMapBubbleView.h"
 
+#import "OKMapAnchorPinView.h"
+
 #import "OKNextViewController.h"
 
 
@@ -22,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (nonatomic, strong) MAMapView *mapView;
 @property (nonatomic, strong) NSArray *anns;
+
+@property (nonatomic, strong) OKMapAnchorPinView *pinV;
+
 @end
 
 @implementation OKMapViewController
@@ -39,8 +44,13 @@
 
     [self setupModels];
     
-    OKMapBubbleView *v = [[OKMapBubbleView alloc] initWithFrame:CGRectMake(100, 300, 200, 46)];
+//    OKMapBubbleView *v = [[OKMapBubbleView alloc] initWithFrame:CGRectMake(100, 300, 200, 46)];
+    OKMapAnchorPinView *v = [[OKMapAnchorPinView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 150) * 0.5, (self.view.frame.size.height - 96) * 0.5, 150, 96)];
     [self.view addSubview:v];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [v startAnimation];
+    });
 }
 
 - (void)viewWillAppear:(BOOL)animated {
