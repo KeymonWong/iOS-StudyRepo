@@ -45,7 +45,7 @@
     [self setupModels];
     
 //    OKMapBubbleView *v = [[OKMapBubbleView alloc] initWithFrame:CGRectMake(100, 300, 200, 46)];
-    OKMapAnchorPinView *v = [[OKMapAnchorPinView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 150) * 0.5, (self.view.frame.size.height - 96) * 0.5, 150, 96)];
+    OKMapAnchorPinView *v = [[OKMapAnchorPinView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 150) * 0.5, (self.view.frame.size.height - 96) * 0.5, 150, 84)];
     [self.view addSubview:v];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -142,6 +142,16 @@
 
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay {
     return nil;
+}
+
+- (void)mapView:(MAMapView *)mapView mapWillMoveByUser:(BOOL)wasUserAction
+{
+    
+}
+
+- (void)mapView:(MAMapView *)mapView mapDidMoveByUser:(BOOL)wasUserAction
+{
+    
 }
 
 - (IBAction)next:(UIBarButtonItem *)sender {

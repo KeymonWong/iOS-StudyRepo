@@ -58,7 +58,7 @@
     self.pinHeaderImgV.frame = pinHeadFrame;
     
     CGRect pinFrame = CGRectMake((self.containerV.frame.size.width - self.pinImgV.image.size.width) * 0.5,
-                                 CGRectGetMaxY(self.pinHeaderImgV.frame) - 2,
+                                 CGRectGetMaxY(self.pinHeaderImgV.frame) - self.pinImgV.image.size.height * 0.5,
                                  self.pinImgV.image.size.width,
                                  self.pinImgV.image.size.height);
     self.pinImgV.frame = pinFrame;
@@ -69,7 +69,15 @@
                                      self.pinTailImgV.image.size.height);
     self.pinTailImgV.frame = pinTailFrame;
     
-    self.pulseAniV.frame = CGRectMake((self.frame.size.width - 60) * 0.5, self.frame.size.height - 30 * 0.5 - 3, 60, 30);
+    self.pulseAniV.frame = CGRectMake((self.frame.size.width - 60) * 0.5, self.frame.size.height - 30 * 0.5 - 2, 60, 30);
+}
+
+- (void)movingMap {
+    
+}
+
+- (void)endMoveMap {
+    
 }
 
 - (void)startAnimation {
@@ -101,7 +109,7 @@
     if (!_pinHeaderImgV) {
         _pinHeaderImgV = [[UIImageView alloc] init];
         _pinHeaderImgV.contentMode = UIViewContentModeScaleAspectFit;
-        _pinHeaderImgV.image = [UIImage imageNamed:@"driver_map_point_header_black"];
+        _pinHeaderImgV.image = [UIImage imageNamed:@"takecar_map_point_header"];
     }
     return _pinHeaderImgV;
 }
@@ -119,7 +127,7 @@
     if (!_pinImgV) {
         _pinImgV = [[UIImageView alloc] init];
         _pinImgV.contentMode = UIViewContentModeScaleAspectFit;
-        _pinImgV.image = [UIImage imageNamed:@"driver_map_point_tail_black"];
+        _pinImgV.image = [UIImage imageNamed:@"takecar_map_point_tail"];
     }
     return _pinImgV;
 }

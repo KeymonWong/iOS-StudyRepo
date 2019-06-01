@@ -13,6 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OKMapAnchorPinView : UIView
 
+/**
+ * 移动地图过程
+ */
+- (void)movingMap;
+
+/**
+ * 结束移动地图
+ */
+- (void)endMoveMap;
+
 - (void)startAnimation;
 - (void)stopAnimation;
 
