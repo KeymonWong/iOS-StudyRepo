@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:({
         OKValuationView *v = [[OKValuationView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 140)];

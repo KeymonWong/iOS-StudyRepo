@@ -15,6 +15,8 @@
 @property (nonatomic, weak) UIImageView *carImgV;
 @property (nonatomic, weak) UILabel *titleL;
 @property (nonatomic, weak) UILabel *priceL;
+@property (nonatomic, weak) UIView *indicatorV;
+@property (nonatomic, weak) UIView *cV;
 @end
 
 @implementation OKCarCell
@@ -22,7 +24,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-//        self.backgroundColor = [UIColor purpleColor];
+        self.backgroundColor = [UIColor purpleColor];
         [self setupViews];
         [self makeLayout];
     }
@@ -55,6 +57,23 @@
         self.priceL = label;
         label;
     })];
+    
+    [self.contentView addSubview:({
+        UIView *v = [[UIView alloc] init];
+        v.backgroundColor = [UIColor clearColor];
+        self.cV = v;
+        v;
+    })];
+    
+    [self.cV addSubview:({
+        UIView *v = [[UIView alloc] init];
+        v.backgroundColor = [UIColor orangeColor];
+        self.indicatorV = v;
+        v;
+    })];
+    
+    self.layer.cornerRadius = 4;
+    self.layer.masksToBounds = YES;
 }
 
 - (void)makeLayout {
@@ -74,6 +93,19 @@
         make.centerX.equalTo(self.contentView);
         make.top.equalTo(self.carImgV.mas_bottom).offset(20);
     }];
+    
+    [self.cV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(@(4));
+        make.left.right.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(0);
+    }];
+    
+    [self.indicatorV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(self.cV);
+        make.width.mas_equalTo(@(0));
+        make.left.equalTo(self.cV);
+        make.right.equalTo(self.cV);
+    }];
 }
 
 - (void)configureCellModel:(OKCar *)model {
@@ -84,40 +116,66 @@
     self.titleL.transform = CGAffineTransformIdentity;
     self.priceL.transform = CGAffineTransformIdentity;
     self.carImgV.transform = CGAffineTransformIdentity;
+    self.indicatorV.transform = CGAffineTransformMakeTranslation(-self.frame.size.width, 0);
+
+    self.alpha = 0.4;
+    
+//    [self.indicatorV mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.height.equalTo(self.cV);
+//        make.width.mas_equalTo(@(0));
+//        make.left.equalTo(self.cV);
+//    }];
     
     if (model.isItemSelected) {
-        self.alpha = 1;
+//        self.alpha = 1;
         [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
             self.titleL.transform = CGAffineTransformMakeScale(1.2, 1.2);
             self.priceL.transform = CGAffineTransformMakeScale(1.2, 1.2);
             self.carImgV.transform = CGAffineTransformMakeScale(1.2, 1.2);
+            self.indicatorV.transform = CGAffineTransformMakeTranslation(0, 0);
+            
+            self.alpha = 1;
+            
+//            [self.indicatorV mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.width.mas_equalTo(@(self.frame.size.width));
+//            }];
+//            [self.cV layoutIfNeeded];
             
 //                self.transform = CGAffineTransformMakeScale(1.2, 1.2);
         } completion:^(BOOL finished) {
-
+            
         }];
     } else {
-        self.alpha = 0.3;
-        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+//        self.alpha = 0.4;
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
             self.titleL.transform = CGAffineTransformIdentity;
             self.priceL.transform = CGAffineTransformIdentity;
             self.carImgV.transform = CGAffineTransformIdentity;
+            self.indicatorV.transform = CGAffineTransformMakeTranslation(-self.frame.size.width, 0);
+            
+            self.alpha = 0.4;
+            
+//            [self.indicatorV mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.width.mas_equalTo(@(0));
+//            }];
+//            [self.cV layoutIfNeeded];
             
 //                self.transform = CGAffineTransformMakeScale(1, 1);
         } completion:^(BOOL finished) {
-
+            
         }];
     }
+}
+
+- (void)updateConstraints {
+    
+    [super updateConstraints];
 }
 
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     
-//    if (selected) {
-//        self.alpha = 1;
-//    } else {
-//        self.alpha = 0.3;
-//    }
+    NSLog(@"%d", selected);
 }
 
 @end
