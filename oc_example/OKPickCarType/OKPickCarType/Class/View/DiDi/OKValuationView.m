@@ -115,7 +115,7 @@ static NSString * const kCellId = @"OKCarCell";
     OKCarCell *cell = (OKCarCell *)[collectionView cellForItemAtIndexPath:indexPath];
     if (tmp.isItemSelected) {
         // 可以做其他跳转的
-        !self.didPickItem ?: self.didPickItem(tmp);
+        !self.didPickCar ?: self.didPickCar(tmp);
     } else {
         tmp.itemSelected = YES;
         for (OKCar *c in self.datas) {
