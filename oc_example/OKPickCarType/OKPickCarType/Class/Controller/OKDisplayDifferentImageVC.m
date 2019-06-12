@@ -7,6 +7,9 @@
 //
 
 #import "OKDisplayDifferentImageVC.h"
+#import "OKDifferentCell.h"
+
+static NSString * const kCellId = @"OKDifferentCell";
 
 @interface OKDisplayDifferentImageVC ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -17,6 +20,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.tableView];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    OKDifferentCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellId forIndexPath:indexPath];
+    [cell configureCellWithIndexPath:indexPath];
+    return cell;
 }
 
 #pragma mark - UITableViewDelegate
@@ -53,17 +80,15 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 90, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-90) style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
         // 0关掉估算行高
-        _tableView.estimatedRowHeight = 100;
-        _tableView.estimatedSectionHeaderHeight = 0;
-        _tableView.estimatedSectionFooterHeight = 0;
+        _tableView.rowHeight = 300;
         
-        [_tableView registerClass:[<#OKRouteEventCell#> class] forCellReuseIdentifier:NSStringFromClass([<#OKRouteEventCell#> class])];
+        [_tableView registerClass:[OKDifferentCell class] forCellReuseIdentifier:kCellId];
     }
     return _tableView;
 }

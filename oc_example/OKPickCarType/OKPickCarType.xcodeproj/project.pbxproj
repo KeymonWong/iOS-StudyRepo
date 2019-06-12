@@ -19,7 +19,7 @@
 		169DC1A422A7AE0C00EFF557 /* OKCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC1A222A7AE0C00EFF557 /* OKCar.m */; };
 		169DC1A722A7B0B500EFF557 /* OKPriceDescViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */; };
 		16ADE64A22B1528800CCFEEA /* OKDisplayDifferentImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */; };
-		16ADE65022B1542700CCFEEA /* DifferentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ADE64F22B1542700CCFEEA /* DifferentCell.m */; };
+		16ADE65022B1542700CCFEEA /* OKDifferentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ADE64F22B1542700CCFEEA /* OKDifferentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 		169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKPriceDescViewController.m; sourceTree = "<group>"; };
 		16ADE64822B1528800CCFEEA /* OKDisplayDifferentImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKDisplayDifferentImageVC.h; sourceTree = "<group>"; };
 		16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKDisplayDifferentImageVC.m; sourceTree = "<group>"; };
-		16ADE64E22B1542700CCFEEA /* DifferentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferentCell.h; sourceTree = "<group>"; };
-		16ADE64F22B1542700CCFEEA /* DifferentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferentCell.m; sourceTree = "<group>"; };
+		16ADE64E22B1542700CCFEEA /* OKDifferentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKDifferentCell.h; sourceTree = "<group>"; };
+		16ADE64F22B1542700CCFEEA /* OKDifferentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKDifferentCell.m; sourceTree = "<group>"; };
 		1A6F51E2018B636E71D1CB5D /* Pods-OKPickCarType.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKPickCarType.release.xcconfig"; path = "Target Support Files/Pods-OKPickCarType/Pods-OKPickCarType.release.xcconfig"; sourceTree = "<group>"; };
 		487B8EF9E2295A79ECBCC8D4 /* Pods-OKPickCarType.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKPickCarType.debug.xcconfig"; path = "Target Support Files/Pods-OKPickCarType/Pods-OKPickCarType.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,8 +140,8 @@
 		16ADE64B22B153AD00CCFEEA /* DisplayDifferentImage */ = {
 			isa = PBXGroup;
 			children = (
-				16ADE64E22B1542700CCFEEA /* DifferentCell.h */,
-				16ADE64F22B1542700CCFEEA /* DifferentCell.m */,
+				16ADE64E22B1542700CCFEEA /* OKDifferentCell.h */,
+				16ADE64F22B1542700CCFEEA /* OKDifferentCell.m */,
 			);
 			path = DisplayDifferentImage;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				16ADE64A22B1528800CCFEEA /* OKDisplayDifferentImageVC.m in Sources */,
 				169DC1A722A7B0B500EFF557 /* OKPriceDescViewController.m in Sources */,
 				169DC16E22A7ACD300EFF557 /* main.m in Sources */,
-				16ADE65022B1542700CCFEEA /* DifferentCell.m in Sources */,
+				16ADE65022B1542700CCFEEA /* OKDifferentCell.m in Sources */,
 				169DC1A122A7AE0500EFF557 /* OKCarCell.m in Sources */,
 				169DC1A422A7AE0C00EFF557 /* OKCar.m in Sources */,
 				169DC16022A7ACD200EFF557 /* AppDelegate.m in Sources */,

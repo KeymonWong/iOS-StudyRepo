@@ -1,5 +1,5 @@
 //
-//  DifferentCell.h
+//  OKDifferentCell.h
 //  OKPickCarType
 //
 //  Created by keymon on 2019/6/12.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DifferentCell : UITableViewCell
+@interface OKDifferentCell : UITableViewCell
 
 - (void)configureCellWithIndexPath:(NSIndexPath *)indexPath;
 
