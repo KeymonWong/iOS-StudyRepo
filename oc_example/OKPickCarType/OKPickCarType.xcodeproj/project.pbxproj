@@ -7,29 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		136ECAFC2238E48D2DDA1746 /* libPods-OKPickCarType.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A755E0479FF4C636B7CA4 /* libPods-OKPickCarType.a */; };
 		169DC16022A7ACD200EFF557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC15F22A7ACD200EFF557 /* AppDelegate.m */; };
 		169DC16322A7ACD200EFF557 /* OKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC16222A7ACD200EFF557 /* OKViewController.m */; };
 		169DC16622A7ACD200EFF557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169DC16422A7ACD200EFF557 /* Main.storyboard */; };
 		169DC16822A7ACD300EFF557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169DC16722A7ACD300EFF557 /* Assets.xcassets */; };
 		169DC16B22A7ACD300EFF557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169DC16922A7ACD300EFF557 /* LaunchScreen.storyboard */; };
 		169DC16E22A7ACD300EFF557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC16D22A7ACD300EFF557 /* main.m */; };
-		169DC19222A7ADF100EFF557 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC17A22A7ADF100EFF557 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		169DC19322A7ADF100EFF557 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC18322A7ADF100EFF557 /* ViewController+MASAdditions.m */; };
-		169DC19422A7ADF100EFF557 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC18722A7ADF100EFF557 /* MASCompositeConstraint.m */; };
-		169DC19522A7ADF100EFF557 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC18822A7ADF100EFF557 /* MASConstraintMaker.m */; };
-		169DC19622A7ADF100EFF557 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC18922A7ADF100EFF557 /* MASLayoutConstraint.m */; };
-		169DC19722A7ADF100EFF557 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC18A22A7ADF100EFF557 /* NSArray+MASAdditions.m */; };
-		169DC19822A7ADF100EFF557 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC18B22A7ADF100EFF557 /* View+MASAdditions.m */; };
-		169DC19922A7ADF100EFF557 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC18E22A7ADF100EFF557 /* MASConstraint.m */; };
-		169DC19A22A7ADF100EFF557 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC19022A7ADF100EFF557 /* MASViewConstraint.m */; };
-		169DC19B22A7ADF100EFF557 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC19122A7ADF100EFF557 /* MASViewAttribute.m */; };
 		169DC19E22A7ADFC00EFF557 /* OKValuationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC19D22A7ADFB00EFF557 /* OKValuationView.m */; };
 		169DC1A122A7AE0500EFF557 /* OKCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC1A022A7AE0500EFF557 /* OKCarCell.m */; };
 		169DC1A422A7AE0C00EFF557 /* OKCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC1A222A7AE0C00EFF557 /* OKCar.m */; };
 		169DC1A722A7B0B500EFF557 /* OKPriceDescViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */; };
+		16ADE64A22B1528800CCFEEA /* OKDisplayDifferentImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */; };
+		16ADE65022B1542700CCFEEA /* DifferentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ADE64F22B1542700CCFEEA /* DifferentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015A755E0479FF4C636B7CA4 /* libPods-OKPickCarType.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKPickCarType.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169DC15B22A7ACD200EFF557 /* OKPickCarType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKPickCarType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169DC15E22A7ACD200EFF557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		169DC15F22A7ACD200EFF557 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,31 +34,6 @@
 		169DC16A22A7ACD300EFF557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169DC16C22A7ACD300EFF557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169DC16D22A7ACD300EFF557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		169DC17922A7ADF100EFF557 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		169DC17A22A7ADF100EFF557 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		169DC17B22A7ADF100EFF557 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		169DC17C22A7ADF100EFF557 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		169DC17D22A7ADF100EFF557 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		169DC17E22A7ADF100EFF557 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		169DC17F22A7ADF100EFF557 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		169DC18022A7ADF100EFF557 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		169DC18122A7ADF100EFF557 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		169DC18222A7ADF100EFF557 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		169DC18322A7ADF100EFF557 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		169DC18422A7ADF100EFF557 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		169DC18522A7ADF100EFF557 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		169DC18622A7ADF100EFF557 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		169DC18722A7ADF100EFF557 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		169DC18822A7ADF100EFF557 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		169DC18922A7ADF100EFF557 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		169DC18A22A7ADF100EFF557 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		169DC18B22A7ADF100EFF557 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		169DC18C22A7ADF100EFF557 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		169DC18D22A7ADF100EFF557 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		169DC18E22A7ADF100EFF557 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		169DC18F22A7ADF100EFF557 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		169DC19022A7ADF100EFF557 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		169DC19122A7ADF100EFF557 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		169DC19C22A7ADFB00EFF557 /* OKValuationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKValuationView.h; sourceTree = "<group>"; };
 		169DC19D22A7ADFB00EFF557 /* OKValuationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKValuationView.m; sourceTree = "<group>"; };
 		169DC19F22A7AE0500EFF557 /* OKCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKCarCell.h; sourceTree = "<group>"; };
@@ -73,6 +42,12 @@
 		169DC1A322A7AE0C00EFF557 /* OKCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKCar.h; sourceTree = "<group>"; };
 		169DC1A522A7B0B500EFF557 /* OKPriceDescViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKPriceDescViewController.h; sourceTree = "<group>"; };
 		169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKPriceDescViewController.m; sourceTree = "<group>"; };
+		16ADE64822B1528800CCFEEA /* OKDisplayDifferentImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKDisplayDifferentImageVC.h; sourceTree = "<group>"; };
+		16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKDisplayDifferentImageVC.m; sourceTree = "<group>"; };
+		16ADE64E22B1542700CCFEEA /* DifferentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferentCell.h; sourceTree = "<group>"; };
+		16ADE64F22B1542700CCFEEA /* DifferentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferentCell.m; sourceTree = "<group>"; };
+		1A6F51E2018B636E71D1CB5D /* Pods-OKPickCarType.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKPickCarType.release.xcconfig"; path = "Target Support Files/Pods-OKPickCarType/Pods-OKPickCarType.release.xcconfig"; sourceTree = "<group>"; };
+		487B8EF9E2295A79ECBCC8D4 /* Pods-OKPickCarType.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKPickCarType.debug.xcconfig"; path = "Target Support Files/Pods-OKPickCarType/Pods-OKPickCarType.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136ECAFC2238E48D2DDA1746 /* libPods-OKPickCarType.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +67,8 @@
 			children = (
 				169DC15D22A7ACD200EFF557 /* OKPickCarType */,
 				169DC15C22A7ACD200EFF557 /* Products */,
+				D33253F87692E364E96F6D24 /* Pods */,
+				8A2C0BEDB6753E32AF459FD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +83,6 @@
 		169DC15D22A7ACD200EFF557 /* OKPickCarType */ = {
 			isa = PBXGroup;
 			children = (
-				169DC17822A7ADF100EFF557 /* Masonry */,
 				169DC17422A7ACE800EFF557 /* Class */,
 				169DC15E22A7ACD200EFF557 /* AppDelegate.h */,
 				169DC15F22A7ACD200EFF557 /* AppDelegate.m */,
@@ -131,10 +108,9 @@
 		169DC17522A7ACFE00EFF557 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				169DC19C22A7ADFB00EFF557 /* OKValuationView.h */,
-				169DC19D22A7ADFB00EFF557 /* OKValuationView.m */,
-				169DC19F22A7AE0500EFF557 /* OKCarCell.h */,
-				169DC1A022A7AE0500EFF557 /* OKCarCell.m */,
+				16ADE64D22B153DA00CCFEEA /* ShouQi */,
+				16ADE64C22B153CE00CCFEEA /* DiDi */,
+				16ADE64B22B153AD00CCFEEA /* DisplayDifferentImage */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +122,8 @@
 				169DC16222A7ACD200EFF557 /* OKViewController.m */,
 				169DC1A522A7B0B500EFF557 /* OKPriceDescViewController.h */,
 				169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */,
+				16ADE64822B1528800CCFEEA /* OKDisplayDifferentImageVC.h */,
+				16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,36 +137,48 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		169DC17822A7ADF100EFF557 /* Masonry */ = {
+		16ADE64B22B153AD00CCFEEA /* DisplayDifferentImage */ = {
 			isa = PBXGroup;
 			children = (
-				169DC17922A7ADF100EFF557 /* MASCompositeConstraint.h */,
-				169DC17A22A7ADF100EFF557 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				169DC17B22A7ADF100EFF557 /* MASConstraint+Private.h */,
-				169DC17C22A7ADF100EFF557 /* MASLayoutConstraint.h */,
-				169DC17D22A7ADF100EFF557 /* NSArray+MASShorthandAdditions.h */,
-				169DC17E22A7ADF100EFF557 /* MASConstraintMaker.h */,
-				169DC17F22A7ADF100EFF557 /* View+MASAdditions.h */,
-				169DC18022A7ADF100EFF557 /* NSArray+MASAdditions.h */,
-				169DC18122A7ADF100EFF557 /* MASUtilities.h */,
-				169DC18222A7ADF100EFF557 /* MASViewAttribute.h */,
-				169DC18322A7ADF100EFF557 /* ViewController+MASAdditions.m */,
-				169DC18422A7ADF100EFF557 /* MASViewConstraint.h */,
-				169DC18522A7ADF100EFF557 /* MASConstraint.h */,
-				169DC18622A7ADF100EFF557 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				169DC18722A7ADF100EFF557 /* MASCompositeConstraint.m */,
-				169DC18822A7ADF100EFF557 /* MASConstraintMaker.m */,
-				169DC18922A7ADF100EFF557 /* MASLayoutConstraint.m */,
-				169DC18A22A7ADF100EFF557 /* NSArray+MASAdditions.m */,
-				169DC18B22A7ADF100EFF557 /* View+MASAdditions.m */,
-				169DC18C22A7ADF100EFF557 /* View+MASShorthandAdditions.h */,
-				169DC18D22A7ADF100EFF557 /* Masonry.h */,
-				169DC18E22A7ADF100EFF557 /* MASConstraint.m */,
-				169DC18F22A7ADF100EFF557 /* ViewController+MASAdditions.h */,
-				169DC19022A7ADF100EFF557 /* MASViewConstraint.m */,
-				169DC19122A7ADF100EFF557 /* MASViewAttribute.m */,
+				16ADE64E22B1542700CCFEEA /* DifferentCell.h */,
+				16ADE64F22B1542700CCFEEA /* DifferentCell.m */,
 			);
-			path = Masonry;
+			path = DisplayDifferentImage;
+			sourceTree = "<group>";
+		};
+		16ADE64C22B153CE00CCFEEA /* DiDi */ = {
+			isa = PBXGroup;
+			children = (
+				169DC19C22A7ADFB00EFF557 /* OKValuationView.h */,
+				169DC19D22A7ADFB00EFF557 /* OKValuationView.m */,
+				169DC19F22A7AE0500EFF557 /* OKCarCell.h */,
+				169DC1A022A7AE0500EFF557 /* OKCarCell.m */,
+			);
+			path = DiDi;
+			sourceTree = "<group>";
+		};
+		16ADE64D22B153DA00CCFEEA /* ShouQi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShouQi;
+			sourceTree = "<group>";
+		};
+		8A2C0BEDB6753E32AF459FD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				015A755E0479FF4C636B7CA4 /* libPods-OKPickCarType.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D33253F87692E364E96F6D24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				487B8EF9E2295A79ECBCC8D4 /* Pods-OKPickCarType.debug.xcconfig */,
+				1A6F51E2018B636E71D1CB5D /* Pods-OKPickCarType.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 169DC17122A7ACD300EFF557 /* Build configuration list for PBXNativeTarget "OKPickCarType" */;
 			buildPhases = (
+				A01A83FA81E058987128F7FD /* [CP] Check Pods Manifest.lock */,
 				169DC15722A7ACD200EFF557 /* Sources */,
 				169DC15822A7ACD200EFF557 /* Frameworks */,
 				169DC15922A7ACD200EFF557 /* Resources */,
@@ -256,28 +247,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A01A83FA81E058987128F7FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OKPickCarType-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		169DC15722A7ACD200EFF557 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169DC19522A7ADF100EFF557 /* MASConstraintMaker.m in Sources */,
 				169DC16322A7ACD200EFF557 /* OKViewController.m in Sources */,
+				16ADE64A22B1528800CCFEEA /* OKDisplayDifferentImageVC.m in Sources */,
 				169DC1A722A7B0B500EFF557 /* OKPriceDescViewController.m in Sources */,
-				169DC19322A7ADF100EFF557 /* ViewController+MASAdditions.m in Sources */,
-				169DC19A22A7ADF100EFF557 /* MASViewConstraint.m in Sources */,
 				169DC16E22A7ACD300EFF557 /* main.m in Sources */,
+				16ADE65022B1542700CCFEEA /* DifferentCell.m in Sources */,
 				169DC1A122A7AE0500EFF557 /* OKCarCell.m in Sources */,
 				169DC1A422A7AE0C00EFF557 /* OKCar.m in Sources */,
-				169DC19622A7ADF100EFF557 /* MASLayoutConstraint.m in Sources */,
-				169DC19922A7ADF100EFF557 /* MASConstraint.m in Sources */,
-				169DC19722A7ADF100EFF557 /* NSArray+MASAdditions.m in Sources */,
 				169DC16022A7ACD200EFF557 /* AppDelegate.m in Sources */,
-				169DC19422A7ADF100EFF557 /* MASCompositeConstraint.m in Sources */,
 				169DC19E22A7ADFC00EFF557 /* OKValuationView.m in Sources */,
-				169DC19822A7ADF100EFF557 /* View+MASAdditions.m in Sources */,
-				169DC19222A7ADF100EFF557 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				169DC19B22A7ADF100EFF557 /* MASViewAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +425,7 @@
 		};
 		169DC17222A7ACD300EFF557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487B8EF9E2295A79ECBCC8D4 /* Pods-OKPickCarType.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,6 +443,7 @@
 		};
 		169DC17322A7ACD300EFF557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6F51E2018B636E71D1CB5D /* Pods-OKPickCarType.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

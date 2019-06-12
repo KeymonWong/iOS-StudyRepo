@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OKValuationView : UIView
-@property (nonatomic, copy) void (^didPickItem)(OKCar *car);
+@property (nonatomic, copy) void (^didPickCar)(OKCar *car);
 @end
 
 NS_ASSUME_NONNULL_END
