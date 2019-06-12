@@ -29,7 +29,7 @@ static NSString * const kCellId = @"OKCarCell";
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor purpleColor];
+        self.backgroundColor = [UIColor clearColor];
         [self setupViews];
     }
     return self;
@@ -62,7 +62,7 @@ static NSString * const kCellId = @"OKCarCell";
     self.loadImgV.animationRepeatCount = 0;
     
     [self.loadImgV startAnimating];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.loadImgV stopAnimating];
         self.loadImgV.hidden = YES;
         self.collectionView.hidden = NO;
@@ -145,7 +145,7 @@ static NSString * const kCellId = @"OKCarCell";
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 140) collectionViewLayout:self.flowLayout];
-        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [UIColor clearColor];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.showsVerticalScrollIndicator = NO;
