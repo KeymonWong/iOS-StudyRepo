@@ -55,7 +55,9 @@
         if (unknown1.size.width > unknown1.size.height) {
             // 根据网络图片宽高比计算 imageView 高度
             CGSize size = CGSizeMake(100, 100 / (unknown1.size.width / unknown1.size.height));
-            [self.imgV mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.imgV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.contentView).offset(100);
+                make.top.equalTo(self.contentView).offset(10);
                 make.size.mas_equalTo(size);
             }];
         }
@@ -72,7 +74,9 @@
         if (unknown2.size.width < unknown2.size.height) {
             // 根据网络图片宽高比计算 imageView 高度
             CGSize size = CGSizeMake(60 * (unknown2.size.width / unknown2.size.height), 60);
-            [self.imgV mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.imgV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.contentView).offset(100);
+                make.top.equalTo(self.contentView).offset(10);
                 make.size.mas_equalTo(size);
             }];
         }
@@ -89,7 +93,9 @@
         if (unknown2.size.width < unknown2.size.height) {
             // 根据网络图片宽高比计算 imageView 高度
             CGSize size = CGSizeMake(60 * (unknown2.size.width / unknown2.size.height), 60);
-            [self.imgV mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.imgV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.contentView).offset(100);
+                make.top.equalTo(self.contentView).offset(10);
                 make.size.mas_equalTo(size);
             }];
         }
@@ -105,7 +111,9 @@
         if (unknown1.size.width > unknown1.size.height) {
             // 根据网络图片宽高比计算 imageView 高度
             CGSize size = CGSizeMake(100, 100 / (unknown1.size.width / unknown1.size.height));
-            [self.imgV mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.imgV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.contentView).offset(100);
+                make.top.equalTo(self.contentView).offset(10);
                 make.size.mas_equalTo(size);
             }];
         }
@@ -123,7 +131,9 @@
         if (unknown1.size.width > unknown1.size.height) {
             // 根据网络图片宽高比计算 imageView 高度
             CGSize size = CGSizeMake(100, 100 / (unknown1.size.width / unknown1.size.height));
-            [self.imgV mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.imgV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.contentView).offset(100);
+                make.top.equalTo(self.contentView).offset(10);
                 make.size.mas_equalTo(size);
             }];
         }
