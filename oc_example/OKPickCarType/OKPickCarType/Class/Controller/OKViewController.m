@@ -8,6 +8,7 @@
 
 #import "OKViewController.h"
 #import "OKDisplayDifferentImageVC.h"
+#import "OKDifferentModeImageVC.h"
 #import "OKPriceDescViewController.h"
 
 #import "OKValuationView.h"
@@ -45,6 +46,11 @@
 }
 
 - (IBAction)clickRightBarItem:(UIBarButtonItem *)sender {
+    OKDifferentModeImageVC *vc = [[OKDifferentModeImageVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)clickLeftBarItem:(UIBarButtonItem *)sender {
     OKDisplayDifferentImageVC *vc = [[OKDisplayDifferentImageVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }

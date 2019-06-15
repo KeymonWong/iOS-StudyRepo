@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		136ECAFC2238E48D2DDA1746 /* libPods-OKPickCarType.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A755E0479FF4C636B7CA4 /* libPods-OKPickCarType.a */; };
+		164BA96E22B5076A0011EF91 /* OKImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164BA96D22B5076A0011EF91 /* OKImageDetailViewController.m */; };
+		164BA97122B50DB50011EF91 /* OKDifferentModeImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 164BA97022B50DB50011EF91 /* OKDifferentModeImageVC.m */; };
 		169DC16022A7ACD200EFF557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC15F22A7ACD200EFF557 /* AppDelegate.m */; };
 		169DC16322A7ACD200EFF557 /* OKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC16222A7ACD200EFF557 /* OKViewController.m */; };
 		169DC16622A7ACD200EFF557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169DC16422A7ACD200EFF557 /* Main.storyboard */; };
@@ -19,11 +21,14 @@
 		169DC1A422A7AE0C00EFF557 /* OKCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC1A222A7AE0C00EFF557 /* OKCar.m */; };
 		169DC1A722A7B0B500EFF557 /* OKPriceDescViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */; };
 		16ADE64A22B1528800CCFEEA /* OKDisplayDifferentImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */; };
-		16ADE65022B1542700CCFEEA /* DifferentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ADE64F22B1542700CCFEEA /* DifferentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		015A755E0479FF4C636B7CA4 /* libPods-OKPickCarType.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKPickCarType.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		164BA96C22B5076A0011EF91 /* OKImageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKImageDetailViewController.h; sourceTree = "<group>"; };
+		164BA96D22B5076A0011EF91 /* OKImageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKImageDetailViewController.m; sourceTree = "<group>"; };
+		164BA96F22B50DB50011EF91 /* OKDifferentModeImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKDifferentModeImageVC.h; sourceTree = "<group>"; };
+		164BA97022B50DB50011EF91 /* OKDifferentModeImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKDifferentModeImageVC.m; sourceTree = "<group>"; };
 		169DC15B22A7ACD200EFF557 /* OKPickCarType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKPickCarType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169DC15E22A7ACD200EFF557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		169DC15F22A7ACD200EFF557 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,8 +49,6 @@
 		169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKPriceDescViewController.m; sourceTree = "<group>"; };
 		16ADE64822B1528800CCFEEA /* OKDisplayDifferentImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKDisplayDifferentImageVC.h; sourceTree = "<group>"; };
 		16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKDisplayDifferentImageVC.m; sourceTree = "<group>"; };
-		16ADE64E22B1542700CCFEEA /* DifferentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferentCell.h; sourceTree = "<group>"; };
-		16ADE64F22B1542700CCFEEA /* DifferentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferentCell.m; sourceTree = "<group>"; };
 		1A6F51E2018B636E71D1CB5D /* Pods-OKPickCarType.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKPickCarType.release.xcconfig"; path = "Target Support Files/Pods-OKPickCarType/Pods-OKPickCarType.release.xcconfig"; sourceTree = "<group>"; };
 		487B8EF9E2295A79ECBCC8D4 /* Pods-OKPickCarType.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKPickCarType.debug.xcconfig"; path = "Target Support Files/Pods-OKPickCarType/Pods-OKPickCarType.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +113,6 @@
 			children = (
 				16ADE64D22B153DA00CCFEEA /* ShouQi */,
 				16ADE64C22B153CE00CCFEEA /* DiDi */,
-				16ADE64B22B153AD00CCFEEA /* DisplayDifferentImage */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +126,10 @@
 				169DC1A622A7B0B500EFF557 /* OKPriceDescViewController.m */,
 				16ADE64822B1528800CCFEEA /* OKDisplayDifferentImageVC.h */,
 				16ADE64922B1528800CCFEEA /* OKDisplayDifferentImageVC.m */,
+				164BA96C22B5076A0011EF91 /* OKImageDetailViewController.h */,
+				164BA96D22B5076A0011EF91 /* OKImageDetailViewController.m */,
+				164BA96F22B50DB50011EF91 /* OKDifferentModeImageVC.h */,
+				164BA97022B50DB50011EF91 /* OKDifferentModeImageVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,15 +141,6 @@
 				169DC1A222A7AE0C00EFF557 /* OKCar.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		16ADE64B22B153AD00CCFEEA /* DisplayDifferentImage */ = {
-			isa = PBXGroup;
-			children = (
-				16ADE64E22B1542700CCFEEA /* DifferentCell.h */,
-				16ADE64F22B1542700CCFEEA /* DifferentCell.m */,
-			);
-			path = DisplayDifferentImage;
 			sourceTree = "<group>";
 		};
 		16ADE64C22B153CE00CCFEEA /* DiDi */ = {
@@ -277,11 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164BA97122B50DB50011EF91 /* OKDifferentModeImageVC.m in Sources */,
 				169DC16322A7ACD200EFF557 /* OKViewController.m in Sources */,
 				16ADE64A22B1528800CCFEEA /* OKDisplayDifferentImageVC.m in Sources */,
 				169DC1A722A7B0B500EFF557 /* OKPriceDescViewController.m in Sources */,
+				164BA96E22B5076A0011EF91 /* OKImageDetailViewController.m in Sources */,
 				169DC16E22A7ACD300EFF557 /* main.m in Sources */,
-				16ADE65022B1542700CCFEEA /* DifferentCell.m in Sources */,
 				169DC1A122A7AE0500EFF557 /* OKCarCell.m in Sources */,
 				169DC1A422A7AE0C00EFF557 /* OKCar.m in Sources */,
 				169DC16022A7ACD200EFF557 /* AppDelegate.m in Sources */,
@@ -431,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RVS482PXM9;
 				INFOPLIST_FILE = OKPickCarType/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RVS482PXM9;
 				INFOPLIST_FILE = OKPickCarType/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

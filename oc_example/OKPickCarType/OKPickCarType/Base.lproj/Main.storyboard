@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--估价车型选择-->
+        <!--选择估价车型-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="OKViewController" sceneMemberID="viewController">
@@ -20,8 +20,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="估价车型选择" largeTitleDisplayMode="always" id="kUT-oZ-fRV">
-                        <barButtonItem key="rightBarButtonItem" title="不同图片显示" id="s27-9r-Vge">
+                    <navigationItem key="navigationItem" title="选择估价车型" largeTitleDisplayMode="always" id="kUT-oZ-fRV">
+                        <barButtonItem key="leftBarButtonItem" title="图片显示1" id="jlE-PZ-bWJ">
+                            <color key="tintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                            <connections>
+                                <action selector="clickLeftBarItem:" destination="BYZ-38-t0r" id="Kev-fF-Y1S"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="图片显示2" id="s27-9r-Vge">
                             <color key="tintColor" red="0.2666666667" green="0.57647058819999997" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="clickRightBarItem:" destination="BYZ-38-t0r" id="kyz-aj-Cbd"/>
