@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		136ECAFC2238E48D2DDA1746 /* libPods-OKPickCarType.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A755E0479FF4C636B7CA4 /* libPods-OKPickCarType.a */; };
+		162FD1EB22B8DF23004A84DA /* OKValuationCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162FD1E722B8DF23004A84DA /* OKValuationCardView.m */; };
+		162FD1EC22B8DF23004A84DA /* OKPickCarTypeCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162FD1E822B8DF23004A84DA /* OKPickCarTypeCardView.m */; };
+		162FD1ED22B8DF23004A84DA /* OKPickCarTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 162FD1E922B8DF23004A84DA /* OKPickCarTypeCell.m */; };
+		162FD1F022B8DF7D004A84DA /* OKCollectionFlipPageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 162FD1EF22B8DF7D004A84DA /* OKCollectionFlipPageLayout.m */; };
 		164BA96E22B5076A0011EF91 /* OKImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164BA96D22B5076A0011EF91 /* OKImageDetailViewController.m */; };
 		164BA97122B50DB50011EF91 /* OKDifferentModeImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 164BA97022B50DB50011EF91 /* OKDifferentModeImageVC.m */; };
 		169DC16022A7ACD200EFF557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DC15F22A7ACD200EFF557 /* AppDelegate.m */; };
@@ -25,6 +29,14 @@
 
 /* Begin PBXFileReference section */
 		015A755E0479FF4C636B7CA4 /* libPods-OKPickCarType.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKPickCarType.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		162FD1E522B8DF23004A84DA /* OKPickCarTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKPickCarTypeCell.h; sourceTree = "<group>"; };
+		162FD1E622B8DF23004A84DA /* OKPickCarTypeCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKPickCarTypeCardView.h; sourceTree = "<group>"; };
+		162FD1E722B8DF23004A84DA /* OKValuationCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKValuationCardView.m; sourceTree = "<group>"; };
+		162FD1E822B8DF23004A84DA /* OKPickCarTypeCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKPickCarTypeCardView.m; sourceTree = "<group>"; };
+		162FD1E922B8DF23004A84DA /* OKPickCarTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKPickCarTypeCell.m; sourceTree = "<group>"; };
+		162FD1EA22B8DF23004A84DA /* OKValuationCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKValuationCardView.h; sourceTree = "<group>"; };
+		162FD1EE22B8DF7D004A84DA /* OKCollectionFlipPageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKCollectionFlipPageLayout.h; sourceTree = "<group>"; };
+		162FD1EF22B8DF7D004A84DA /* OKCollectionFlipPageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKCollectionFlipPageLayout.m; sourceTree = "<group>"; };
 		164BA96C22B5076A0011EF91 /* OKImageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKImageDetailViewController.h; sourceTree = "<group>"; };
 		164BA96D22B5076A0011EF91 /* OKImageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKImageDetailViewController.m; sourceTree = "<group>"; };
 		164BA96F22B50DB50011EF91 /* OKDifferentModeImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKDifferentModeImageVC.h; sourceTree = "<group>"; };
@@ -65,6 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162FD1E422B8DF23004A84DA /* ShouQi */ = {
+			isa = PBXGroup;
+			children = (
+				162FD1EE22B8DF7D004A84DA /* OKCollectionFlipPageLayout.h */,
+				162FD1EF22B8DF7D004A84DA /* OKCollectionFlipPageLayout.m */,
+				162FD1E622B8DF23004A84DA /* OKPickCarTypeCardView.h */,
+				162FD1E822B8DF23004A84DA /* OKPickCarTypeCardView.m */,
+				162FD1E522B8DF23004A84DA /* OKPickCarTypeCell.h */,
+				162FD1E922B8DF23004A84DA /* OKPickCarTypeCell.m */,
+				162FD1EA22B8DF23004A84DA /* OKValuationCardView.h */,
+				162FD1E722B8DF23004A84DA /* OKValuationCardView.m */,
+			);
+			path = ShouQi;
+			sourceTree = "<group>";
+		};
 		169DC15222A7ACD200EFF557 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +138,7 @@
 		169DC17522A7ACFE00EFF557 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				16ADE64D22B153DA00CCFEEA /* ShouQi */,
+				162FD1E422B8DF23004A84DA /* ShouQi */,
 				16ADE64C22B153CE00CCFEEA /* DiDi */,
 			);
 			path = View;
@@ -152,13 +179,6 @@
 				169DC1A022A7AE0500EFF557 /* OKCarCell.m */,
 			);
 			path = DiDi;
-			sourceTree = "<group>";
-		};
-		16ADE64D22B153DA00CCFEEA /* ShouQi */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ShouQi;
 			sourceTree = "<group>";
 		};
 		8A2C0BEDB6753E32AF459FD5 /* Frameworks */ = {
@@ -281,8 +301,12 @@
 				164BA96E22B5076A0011EF91 /* OKImageDetailViewController.m in Sources */,
 				169DC16E22A7ACD300EFF557 /* main.m in Sources */,
 				169DC1A122A7AE0500EFF557 /* OKCarCell.m in Sources */,
+				162FD1EC22B8DF23004A84DA /* OKPickCarTypeCardView.m in Sources */,
+				162FD1F022B8DF7D004A84DA /* OKCollectionFlipPageLayout.m in Sources */,
 				169DC1A422A7AE0C00EFF557 /* OKCar.m in Sources */,
+				162FD1ED22B8DF23004A84DA /* OKPickCarTypeCell.m in Sources */,
 				169DC16022A7ACD200EFF557 /* AppDelegate.m in Sources */,
+				162FD1EB22B8DF23004A84DA /* OKValuationCardView.m in Sources */,
 				169DC19E22A7ADFC00EFF557 /* OKValuationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

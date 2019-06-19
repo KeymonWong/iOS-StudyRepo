@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface OKCar : NSObject
+@property (nonatomic, assign) NSInteger isValuationSuccess;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *price;
 @property (nonatomic, assign, getter=isItemSelected) BOOL itemSelected;

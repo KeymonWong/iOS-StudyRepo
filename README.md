@@ -1,5 +1,10 @@
 ## iOSDevRepo
 
+####  2019/06/19
+    
+    1. 修改 OKPickCarType demo，添加仿首汽约车估价页面选择车型
+    2. OKPickCarType demo 新增图片在不同的 contentMode 下的显示
+
 ####  2019/06/05
     
     1. 添加OKPickCarType demo，仿滴滴估价页面选择车型
