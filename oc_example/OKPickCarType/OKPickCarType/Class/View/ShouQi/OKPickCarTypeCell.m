@@ -15,8 +15,6 @@
 @interface OKPickCarTypeCell ()
 @property (nonatomic, weak) UILabel *titleL;
 @property (nonatomic, weak) UIImageView *carImgV;
-@property (nonatomic, weak) UILabel *priceL; ///< 预估价格
-@property (nonatomic, weak) UILabel *discountL; ///< 抵扣金额
 @end
 
 @implementation OKPickCarTypeCell
@@ -49,26 +47,11 @@
     
     [self.contentView addSubview:({
         UIImageView *imgV = [[UIImageView alloc] init];
-        imgV.image = [UIImage imageNamed:@"ola_placehold_car"];
+        imgV.image = [UIImage imageNamed:@"ole_icon_carpool"];
         imgV.contentMode = UIViewContentModeScaleAspectFit;
         imgV.clipsToBounds = YES;
         self.carImgV = imgV;
         imgV;
-    })];
-    
-    [self.contentView addSubview:({
-        UILabel *label = [[UILabel alloc] init];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.numberOfLines = 0;
-        self.priceL = label;
-        label;
-    })];
-    
-    [self.contentView addSubview:({
-        UILabel *l = [[UILabel alloc] init];
-        l.textAlignment = NSTextAlignmentCenter;
-        self.discountL = l;
-        l;
     })];
 }
 
@@ -92,21 +75,10 @@
         make.size.mas_equalTo(imgSize);
         make.centerX.equalTo(self.contentView);
     }];
-    
-    [self.priceL mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.carImgV.mas_bottom).offset(8);
-        make.left.right.equalTo(self.contentView).offset(0);
-    }];
-    
-    [self.discountL mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.priceL.mas_bottom).offset(4);
-        make.left.right.equalTo(self.contentView).offset(0);
-    }];
 }
 
 - (void)configureCellWithModel:(OKCar *)model {
     self.titleL.text = model.name;
-    self.priceL.text = model.price;
 }
 
 @end

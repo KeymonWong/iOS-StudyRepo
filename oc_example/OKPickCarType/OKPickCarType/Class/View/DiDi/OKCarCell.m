@@ -101,6 +101,7 @@
     }];
     
     [self.indicatorV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.cV);
         make.height.equalTo(self.cV);
 //        make.width.mas_equalTo(@(0));
         make.left.equalTo(self.cV);

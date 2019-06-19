@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol OKPickCarTypeCardViewDelegate <NSObject>
 
 @optional
-- (void)pickCarTypeCardView:(OKPickCarTypeCardView *)carTypeView didSelectItem:(OLAValuation *)item;
+- (void)pickCarTypeCardView:(OKPickCarTypeCardView *)carTypeView didSelectItem:(OKCar *)item;
 
 - (void)pickCarTypeCardView:(OKPickCarTypeCardView *)carTypeView
         didEndScrollToIndex:(NSInteger)index
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<OKPickCarTypeCardViewDelegate> delegate;
 
-@property (nonatomic, copy) NSArray *models;
+@property (nonatomic, copy) NSArray<OKCar *> *models;
 
 /** 可以调用此方法手动控制滚动到哪一个index */
 - (void)makeCellScrollToIndex:(NSInteger)index;

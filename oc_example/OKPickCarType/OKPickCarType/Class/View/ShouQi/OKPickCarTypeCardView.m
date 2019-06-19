@@ -75,14 +75,15 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 5;
+    return self.models.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     OKPickCarTypeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([OKPickCarTypeCell class]) forIndexPath:indexPath];
-    
-    [cell configureCellWithModel:self.models[indexPath.item]];
+    if (indexPath.item < self.models.count) {
+        [cell configureCellWithModel:self.models[indexPath.item]];
+    }
 //    [cell setNeedsLayout];
     return cell;
 }

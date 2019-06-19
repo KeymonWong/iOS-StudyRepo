@@ -132,7 +132,7 @@
     
     [self.seeDetailBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self);
-        make.bottom.equalTo(self.mas_bottom).offset(-10);
+        make.bottom.equalTo(self.mas_bottom).offset(0);
         make.centerX.equalTo(self);
         make.width.mas_equalTo(@(150));
     }];
@@ -141,7 +141,6 @@
 - (void)configSwitchLoadAnimationWithScrolling:(BOOL)scrolling {
     scrolling ? [self.switchLoadGIF startAnimating] : [self.switchLoadGIF stopAnimating];
     self.containerV.hidden = scrolling;
-    self.refreshPriceBtn.hidden = scrolling;
     self.switchLoadGIF.hidden = !scrolling;
     self.seeDetailBtn.hidden = scrolling;
 }
@@ -167,7 +166,7 @@
 }
 
 - (void)configureValuation:(OKCar *)valuation {
-    
+    self.priceL.text = valuation.price;
 }
 
 - (void)setupRefreshBtnStateWithRefresh:(BOOL)refresh {
