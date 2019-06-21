@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:WeiboPublish/WeiboPublish.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ScreenOrientation/ScreenOrientation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x81ea;&#x5b9a;&#x4e49;TabBar/&#x81ea;&#x5b9a;&#x4e49;TabBar.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x81ea;&#x5b9a;&#x4e49;searchBar/&#x81ea;&#x5b9a;&#x4e49;searchBar.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StarEvaluation/StarEvaluation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Waterflow_Example/Waterflow_Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QQ&#x97f3;&#x4e50;&#x64ad;&#x653e;&#x5668;/QQ&#x97f3;&#x4e50;&#x64ad;&#x653e;&#x5668;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RefreshControl/RefreshControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DifferentCellDisplay/DifferentCellDisplay.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AnimationDragView/AnimationDragView.xcodeproj">
+   </FileRef>
+</Workspace>

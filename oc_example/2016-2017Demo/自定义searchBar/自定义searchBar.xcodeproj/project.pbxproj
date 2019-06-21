@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		422567361DB8D043008C1AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 422567351DB8D043008C1AC3 /* main.m */; };
+		422567391DB8D043008C1AC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 422567381DB8D043008C1AC3 /* AppDelegate.m */; };
+		4225673C1DB8D043008C1AC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4225673B1DB8D043008C1AC3 /* ViewController.m */; };
+		4225673F1DB8D043008C1AC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4225673D1DB8D043008C1AC3 /* Main.storyboard */; };
+		422567411DB8D043008C1AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422567401DB8D043008C1AC3 /* Assets.xcassets */; };
+		422567441DB8D043008C1AC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422567421DB8D043008C1AC3 /* LaunchScreen.storyboard */; };
+		4225676A1DB8D56F008C1AC3 /* UISearchBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 422567691DB8D56F008C1AC3 /* UISearchBar+Extension.m */; };
+		4225676D1DB8E2DA008C1AC3 /* HQMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4225676C1DB8E2DA008C1AC3 /* HQMSearchBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4225674B1DB8D043008C1AC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422567291DB8D043008C1AC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 422567301DB8D043008C1AC3;
+			remoteInfo = "自定义searchBar";
+		};
+		422567561DB8D043008C1AC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422567291DB8D043008C1AC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 422567301DB8D043008C1AC3;
+			remoteInfo = "自定义searchBar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		422567311DB8D043008C1AC3 /* 自定义searchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义searchBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		422567351DB8D043008C1AC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		422567371DB8D043008C1AC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		422567381DB8D043008C1AC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4225673A1DB8D043008C1AC3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4225673B1DB8D043008C1AC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4225673E1DB8D043008C1AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		422567401DB8D043008C1AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		422567431DB8D043008C1AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		422567451DB8D043008C1AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4225674A1DB8D043008C1AC3 /* 自定义searchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义searchBarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		422567551DB8D043008C1AC3 /* 自定义searchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义searchBarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		422567681DB8D56F008C1AC3 /* UISearchBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Extension.h"; sourceTree = "<group>"; };
+		422567691DB8D56F008C1AC3 /* UISearchBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Extension.m"; sourceTree = "<group>"; };
+		4225676B1DB8E2DA008C1AC3 /* HQMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQMSearchBar.h; sourceTree = "<group>"; };
+		4225676C1DB8E2DA008C1AC3 /* HQMSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQMSearchBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4225672E1DB8D043008C1AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422567471DB8D043008C1AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422567521DB8D043008C1AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		422567281DB8D043008C1AC3 = {
+			isa = PBXGroup;
+			children = (
+				422567331DB8D043008C1AC3 /* 自定义searchBar */,
+				422567321DB8D043008C1AC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		422567321DB8D043008C1AC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				422567311DB8D043008C1AC3 /* 自定义searchBar.app */,
+				4225674A1DB8D043008C1AC3 /* 自定义searchBarTests.xctest */,
+				422567551DB8D043008C1AC3 /* 自定义searchBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		422567331DB8D043008C1AC3 /* 自定义searchBar */ = {
+			isa = PBXGroup;
+			children = (
+				422567671DB8D161008C1AC3 /* Source */,
+				422567371DB8D043008C1AC3 /* AppDelegate.h */,
+				422567381DB8D043008C1AC3 /* AppDelegate.m */,
+				4225673A1DB8D043008C1AC3 /* ViewController.h */,
+				4225673B1DB8D043008C1AC3 /* ViewController.m */,
+				422567401DB8D043008C1AC3 /* Assets.xcassets */,
+				422567341DB8D043008C1AC3 /* Supporting Files */,
+			);
+			path = "自定义searchBar";
+			sourceTree = "<group>";
+		};
+		422567341DB8D043008C1AC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4225673D1DB8D043008C1AC3 /* Main.storyboard */,
+				422567421DB8D043008C1AC3 /* LaunchScreen.storyboard */,
+				422567451DB8D043008C1AC3 /* Info.plist */,
+				422567351DB8D043008C1AC3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		422567671DB8D161008C1AC3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				422567681DB8D56F008C1AC3 /* UISearchBar+Extension.h */,
+				422567691DB8D56F008C1AC3 /* UISearchBar+Extension.m */,
+				4225676B1DB8E2DA008C1AC3 /* HQMSearchBar.h */,
+				4225676C1DB8E2DA008C1AC3 /* HQMSearchBar.m */,
+			);
+			name = Source;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		422567301DB8D043008C1AC3 /* 自定义searchBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4225675E1DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBar" */;
+			buildPhases = (
+				4225672D1DB8D043008C1AC3 /* Sources */,
+				4225672E1DB8D043008C1AC3 /* Frameworks */,
+				4225672F1DB8D043008C1AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义searchBar";
+			productName = "自定义searchBar";
+			productReference = 422567311DB8D043008C1AC3 /* 自定义searchBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		422567491DB8D043008C1AC3 /* 自定义searchBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 422567611DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarTests" */;
+			buildPhases = (
+				422567461DB8D043008C1AC3 /* Sources */,
+				422567471DB8D043008C1AC3 /* Frameworks */,
+				422567481DB8D043008C1AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4225674C1DB8D043008C1AC3 /* PBXTargetDependency */,
+			);
+			name = "自定义searchBarTests";
+			productName = "自定义searchBarTests";
+			productReference = 4225674A1DB8D043008C1AC3 /* 自定义searchBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		422567541DB8D043008C1AC3 /* 自定义searchBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 422567641DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarUITests" */;
+			buildPhases = (
+				422567511DB8D043008C1AC3 /* Sources */,
+				422567521DB8D043008C1AC3 /* Frameworks */,
+				422567531DB8D043008C1AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				422567571DB8D043008C1AC3 /* PBXTargetDependency */,
+			);
+			name = "自定义searchBarUITests";
+			productName = "自定义searchBarUITests";
+			productReference = 422567551DB8D043008C1AC3 /* 自定义searchBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		422567291DB8D043008C1AC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = huangqimeng;
+				TargetAttributes = {
+					422567301DB8D043008C1AC3 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					422567491DB8D043008C1AC3 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 422567301DB8D043008C1AC3;
+					};
+					422567541DB8D043008C1AC3 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 422567301DB8D043008C1AC3;
+					};
+				};
+			};
+			buildConfigurationList = 4225672C1DB8D043008C1AC3 /* Build configuration list for PBXProject "自定义searchBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 422567281DB8D043008C1AC3;
+			productRefGroup = 422567321DB8D043008C1AC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				422567301DB8D043008C1AC3 /* 自定义searchBar */,
+				422567491DB8D043008C1AC3 /* 自定义searchBarTests */,
+				422567541DB8D043008C1AC3 /* 自定义searchBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4225672F1DB8D043008C1AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422567441DB8D043008C1AC3 /* LaunchScreen.storyboard in Resources */,
+				422567411DB8D043008C1AC3 /* Assets.xcassets in Resources */,
+				4225673F1DB8D043008C1AC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422567481DB8D043008C1AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422567531DB8D043008C1AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4225672D1DB8D043008C1AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4225673C1DB8D043008C1AC3 /* ViewController.m in Sources */,
+				4225676D1DB8E2DA008C1AC3 /* HQMSearchBar.m in Sources */,
+				422567391DB8D043008C1AC3 /* AppDelegate.m in Sources */,
+				422567361DB8D043008C1AC3 /* main.m in Sources */,
+				4225676A1DB8D56F008C1AC3 /* UISearchBar+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422567461DB8D043008C1AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422567511DB8D043008C1AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4225674C1DB8D043008C1AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 422567301DB8D043008C1AC3 /* 自定义searchBar */;
+			targetProxy = 4225674B1DB8D043008C1AC3 /* PBXContainerItemProxy */;
+		};
+		422567571DB8D043008C1AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 422567301DB8D043008C1AC3 /* 自定义searchBar */;
+			targetProxy = 422567561DB8D043008C1AC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4225673D1DB8D043008C1AC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4225673E1DB8D043008C1AC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		422567421DB8D043008C1AC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				422567431DB8D043008C1AC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4225675C1DB8D043008C1AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4225675D1DB8D043008C1AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4225675F1DB8D043008C1AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自定义searchBar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		422567601DB8D043008C1AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自定义searchBar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		422567621DB8D043008C1AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "自定义searchBarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义searchBar.app/自定义searchBar";
+			};
+			name = Debug;
+		};
+		422567631DB8D043008C1AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "自定义searchBarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义searchBar.app/自定义searchBar";
+			};
+			name = Release;
+		};
+		422567651DB8D043008C1AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "自定义searchBarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "自定义searchBar";
+			};
+			name = Debug;
+		};
+		422567661DB8D043008C1AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "自定义searchBarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "自定义searchBar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4225672C1DB8D043008C1AC3 /* Build configuration list for PBXProject "自定义searchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4225675C1DB8D043008C1AC3 /* Debug */,
+				4225675D1DB8D043008C1AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4225675E1DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4225675F1DB8D043008C1AC3 /* Debug */,
+				422567601DB8D043008C1AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		422567611DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422567621DB8D043008C1AC3 /* Debug */,
+				422567631DB8D043008C1AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		422567641DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422567651DB8D043008C1AC3 /* Debug */,
+				422567661DB8D043008C1AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 422567291DB8D043008C1AC3 /* Project object */;
+}
