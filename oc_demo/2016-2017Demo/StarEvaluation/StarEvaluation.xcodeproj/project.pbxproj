@@ -21,23 +21,6 @@
 		42FE89271E56943800C9690B /* 五星评价_灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FE89231E56943800C9690B /* 五星评价_灰@3x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		42FE88FD1E55985000C9690B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42FE88DB1E55985000C9690B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42FE88E21E55985000C9690B;
-			remoteInfo = StarEvaluation;
-		};
-		42FE89081E55985000C9690B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42FE88DB1E55985000C9690B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42FE88E21E55985000C9690B;
-			remoteInfo = StarEvaluation;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		42FE88E31E55985000C9690B /* StarEvaluation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarEvaluation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FE88E71E55985000C9690B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,8 +32,6 @@
 		42FE88F21E55985000C9690B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42FE88F51E55985000C9690B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42FE88F71E55985000C9690B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42FE88FC1E55985000C9690B /* StarEvaluationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarEvaluationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42FE89071E55985000C9690B /* StarEvaluationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarEvaluationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FE891A1E559C0A00C9690B /* StarEvaluationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarEvaluationView.h; sourceTree = "<group>"; };
 		42FE891B1E559C0A00C9690B /* StarEvaluationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarEvaluationView.m; sourceTree = "<group>"; };
 		42FE891D1E5690EB00C9690B /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleView.h; sourceTree = "<group>"; };
@@ -63,20 +44,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		42FE88E01E55985000C9690B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE88F91E55985000C9690B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89041E55985000C9690B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,8 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				42FE88E31E55985000C9690B /* StarEvaluation.app */,
-				42FE88FC1E55985000C9690B /* StarEvaluationTests.xctest */,
-				42FE89071E55985000C9690B /* StarEvaluationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,42 +129,6 @@
 			productReference = 42FE88E31E55985000C9690B /* StarEvaluation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42FE88FB1E55985000C9690B /* StarEvaluationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42FE89131E55985100C9690B /* Build configuration list for PBXNativeTarget "StarEvaluationTests" */;
-			buildPhases = (
-				42FE88F81E55985000C9690B /* Sources */,
-				42FE88F91E55985000C9690B /* Frameworks */,
-				42FE88FA1E55985000C9690B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42FE88FE1E55985000C9690B /* PBXTargetDependency */,
-			);
-			name = StarEvaluationTests;
-			productName = StarEvaluationTests;
-			productReference = 42FE88FC1E55985000C9690B /* StarEvaluationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		42FE89061E55985000C9690B /* StarEvaluationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42FE89161E55985100C9690B /* Build configuration list for PBXNativeTarget "StarEvaluationUITests" */;
-			buildPhases = (
-				42FE89031E55985000C9690B /* Sources */,
-				42FE89041E55985000C9690B /* Frameworks */,
-				42FE89051E55985000C9690B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42FE89091E55985000C9690B /* PBXTargetDependency */,
-			);
-			name = StarEvaluationUITests;
-			productName = StarEvaluationUITests;
-			productReference = 42FE89071E55985000C9690B /* StarEvaluationUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,20 +140,7 @@
 				TargetAttributes = {
 					42FE88E21E55985000C9690B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-					};
-					42FE88FB1E55985000C9690B = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 42FE88E21E55985000C9690B;
-					};
-					42FE89061E55985000C9690B = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 42FE88E21E55985000C9690B;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -243,8 +159,6 @@
 			projectRoot = "";
 			targets = (
 				42FE88E21E55985000C9690B /* StarEvaluation */,
-				42FE88FB1E55985000C9690B /* StarEvaluationTests */,
-				42FE89061E55985000C9690B /* StarEvaluationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,20 +178,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42FE88FA1E55985000C9690B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89051E55985000C9690B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -293,34 +193,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42FE88F81E55985000C9690B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89031E55985000C9690B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		42FE88FE1E55985000C9690B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42FE88E21E55985000C9690B /* StarEvaluation */;
-			targetProxy = 42FE88FD1E55985000C9690B /* PBXContainerItemProxy */;
-		};
-		42FE89091E55985000C9690B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42FE88E21E55985000C9690B /* StarEvaluation */;
-			targetProxy = 42FE89081E55985000C9690B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42FE88EF1E55985000C9690B /* Main.storyboard */ = {
@@ -434,11 +307,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVS482PXM9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StarEvaluation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.StarEvaluation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -446,61 +321,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVS482PXM9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StarEvaluation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.StarEvaluation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		42FE89141E55985100C9690B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = StarEvaluationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.StarEvaluationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarEvaluation.app/StarEvaluation";
-			};
-			name = Debug;
-		};
-		42FE89151E55985100C9690B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = StarEvaluationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.StarEvaluationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarEvaluation.app/StarEvaluation";
-			};
-			name = Release;
-		};
-		42FE89171E55985100C9690B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = StarEvaluationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.StarEvaluationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = StarEvaluation;
-			};
-			name = Debug;
-		};
-		42FE89181E55985100C9690B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = StarEvaluationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.StarEvaluationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = StarEvaluation;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -521,24 +348,6 @@
 			buildConfigurations = (
 				42FE89111E55985100C9690B /* Debug */,
 				42FE89121E55985100C9690B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42FE89131E55985100C9690B /* Build configuration list for PBXNativeTarget "StarEvaluationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42FE89141E55985100C9690B /* Debug */,
-				42FE89151E55985100C9690B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42FE89161E55985100C9690B /* Build configuration list for PBXNativeTarget "StarEvaluationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42FE89171E55985100C9690B /* Debug */,
-				42FE89181E55985100C9690B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

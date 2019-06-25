@@ -16,23 +16,6 @@
 		42ACF6D01E496A48007F4E6F /* OrientationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ACF6CF1E496A48007F4E6F /* OrientationView.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		42ACF6B21E4969FF007F4E6F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42ACF6901E4969FE007F4E6F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42ACF6971E4969FE007F4E6F;
-			remoteInfo = ScreenOrientation;
-		};
-		42ACF6BD1E4969FF007F4E6F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42ACF6901E4969FE007F4E6F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42ACF6971E4969FE007F4E6F;
-			remoteInfo = ScreenOrientation;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		42ACF6981E4969FE007F4E6F /* ScreenOrientation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenOrientation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ACF69C1E4969FE007F4E6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,28 +27,12 @@
 		42ACF6A71E4969FE007F4E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42ACF6AA1E4969FE007F4E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42ACF6AC1E4969FE007F4E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42ACF6B11E4969FF007F4E6F /* ScreenOrientationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenOrientationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42ACF6BC1E4969FF007F4E6F /* ScreenOrientationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenOrientationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ACF6CE1E496A48007F4E6F /* OrientationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationView.h; sourceTree = "<group>"; };
 		42ACF6CF1E496A48007F4E6F /* OrientationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrientationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		42ACF6951E4969FE007F4E6F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42ACF6AE1E4969FF007F4E6F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42ACF6B91E4969FF007F4E6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				42ACF6981E4969FE007F4E6F /* ScreenOrientation.app */,
-				42ACF6B11E4969FF007F4E6F /* ScreenOrientationTests.xctest */,
-				42ACF6BC1E4969FF007F4E6F /* ScreenOrientationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,42 +104,6 @@
 			productReference = 42ACF6981E4969FE007F4E6F /* ScreenOrientation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42ACF6B01E4969FF007F4E6F /* ScreenOrientationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42ACF6C81E4969FF007F4E6F /* Build configuration list for PBXNativeTarget "ScreenOrientationTests" */;
-			buildPhases = (
-				42ACF6AD1E4969FF007F4E6F /* Sources */,
-				42ACF6AE1E4969FF007F4E6F /* Frameworks */,
-				42ACF6AF1E4969FF007F4E6F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42ACF6B31E4969FF007F4E6F /* PBXTargetDependency */,
-			);
-			name = ScreenOrientationTests;
-			productName = ScreenOrientationTests;
-			productReference = 42ACF6B11E4969FF007F4E6F /* ScreenOrientationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		42ACF6BB1E4969FF007F4E6F /* ScreenOrientationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42ACF6CB1E4969FF007F4E6F /* Build configuration list for PBXNativeTarget "ScreenOrientationUITests" */;
-			buildPhases = (
-				42ACF6B81E4969FF007F4E6F /* Sources */,
-				42ACF6B91E4969FF007F4E6F /* Frameworks */,
-				42ACF6BA1E4969FF007F4E6F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42ACF6BE1E4969FF007F4E6F /* PBXTargetDependency */,
-			);
-			name = ScreenOrientationUITests;
-			productName = ScreenOrientationUITests;
-			productReference = 42ACF6BC1E4969FF007F4E6F /* ScreenOrientationUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,20 +115,7 @@
 				TargetAttributes = {
 					42ACF6971E4969FE007F4E6F = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-					};
-					42ACF6B01E4969FF007F4E6F = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 42ACF6971E4969FE007F4E6F;
-					};
-					42ACF6BB1E4969FF007F4E6F = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 42ACF6971E4969FE007F4E6F;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -218,8 +134,6 @@
 			projectRoot = "";
 			targets = (
 				42ACF6971E4969FE007F4E6F /* ScreenOrientation */,
-				42ACF6B01E4969FF007F4E6F /* ScreenOrientationTests */,
-				42ACF6BB1E4969FF007F4E6F /* ScreenOrientationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,20 +146,6 @@
 				42ACF6AB1E4969FE007F4E6F /* LaunchScreen.storyboard in Resources */,
 				42ACF6A81E4969FE007F4E6F /* Assets.xcassets in Resources */,
 				42ACF6A61E4969FE007F4E6F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42ACF6AF1E4969FF007F4E6F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42ACF6BA1E4969FF007F4E6F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,34 +163,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42ACF6AD1E4969FF007F4E6F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42ACF6B81E4969FF007F4E6F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		42ACF6B31E4969FF007F4E6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42ACF6971E4969FE007F4E6F /* ScreenOrientation */;
-			targetProxy = 42ACF6B21E4969FF007F4E6F /* PBXContainerItemProxy */;
-		};
-		42ACF6BE1E4969FF007F4E6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42ACF6971E4969FE007F4E6F /* ScreenOrientation */;
-			targetProxy = 42ACF6BD1E4969FF007F4E6F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42ACF6A41E4969FE007F4E6F /* Main.storyboard */ = {
@@ -404,12 +277,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVS482PXM9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ScreenOrientation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.ScreenOrientation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -417,62 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVS482PXM9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ScreenOrientation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.ScreenOrientation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		42ACF6C91E4969FF007F4E6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = ScreenOrientationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.ScreenOrientationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenOrientation.app/ScreenOrientation";
-			};
-			name = Debug;
-		};
-		42ACF6CA1E4969FF007F4E6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = ScreenOrientationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.ScreenOrientationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenOrientation.app/ScreenOrientation";
-			};
-			name = Release;
-		};
-		42ACF6CC1E4969FF007F4E6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = ScreenOrientationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.ScreenOrientationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ScreenOrientation;
-			};
-			name = Debug;
-		};
-		42ACF6CD1E4969FF007F4E6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = ScreenOrientationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.ScreenOrientationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ScreenOrientation;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -493,24 +320,6 @@
 			buildConfigurations = (
 				42ACF6C61E4969FF007F4E6F /* Debug */,
 				42ACF6C71E4969FF007F4E6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42ACF6C81E4969FF007F4E6F /* Build configuration list for PBXNativeTarget "ScreenOrientationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42ACF6C91E4969FF007F4E6F /* Debug */,
-				42ACF6CA1E4969FF007F4E6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42ACF6CB1E4969FF007F4E6F /* Build configuration list for PBXNativeTarget "ScreenOrientationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42ACF6CC1E4969FF007F4E6F /* Debug */,
-				42ACF6CD1E4969FF007F4E6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

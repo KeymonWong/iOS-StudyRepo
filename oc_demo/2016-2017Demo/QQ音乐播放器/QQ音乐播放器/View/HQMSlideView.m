@@ -89,7 +89,6 @@ NSString *HQMSlideViewNotification = @"HQMSlideViewNotification";
     [self.bgImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
-
 }
 
 - (void)setTi:(NSTimeInterval)ti {

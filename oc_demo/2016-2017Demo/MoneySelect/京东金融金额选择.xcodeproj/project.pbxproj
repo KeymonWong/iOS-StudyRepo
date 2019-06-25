@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		426D5FC31EB2E60A00C477DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D5FC21EB2E60A00C477DD /* main.m */; };
+		426D5FC61EB2E60A00C477DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D5FC51EB2E60A00C477DD /* AppDelegate.m */; };
+		426D5FC91EB2E60A00C477DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D5FC81EB2E60A00C477DD /* ViewController.m */; };
+		426D5FCC1EB2E60A00C477DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426D5FCA1EB2E60A00C477DD /* Main.storyboard */; };
+		426D5FCE1EB2E60A00C477DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426D5FCD1EB2E60A00C477DD /* Assets.xcassets */; };
+		426D5FD11EB2E60A00C477DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426D5FCF1EB2E60A00C477DD /* LaunchScreen.storyboard */; };
+		426D5FF71EB2E8E100C477DD /* FundSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D5FF61EB2E8E000C477DD /* FundSelectView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		426D5FD81EB2E60A00C477DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 426D5FB61EB2E60900C477DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 426D5FBD1EB2E60900C477DD;
+			remoteInfo = "京东金融金额选择";
+		};
+		426D5FE31EB2E60A00C477DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 426D5FB61EB2E60900C477DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 426D5FBD1EB2E60900C477DD;
+			remoteInfo = "京东金融金额选择";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		426D5FBE1EB2E60900C477DD /* 京东金融金额选择.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "京东金融金额选择.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D5FC21EB2E60A00C477DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		426D5FC41EB2E60A00C477DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		426D5FC51EB2E60A00C477DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		426D5FC71EB2E60A00C477DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		426D5FC81EB2E60A00C477DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		426D5FCB1EB2E60A00C477DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		426D5FCD1EB2E60A00C477DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		426D5FD01EB2E60A00C477DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		426D5FD21EB2E60A00C477DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426D5FD71EB2E60A00C477DD /* 京东金融金额选择Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "京东金融金额选择Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D5FE21EB2E60A00C477DD /* 京东金融金额选择UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "京东金融金额选择UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D5FF51EB2E8E000C477DD /* FundSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundSelectView.h; sourceTree = "<group>"; };
+		426D5FF61EB2E8E000C477DD /* FundSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundSelectView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		426D5FBB1EB2E60900C477DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D5FD41EB2E60A00C477DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D5FDF1EB2E60A00C477DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426D5FB51EB2E60900C477DD = {
+			isa = PBXGroup;
+			children = (
+				426D5FC01EB2E60900C477DD /* 京东金融金额选择 */,
+				426D5FBF1EB2E60900C477DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		426D5FBF1EB2E60900C477DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				426D5FBE1EB2E60900C477DD /* 京东金融金额选择.app */,
+				426D5FD71EB2E60A00C477DD /* 京东金融金额选择Tests.xctest */,
+				426D5FE21EB2E60A00C477DD /* 京东金融金额选择UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		426D5FC01EB2E60900C477DD /* 京东金融金额选择 */ = {
+			isa = PBXGroup;
+			children = (
+				426D5FF41EB2E84000C477DD /* Component */,
+				426D5FC41EB2E60A00C477DD /* AppDelegate.h */,
+				426D5FC51EB2E60A00C477DD /* AppDelegate.m */,
+				426D5FC71EB2E60A00C477DD /* ViewController.h */,
+				426D5FC81EB2E60A00C477DD /* ViewController.m */,
+				426D5FCD1EB2E60A00C477DD /* Assets.xcassets */,
+				426D5FC11EB2E60900C477DD /* Supporting Files */,
+			);
+			path = "京东金融金额选择";
+			sourceTree = "<group>";
+		};
+		426D5FC11EB2E60900C477DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				426D5FCA1EB2E60A00C477DD /* Main.storyboard */,
+				426D5FCF1EB2E60A00C477DD /* LaunchScreen.storyboard */,
+				426D5FD21EB2E60A00C477DD /* Info.plist */,
+				426D5FC21EB2E60A00C477DD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		426D5FF41EB2E84000C477DD /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				426D5FF51EB2E8E000C477DD /* FundSelectView.h */,
+				426D5FF61EB2E8E000C477DD /* FundSelectView.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		426D5FBD1EB2E60900C477DD /* 京东金融金额选择 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426D5FEB1EB2E60A00C477DD /* Build configuration list for PBXNativeTarget "京东金融金额选择" */;
+			buildPhases = (
+				426D5FBA1EB2E60900C477DD /* Sources */,
+				426D5FBB1EB2E60900C477DD /* Frameworks */,
+				426D5FBC1EB2E60900C477DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "京东金融金额选择";
+			productName = "京东金融金额选择";
+			productReference = 426D5FBE1EB2E60900C477DD /* 京东金融金额选择.app */;
+			productType = "com.apple.product-type.application";
+		};
+		426D5FD61EB2E60A00C477DD /* 京东金融金额选择Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426D5FEE1EB2E60A00C477DD /* Build configuration list for PBXNativeTarget "京东金融金额选择Tests" */;
+			buildPhases = (
+				426D5FD31EB2E60A00C477DD /* Sources */,
+				426D5FD41EB2E60A00C477DD /* Frameworks */,
+				426D5FD51EB2E60A00C477DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				426D5FD91EB2E60A00C477DD /* PBXTargetDependency */,
+			);
+			name = "京东金融金额选择Tests";
+			productName = "京东金融金额选择Tests";
+			productReference = 426D5FD71EB2E60A00C477DD /* 京东金融金额选择Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		426D5FE11EB2E60A00C477DD /* 京东金融金额选择UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426D5FF11EB2E60A00C477DD /* Build configuration list for PBXNativeTarget "京东金融金额选择UITests" */;
+			buildPhases = (
+				426D5FDE1EB2E60A00C477DD /* Sources */,
+				426D5FDF1EB2E60A00C477DD /* Frameworks */,
+				426D5FE01EB2E60A00C477DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				426D5FE41EB2E60A00C477DD /* PBXTargetDependency */,
+			);
+			name = "京东金融金额选择UITests";
+			productName = "京东金融金额选择UITests";
+			productReference = 426D5FE21EB2E60A00C477DD /* 京东金融金额选择UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		426D5FB61EB2E60900C477DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = huangqimeng;
+				TargetAttributes = {
+					426D5FBD1EB2E60900C477DD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RVS482PXM9;
+						ProvisioningStyle = Automatic;
+					};
+					426D5FD61EB2E60A00C477DD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RVS482PXM9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 426D5FBD1EB2E60900C477DD;
+					};
+					426D5FE11EB2E60A00C477DD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RVS482PXM9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 426D5FBD1EB2E60900C477DD;
+					};
+				};
+			};
+			buildConfigurationList = 426D5FB91EB2E60900C477DD /* Build configuration list for PBXProject "京东金融金额选择" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 426D5FB51EB2E60900C477DD;
+			productRefGroup = 426D5FBF1EB2E60900C477DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				426D5FBD1EB2E60900C477DD /* 京东金融金额选择 */,
+				426D5FD61EB2E60A00C477DD /* 京东金融金额选择Tests */,
+				426D5FE11EB2E60A00C477DD /* 京东金融金额选择UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		426D5FBC1EB2E60900C477DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426D5FD11EB2E60A00C477DD /* LaunchScreen.storyboard in Resources */,
+				426D5FCE1EB2E60A00C477DD /* Assets.xcassets in Resources */,
+				426D5FCC1EB2E60A00C477DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D5FD51EB2E60A00C477DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D5FE01EB2E60A00C477DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		426D5FBA1EB2E60900C477DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426D5FC91EB2E60A00C477DD /* ViewController.m in Sources */,
+				426D5FC61EB2E60A00C477DD /* AppDelegate.m in Sources */,
+				426D5FF71EB2E8E100C477DD /* FundSelectView.m in Sources */,
+				426D5FC31EB2E60A00C477DD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D5FD31EB2E60A00C477DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D5FDE1EB2E60A00C477DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		426D5FD91EB2E60A00C477DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 426D5FBD1EB2E60900C477DD /* 京东金融金额选择 */;
+			targetProxy = 426D5FD81EB2E60A00C477DD /* PBXContainerItemProxy */;
+		};
+		426D5FE41EB2E60A00C477DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 426D5FBD1EB2E60900C477DD /* 京东金融金额选择 */;
+			targetProxy = 426D5FE31EB2E60A00C477DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		426D5FCA1EB2E60A00C477DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426D5FCB1EB2E60A00C477DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		426D5FCF1EB2E60A00C477DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426D5FD01EB2E60A00C477DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		426D5FE91EB2E60A00C477DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		426D5FEA1EB2E60A00C477DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		426D5FEC1EB2E60A00C477DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = "京东金融金额选择/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoban.mobi.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		426D5FED1EB2E60A00C477DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = "京东金融金额选择/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoban.mobi.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		426D5FEF1EB2E60A00C477DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = "京东金融金额选择Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoban.mobi.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/京东金融金额选择.app/京东金融金额选择";
+			};
+			name = Debug;
+		};
+		426D5FF01EB2E60A00C477DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = "京东金融金额选择Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoban.mobi.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/京东金融金额选择.app/京东金融金额选择";
+			};
+			name = Release;
+		};
+		426D5FF21EB2E60A00C477DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = "京东金融金额选择UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoban.mobi.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "京东金融金额选择";
+			};
+			name = Debug;
+		};
+		426D5FF31EB2E60A00C477DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = RVS482PXM9;
+				INFOPLIST_FILE = "京东金融金额选择UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoban.mobi.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "京东金融金额选择";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		426D5FB91EB2E60900C477DD /* Build configuration list for PBXProject "京东金融金额选择" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D5FE91EB2E60A00C477DD /* Debug */,
+				426D5FEA1EB2E60A00C477DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426D5FEB1EB2E60A00C477DD /* Build configuration list for PBXNativeTarget "京东金融金额选择" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D5FEC1EB2E60A00C477DD /* Debug */,
+				426D5FED1EB2E60A00C477DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426D5FEE1EB2E60A00C477DD /* Build configuration list for PBXNativeTarget "京东金融金额选择Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D5FEF1EB2E60A00C477DD /* Debug */,
+				426D5FF01EB2E60A00C477DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426D5FF11EB2E60A00C477DD /* Build configuration list for PBXNativeTarget "京东金融金额选择UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D5FF21EB2E60A00C477DD /* Debug */,
+				426D5FF31EB2E60A00C477DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 426D5FB61EB2E60900C477DD /* Project object */;
+}

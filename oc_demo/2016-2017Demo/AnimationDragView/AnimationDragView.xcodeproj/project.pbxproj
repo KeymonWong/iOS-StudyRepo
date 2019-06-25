@@ -17,23 +17,6 @@
 		42FE896A1E56FDDB00C9690B /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE89691E56FDDB00C9690B /* UIView+Draggable.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		42FE894B1E56FCD600C9690B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42FE89291E56FCD500C9690B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42FE89301E56FCD500C9690B;
-			remoteInfo = AnimationDragView;
-		};
-		42FE89561E56FCD600C9690B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42FE89291E56FCD500C9690B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42FE89301E56FCD500C9690B;
-			remoteInfo = AnimationDragView;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		42A3056F1E5ADC3400527DE8 /* me@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "me@2x.jpg"; sourceTree = "<group>"; };
 		42FE89311E56FCD500C9690B /* AnimationDragView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDragView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,28 +29,12 @@
 		42FE89401E56FCD500C9690B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42FE89431E56FCD500C9690B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42FE89451E56FCD500C9690B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42FE894A1E56FCD600C9690B /* AnimationDragViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationDragViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42FE89551E56FCD600C9690B /* AnimationDragViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationDragViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FE89681E56FDDB00C9690B /* UIView+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Draggable.h"; sourceTree = "<group>"; };
 		42FE89691E56FDDB00C9690B /* UIView+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draggable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		42FE892E1E56FCD500C9690B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89471E56FCD600C9690B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89521E56FCD600C9690B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				42FE89311E56FCD500C9690B /* AnimationDragView.app */,
-				42FE894A1E56FCD600C9690B /* AnimationDragViewTests.xctest */,
-				42FE89551E56FCD600C9690B /* AnimationDragViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,42 +115,6 @@
 			productReference = 42FE89311E56FCD500C9690B /* AnimationDragView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42FE89491E56FCD600C9690B /* AnimationDragViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42FE89611E56FCD600C9690B /* Build configuration list for PBXNativeTarget "AnimationDragViewTests" */;
-			buildPhases = (
-				42FE89461E56FCD600C9690B /* Sources */,
-				42FE89471E56FCD600C9690B /* Frameworks */,
-				42FE89481E56FCD600C9690B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42FE894C1E56FCD600C9690B /* PBXTargetDependency */,
-			);
-			name = AnimationDragViewTests;
-			productName = AnimationDragViewTests;
-			productReference = 42FE894A1E56FCD600C9690B /* AnimationDragViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		42FE89541E56FCD600C9690B /* AnimationDragViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42FE89641E56FCD600C9690B /* Build configuration list for PBXNativeTarget "AnimationDragViewUITests" */;
-			buildPhases = (
-				42FE89511E56FCD600C9690B /* Sources */,
-				42FE89521E56FCD600C9690B /* Frameworks */,
-				42FE89531E56FCD600C9690B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42FE89571E56FCD600C9690B /* PBXTargetDependency */,
-			);
-			name = AnimationDragViewUITests;
-			productName = AnimationDragViewUITests;
-			productReference = 42FE89551E56FCD600C9690B /* AnimationDragViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,20 +126,7 @@
 				TargetAttributes = {
 					42FE89301E56FCD500C9690B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-					};
-					42FE89491E56FCD600C9690B = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 42FE89301E56FCD500C9690B;
-					};
-					42FE89541E56FCD600C9690B = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RVS482PXM9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 42FE89301E56FCD500C9690B;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -229,8 +145,6 @@
 			projectRoot = "";
 			targets = (
 				42FE89301E56FCD500C9690B /* AnimationDragView */,
-				42FE89491E56FCD600C9690B /* AnimationDragViewTests */,
-				42FE89541E56FCD600C9690B /* AnimationDragViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,20 +158,6 @@
 				42FE89441E56FCD500C9690B /* LaunchScreen.storyboard in Resources */,
 				42FE89411E56FCD500C9690B /* Assets.xcassets in Resources */,
 				42FE893F1E56FCD500C9690B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89481E56FCD600C9690B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89531E56FCD600C9690B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,34 +175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42FE89461E56FCD600C9690B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42FE89511E56FCD600C9690B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		42FE894C1E56FCD600C9690B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42FE89301E56FCD500C9690B /* AnimationDragView */;
-			targetProxy = 42FE894B1E56FCD600C9690B /* PBXContainerItemProxy */;
-		};
-		42FE89571E56FCD600C9690B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42FE89301E56FCD500C9690B /* AnimationDragView */;
-			targetProxy = 42FE89561E56FCD600C9690B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42FE893D1E56FCD500C9690B /* Main.storyboard */ = {
@@ -416,11 +289,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVS482PXM9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationDragView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.AnimationDragView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -428,61 +303,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVS482PXM9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationDragView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.AnimationDragView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		42FE89621E56FCD600C9690B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = AnimationDragViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.AnimationDragViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimationDragView.app/AnimationDragView";
-			};
-			name = Debug;
-		};
-		42FE89631E56FCD600C9690B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = AnimationDragViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.AnimationDragViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimationDragView.app/AnimationDragView";
-			};
-			name = Release;
-		};
-		42FE89651E56FCD600C9690B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = AnimationDragViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.AnimationDragViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AnimationDragView;
-			};
-			name = Debug;
-		};
-		42FE89661E56FCD600C9690B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = AnimationDragViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoban.mobi.AnimationDragViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AnimationDragView;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -503,24 +330,6 @@
 			buildConfigurations = (
 				42FE895F1E56FCD600C9690B /* Debug */,
 				42FE89601E56FCD600C9690B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42FE89611E56FCD600C9690B /* Build configuration list for PBXNativeTarget "AnimationDragViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42FE89621E56FCD600C9690B /* Debug */,
-				42FE89631E56FCD600C9690B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42FE89641E56FCD600C9690B /* Build configuration list for PBXNativeTarget "AnimationDragViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42FE89651E56FCD600C9690B /* Debug */,
-				42FE89661E56FCD600C9690B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -159,6 +159,10 @@
 #pragma mark - lyrics 的 setter
 - (void)setLyrics:(NSArray *)lyrics {
     _lyrics = lyrics;
+    // 歌词为空处理
+    if (_lyrics.count == 0) {
+        return;
+    }
 
     [self.vScrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 

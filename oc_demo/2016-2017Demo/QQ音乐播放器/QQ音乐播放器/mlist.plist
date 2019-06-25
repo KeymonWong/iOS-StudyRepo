@@ -4,38 +4,6 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>zhanzainizhebian.jpg</string>
-		<key>lrc</key>
-		<string>站在你这边.lrc</string>
-		<key>mp3</key>
-		<string>潘玮柏-站在你这边.mp3</string>
-		<key>name</key>
-		<string>站在你这边</string>
-		<key>singer</key>
-		<string>潘玮柏</string>
-		<key>album</key>
-		<string>壁虎漫步</string>
-		<key>type</key>
-		<integer>2</integer>
-	</dict>
-	<dict>
-		<key>image</key>
-		<string>向着光亮那方.jpg</string>
-		<key>lrc</key>
-		<string>向着光亮那方.lrc</string>
-		<key>mp3</key>
-		<string>许魏洲-向着光亮那方.mp3</string>
-		<key>name</key>
-		<string>向着光亮那方</string>
-		<key>singer</key>
-		<string>许魏洲</string>
-		<key>album</key>
-		<string>青茫</string>
-		<key>type</key>
-		<integer>2</integer>
-	</dict>
-	<dict>
-		<key>image</key>
 		<string>匆匆那年.jpg</string>
 		<key>lrc</key>
 		<string>匆匆那年.lrc</string>

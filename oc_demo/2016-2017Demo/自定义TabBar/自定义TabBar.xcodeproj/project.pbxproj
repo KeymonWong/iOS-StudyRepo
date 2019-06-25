@@ -32,23 +32,6 @@
 		42EF2FBD1DE2B644004F685F /* UIView+RSEasyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EF2FB91DE2B644004F685F /* UIView+RSEasyFrame.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		42BAA0CF1D407427003FDCCA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42BAA0AD1D407427003FDCCA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42BAA0B41D407427003FDCCA;
-			remoteInfo = "自定义TabBar";
-		};
-		42BAA0DA1D407427003FDCCA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42BAA0AD1D407427003FDCCA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42BAA0B41D407427003FDCCA;
-			remoteInfo = "自定义TabBar";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		421C51F11D47303E004DC12B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		421C51F41D4737A2004DC12B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -59,8 +42,6 @@
 		42BAA0C41D407427003FDCCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42BAA0C71D407427003FDCCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42BAA0C91D407427003FDCCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42BAA0CE1D407427003FDCCA /* 自定义TabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义TabBarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42BAA0D91D407427003FDCCA /* 自定义TabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义TabBarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BAA0EC1D407D2E003FDCCA /* HQMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQMAppDelegate.h; sourceTree = "<group>"; };
 		42BAA0ED1D407D2E003FDCCA /* HQMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQMAppDelegate.m; sourceTree = "<group>"; };
 		42BAA11F1D408988003FDCCA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -109,20 +90,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42BAA0CB1D407427003FDCCA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42BAA0D61D407427003FDCCA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -155,8 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				42BAA0B51D407427003FDCCA /* 自定义TabBar.app */,
-				42BAA0CE1D407427003FDCCA /* 自定义TabBarTests.xctest */,
-				42BAA0D91D407427003FDCCA /* 自定义TabBarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -551,42 +516,6 @@
 			productReference = 42BAA0B51D407427003FDCCA /* 自定义TabBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42BAA0CD1D407427003FDCCA /* 自定义TabBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42BAA0E51D407427003FDCCA /* Build configuration list for PBXNativeTarget "自定义TabBarTests" */;
-			buildPhases = (
-				42BAA0CA1D407427003FDCCA /* Sources */,
-				42BAA0CB1D407427003FDCCA /* Frameworks */,
-				42BAA0CC1D407427003FDCCA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42BAA0D01D407427003FDCCA /* PBXTargetDependency */,
-			);
-			name = "自定义TabBarTests";
-			productName = "自定义TabBarTests";
-			productReference = 42BAA0CE1D407427003FDCCA /* 自定义TabBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		42BAA0D81D407427003FDCCA /* 自定义TabBarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42BAA0E81D407427003FDCCA /* Build configuration list for PBXNativeTarget "自定义TabBarUITests" */;
-			buildPhases = (
-				42BAA0D51D407427003FDCCA /* Sources */,
-				42BAA0D61D407427003FDCCA /* Frameworks */,
-				42BAA0D71D407427003FDCCA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42BAA0DB1D407427003FDCCA /* PBXTargetDependency */,
-			);
-			name = "自定义TabBarUITests";
-			productName = "自定义TabBarUITests";
-			productReference = 42BAA0D91D407427003FDCCA /* 自定义TabBarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -598,15 +527,7 @@
 				TargetAttributes = {
 					42BAA0B41D407427003FDCCA = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = RVS482PXM9;
-					};
-					42BAA0CD1D407427003FDCCA = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 42BAA0B41D407427003FDCCA;
-					};
-					42BAA0D81D407427003FDCCA = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 42BAA0B41D407427003FDCCA;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -625,8 +546,6 @@
 			projectRoot = "";
 			targets = (
 				42BAA0B41D407427003FDCCA /* 自定义TabBar */,
-				42BAA0CD1D407427003FDCCA /* 自定义TabBarTests */,
-				42BAA0D81D407427003FDCCA /* 自定义TabBarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -640,20 +559,6 @@
 				42BAA0C81D407427003FDCCA /* LaunchScreen.storyboard in Resources */,
 				42BAA0C51D407427003FDCCA /* Assets.xcassets in Resources */,
 				42BAA0C31D407427003FDCCA /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42BAA0CC1D407427003FDCCA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42BAA0D71D407427003FDCCA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,34 +589,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42BAA0CA1D407427003FDCCA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42BAA0D51D407427003FDCCA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		42BAA0D01D407427003FDCCA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42BAA0B41D407427003FDCCA /* 自定义TabBar */;
-			targetProxy = 42BAA0CF1D407427003FDCCA /* PBXContainerItemProxy */;
-		};
-		42BAA0DB1D407427003FDCCA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42BAA0B41D407427003FDCCA /* 自定义TabBar */;
-			targetProxy = 42BAA0DA1D407427003FDCCA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42BAA0C11D407427003FDCCA /* Main.storyboard */ = {
@@ -818,12 +696,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREFIX_HEADER = "/Users/xiaoban/Desktop/CookBookLearn/自定义TabBar/自定义TabBar/FishHeader.pch";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/自定义TabBar/FishHeader.pch";
 				INFOPLIST_FILE = "自定义TabBar/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myxianyu.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -832,60 +713,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREFIX_HEADER = "/Users/xiaoban/Desktop/CookBookLearn/自定义TabBar/自定义TabBar/FishHeader.pch";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/自定义TabBar/FishHeader.pch";
 				INFOPLIST_FILE = "自定义TabBar/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myxianyu.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		42BAA0E61D407427003FDCCA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "自定义TabBarTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---TabBarTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义TabBar.app/自定义TabBar";
-			};
-			name = Debug;
-		};
-		42BAA0E71D407427003FDCCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "自定义TabBarTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---TabBarTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义TabBar.app/自定义TabBar";
-			};
-			name = Release;
-		};
-		42BAA0E91D407427003FDCCA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "自定义TabBarUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---TabBarUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "自定义TabBar";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		42BAA0EA1D407427003FDCCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "自定义TabBarUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---TabBarUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "自定义TabBar";
-				USES_XCTRUNNER = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -906,24 +742,6 @@
 			buildConfigurations = (
 				42BAA0E31D407427003FDCCA /* Debug */,
 				42BAA0E41D407427003FDCCA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42BAA0E51D407427003FDCCA /* Build configuration list for PBXNativeTarget "自定义TabBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42BAA0E61D407427003FDCCA /* Debug */,
-				42BAA0E71D407427003FDCCA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42BAA0E81D407427003FDCCA /* Build configuration list for PBXNativeTarget "自定义TabBarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42BAA0E91D407427003FDCCA /* Debug */,
-				42BAA0EA1D407427003FDCCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

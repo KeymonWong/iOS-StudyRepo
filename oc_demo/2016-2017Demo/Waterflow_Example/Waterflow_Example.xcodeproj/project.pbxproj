@@ -17,16 +17,6 @@
 		16E2882F1B7791DE00A1D71C /* HKWaterflowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E2882D1B7791DE00A1D71C /* HKWaterflowViewCell.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		16E288191B7790C700A1D71C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 16E287F71B7790C700A1D71C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 16E287FE1B7790C700A1D71C;
-			remoteInfo = Waterflow_Example;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		16E287FF1B7790C700A1D71C /* Waterflow_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterflow_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E288031B7790C700A1D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,7 +28,6 @@
 		16E2880D1B7790C700A1D71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16E2880F1B7790C700A1D71C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		16E288121B7790C700A1D71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		16E288181B7790C700A1D71C /* Waterflow_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Waterflow_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E2882A1B7791DE00A1D71C /* HKWaterflowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWaterflowView.h; sourceTree = "<group>"; };
 		16E2882B1B7791DE00A1D71C /* HKWaterflowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKWaterflowView.m; sourceTree = "<group>"; };
 		16E2882C1B7791DE00A1D71C /* HKWaterflowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWaterflowViewCell.h; sourceTree = "<group>"; };
@@ -48,13 +37,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		16E287FC1B7790C700A1D71C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		16E288151B7790C700A1D71C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				16E287FF1B7790C700A1D71C /* Waterflow_Example.app */,
-				16E288181B7790C700A1D71C /* Waterflow_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,24 +127,6 @@
 			productReference = 16E287FF1B7790C700A1D71C /* Waterflow_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		16E288171B7790C700A1D71C /* Waterflow_ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 16E288251B7790C700A1D71C /* Build configuration list for PBXNativeTarget "Waterflow_ExampleTests" */;
-			buildPhases = (
-				16E288141B7790C700A1D71C /* Sources */,
-				16E288151B7790C700A1D71C /* Frameworks */,
-				16E288161B7790C700A1D71C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				16E2881A1B7790C700A1D71C /* PBXTargetDependency */,
-			);
-			name = Waterflow_ExampleTests;
-			productName = Waterflow_ExampleTests;
-			productReference = 16E288181B7790C700A1D71C /* Waterflow_ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,10 +138,7 @@
 				TargetAttributes = {
 					16E287FE1B7790C700A1D71C = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					16E288171B7790C700A1D71C = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 16E287FE1B7790C700A1D71C;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -197,7 +157,6 @@
 			projectRoot = "";
 			targets = (
 				16E287FE1B7790C700A1D71C /* Waterflow_Example */,
-				16E288171B7790C700A1D71C /* Waterflow_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,13 +169,6 @@
 				16E2880E1B7790C700A1D71C /* Main.storyboard in Resources */,
 				16E288131B7790C700A1D71C /* LaunchScreen.xib in Resources */,
 				16E288101B7790C700A1D71C /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		16E288161B7790C700A1D71C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,22 +187,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		16E288141B7790C700A1D71C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		16E2881A1B7790C700A1D71C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 16E287FE1B7790C700A1D71C /* Waterflow_Example */;
-			targetProxy = 16E288191B7790C700A1D71C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		16E2880C1B7790C700A1D71C /* Main.storyboard */ = {
@@ -354,10 +291,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = Waterflow_Example/PrefixHeader.pch;
 				INFOPLIST_FILE = Waterflow_Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -365,44 +305,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = Waterflow_Example/PrefixHeader.pch;
 				INFOPLIST_FILE = Waterflow_Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		16E288261B7790C700A1D71C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Waterflow_ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Waterflow_Example.app/Waterflow_Example";
-			};
-			name = Debug;
-		};
-		16E288271B7790C700A1D71C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Waterflow_ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Waterflow_Example.app/Waterflow_Example";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -423,15 +332,6 @@
 			buildConfigurations = (
 				16E288231B7790C700A1D71C /* Debug */,
 				16E288241B7790C700A1D71C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		16E288251B7790C700A1D71C /* Build configuration list for PBXNativeTarget "Waterflow_ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				16E288261B7790C700A1D71C /* Debug */,
-				16E288271B7790C700A1D71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

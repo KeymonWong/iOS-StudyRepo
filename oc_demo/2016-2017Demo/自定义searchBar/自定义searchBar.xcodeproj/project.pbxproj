@@ -17,23 +17,6 @@
 		4225676D1DB8E2DA008C1AC3 /* HQMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4225676C1DB8E2DA008C1AC3 /* HQMSearchBar.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4225674B1DB8D043008C1AC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 422567291DB8D043008C1AC3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 422567301DB8D043008C1AC3;
-			remoteInfo = "自定义searchBar";
-		};
-		422567561DB8D043008C1AC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 422567291DB8D043008C1AC3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 422567301DB8D043008C1AC3;
-			remoteInfo = "自定义searchBar";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		422567311DB8D043008C1AC3 /* 自定义searchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义searchBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		422567351DB8D043008C1AC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,8 +28,6 @@
 		422567401DB8D043008C1AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		422567431DB8D043008C1AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422567451DB8D043008C1AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4225674A1DB8D043008C1AC3 /* 自定义searchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义searchBarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		422567551DB8D043008C1AC3 /* 自定义searchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义searchBarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		422567681DB8D56F008C1AC3 /* UISearchBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Extension.h"; sourceTree = "<group>"; };
 		422567691DB8D56F008C1AC3 /* UISearchBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Extension.m"; sourceTree = "<group>"; };
 		4225676B1DB8E2DA008C1AC3 /* HQMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQMSearchBar.h; sourceTree = "<group>"; };
@@ -55,20 +36,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4225672E1DB8D043008C1AC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		422567471DB8D043008C1AC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		422567521DB8D043008C1AC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				422567311DB8D043008C1AC3 /* 自定义searchBar.app */,
-				4225674A1DB8D043008C1AC3 /* 自定义searchBarTests.xctest */,
-				422567551DB8D043008C1AC3 /* 自定义searchBarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,42 +118,6 @@
 			productReference = 422567311DB8D043008C1AC3 /* 自定义searchBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		422567491DB8D043008C1AC3 /* 自定义searchBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 422567611DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarTests" */;
-			buildPhases = (
-				422567461DB8D043008C1AC3 /* Sources */,
-				422567471DB8D043008C1AC3 /* Frameworks */,
-				422567481DB8D043008C1AC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4225674C1DB8D043008C1AC3 /* PBXTargetDependency */,
-			);
-			name = "自定义searchBarTests";
-			productName = "自定义searchBarTests";
-			productReference = 4225674A1DB8D043008C1AC3 /* 自定义searchBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		422567541DB8D043008C1AC3 /* 自定义searchBarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 422567641DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarUITests" */;
-			buildPhases = (
-				422567511DB8D043008C1AC3 /* Sources */,
-				422567521DB8D043008C1AC3 /* Frameworks */,
-				422567531DB8D043008C1AC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				422567571DB8D043008C1AC3 /* PBXTargetDependency */,
-			);
-			name = "自定义searchBarUITests";
-			productName = "自定义searchBarUITests";
-			productReference = 422567551DB8D043008C1AC3 /* 自定义searchBarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,17 +129,7 @@
 				TargetAttributes = {
 					422567301DB8D043008C1AC3 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
-					422567491DB8D043008C1AC3 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 422567301DB8D043008C1AC3;
-					};
-					422567541DB8D043008C1AC3 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 422567301DB8D043008C1AC3;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -229,8 +148,6 @@
 			projectRoot = "";
 			targets = (
 				422567301DB8D043008C1AC3 /* 自定义searchBar */,
-				422567491DB8D043008C1AC3 /* 自定义searchBarTests */,
-				422567541DB8D043008C1AC3 /* 自定义searchBarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,20 +160,6 @@
 				422567441DB8D043008C1AC3 /* LaunchScreen.storyboard in Resources */,
 				422567411DB8D043008C1AC3 /* Assets.xcassets in Resources */,
 				4225673F1DB8D043008C1AC3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		422567481DB8D043008C1AC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		422567531DB8D043008C1AC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,34 +178,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		422567461DB8D043008C1AC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		422567511DB8D043008C1AC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4225674C1DB8D043008C1AC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 422567301DB8D043008C1AC3 /* 自定义searchBar */;
-			targetProxy = 4225674B1DB8D043008C1AC3 /* PBXContainerItemProxy */;
-		};
-		422567571DB8D043008C1AC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 422567301DB8D043008C1AC3 /* 自定义searchBar */;
-			targetProxy = 422567561DB8D043008C1AC3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4225673D1DB8D043008C1AC3 /* Main.storyboard */ = {
@@ -416,11 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "自定义searchBar/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -428,57 +307,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "自定义searchBar/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		422567621DB8D043008C1AC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "自定义searchBarTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义searchBar.app/自定义searchBar";
-			};
-			name = Debug;
-		};
-		422567631DB8D043008C1AC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "自定义searchBarTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义searchBar.app/自定义searchBar";
-			};
-			name = Release;
-		};
-		422567651DB8D043008C1AC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "自定义searchBarUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "自定义searchBar";
-			};
-			name = Debug;
-		};
-		422567661DB8D043008C1AC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "自定义searchBarUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.---searchBarUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "自定义searchBar";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -499,24 +335,6 @@
 			buildConfigurations = (
 				4225675F1DB8D043008C1AC3 /* Debug */,
 				422567601DB8D043008C1AC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		422567611DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				422567621DB8D043008C1AC3 /* Debug */,
-				422567631DB8D043008C1AC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		422567641DB8D043008C1AC3 /* Build configuration list for PBXNativeTarget "自定义searchBarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				422567651DB8D043008C1AC3 /* Debug */,
-				422567661DB8D043008C1AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

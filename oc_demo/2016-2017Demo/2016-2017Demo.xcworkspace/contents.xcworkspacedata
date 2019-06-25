@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MoneySelect/&#x4eac;&#x4e1c;&#x91d1;&#x878d;&#x91d1;&#x989d;&#x9009;&#x62e9;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JsAndObjc/OC-JS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:WeiboPublish/WeiboPublish.xcodeproj">
    </FileRef>
    <FileRef

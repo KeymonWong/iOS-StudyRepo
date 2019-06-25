@@ -17,23 +17,6 @@
 		42570F451CABD89D00B3D5DD /* HKSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42570F441CABD89D00B3D5DD /* HKSettingCell.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		42570F1C1CABD70E00B3D5DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42570EFA1CABD70E00B3D5DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42570F011CABD70E00B3D5DD;
-			remoteInfo = DifferentCellDisplay;
-		};
-		42570F271CABD70E00B3D5DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42570EFA1CABD70E00B3D5DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42570F011CABD70E00B3D5DD;
-			remoteInfo = DifferentCellDisplay;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1613432622BCAC1A00B70E8B /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
 		1613432722BCAC1A00B70E8B /* HKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
@@ -43,8 +26,6 @@
 		42570F111CABD70E00B3D5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42570F141CABD70E00B3D5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42570F161CABD70E00B3D5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42570F1B1CABD70E00B3D5DD /* DifferentCellDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DifferentCellDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42570F261CABD70E00B3D5DD /* DifferentCellDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DifferentCellDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42570F3D1CABD7A400B3D5DD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42570F3E1CABD7A400B3D5DD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42570F401CABD80B00B3D5DD /* HKSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKSettingItem.h; sourceTree = "<group>"; };
@@ -55,20 +36,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		42570EFF1CABD70E00B3D5DD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42570F181CABD70E00B3D5DD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42570F231CABD70E00B3D5DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				42570F021CABD70E00B3D5DD /* DifferentCellDisplay.app */,
-				42570F1B1CABD70E00B3D5DD /* DifferentCellDisplayTests.xctest */,
-				42570F261CABD70E00B3D5DD /* DifferentCellDisplayUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,42 +149,6 @@
 			productReference = 42570F021CABD70E00B3D5DD /* DifferentCellDisplay.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42570F1A1CABD70E00B3D5DD /* DifferentCellDisplayTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42570F321CABD70E00B3D5DD /* Build configuration list for PBXNativeTarget "DifferentCellDisplayTests" */;
-			buildPhases = (
-				42570F171CABD70E00B3D5DD /* Sources */,
-				42570F181CABD70E00B3D5DD /* Frameworks */,
-				42570F191CABD70E00B3D5DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42570F1D1CABD70E00B3D5DD /* PBXTargetDependency */,
-			);
-			name = DifferentCellDisplayTests;
-			productName = DifferentCellDisplayTests;
-			productReference = 42570F1B1CABD70E00B3D5DD /* DifferentCellDisplayTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		42570F251CABD70E00B3D5DD /* DifferentCellDisplayUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42570F351CABD70E00B3D5DD /* Build configuration list for PBXNativeTarget "DifferentCellDisplayUITests" */;
-			buildPhases = (
-				42570F221CABD70E00B3D5DD /* Sources */,
-				42570F231CABD70E00B3D5DD /* Frameworks */,
-				42570F241CABD70E00B3D5DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42570F281CABD70E00B3D5DD /* PBXTargetDependency */,
-			);
-			name = DifferentCellDisplayUITests;
-			productName = DifferentCellDisplayUITests;
-			productReference = 42570F261CABD70E00B3D5DD /* DifferentCellDisplayUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,15 +161,7 @@
 				TargetAttributes = {
 					42570F011CABD70E00B3D5DD = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = RVS482PXM9;
-					};
-					42570F1A1CABD70E00B3D5DD = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 42570F011CABD70E00B3D5DD;
-					};
-					42570F251CABD70E00B3D5DD = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 42570F011CABD70E00B3D5DD;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -259,8 +180,6 @@
 			projectRoot = "";
 			targets = (
 				42570F011CABD70E00B3D5DD /* DifferentCellDisplay */,
-				42570F1A1CABD70E00B3D5DD /* DifferentCellDisplayTests */,
-				42570F251CABD70E00B3D5DD /* DifferentCellDisplayUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,20 +192,6 @@
 				42570F151CABD70E00B3D5DD /* LaunchScreen.storyboard in Resources */,
 				42570F121CABD70E00B3D5DD /* Assets.xcassets in Resources */,
 				42570F101CABD70E00B3D5DD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42570F191CABD70E00B3D5DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42570F241CABD70E00B3D5DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,34 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42570F171CABD70E00B3D5DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42570F221CABD70E00B3D5DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		42570F1D1CABD70E00B3D5DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42570F011CABD70E00B3D5DD /* DifferentCellDisplay */;
-			targetProxy = 42570F1C1CABD70E00B3D5DD /* PBXContainerItemProxy */;
-		};
-		42570F281CABD70E00B3D5DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42570F011CABD70E00B3D5DD /* DifferentCellDisplay */;
-			targetProxy = 42570F271CABD70E00B3D5DD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42570F0E1CABD70E00B3D5DD /* Main.storyboard */ = {
@@ -439,10 +317,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DifferentCellDisplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DifferentCellDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -451,58 +333,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DifferentCellDisplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DifferentCellDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		42570F331CABD70E00B3D5DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DifferentCellDisplayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.DifferentCellDisplayTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DifferentCellDisplay.app/DifferentCellDisplay";
-			};
-			name = Debug;
-		};
-		42570F341CABD70E00B3D5DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DifferentCellDisplayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.DifferentCellDisplayTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DifferentCellDisplay.app/DifferentCellDisplay";
-			};
-			name = Release;
-		};
-		42570F361CABD70E00B3D5DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = DifferentCellDisplayUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.DifferentCellDisplayUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = DifferentCellDisplay;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		42570F371CABD70E00B3D5DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = DifferentCellDisplayUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "App---.DifferentCellDisplayUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = DifferentCellDisplay;
-				USES_XCTRUNNER = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -523,24 +361,6 @@
 			buildConfigurations = (
 				42570F301CABD70E00B3D5DD /* Debug */,
 				42570F311CABD70E00B3D5DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42570F321CABD70E00B3D5DD /* Build configuration list for PBXNativeTarget "DifferentCellDisplayTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42570F331CABD70E00B3D5DD /* Debug */,
-				42570F341CABD70E00B3D5DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42570F351CABD70E00B3D5DD /* Build configuration list for PBXNativeTarget "DifferentCellDisplayUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42570F361CABD70E00B3D5DD /* Debug */,
-				42570F371CABD70E00B3D5DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
