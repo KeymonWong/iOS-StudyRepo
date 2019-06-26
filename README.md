@@ -1,5 +1,10 @@
 ## iOSDevRepo
 
+####  2019/06/26
+
+整理 2016-2017 年的 demo，见oc_demo/2016-2017Demo，使用 `2016-2017Demo.xcworkspace` 管理多个工程，打开 `2016-2017Demo.xcworkspace` 选择不同的 `scheme` 就可以运行不同的工程了。
+更多详情见 `oc_demo/2016-2017Demo/README.md`
+
 ####  2019/06/19
     
     1. 修改 OKPickCarType demo，添加仿首汽约车估价页面选择车型
