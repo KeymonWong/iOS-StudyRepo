@@ -1,39 +1,27 @@
 ## iOSDevRepo
 
-####  2019/06/19
-    
-    1. 修改 OKPickCarType demo，添加仿首汽约车估价页面选择车型
-    2. OKPickCarType demo 新增图片在不同的 contentMode 下的显示
+####  2019/06/26
 
-####  2019/06/05
-    
-    1. 添加OKPickCarType demo，仿滴滴估价页面选择车型
-    
-####  2019/04/24
+整理 2016-2017 年的 demo，见oc_demo/2016-2017Demo，使用 `2016-2017Demo.xcworkspace` 管理多个工程，打开 `2016-2017Demo.xcworkspace` 选择不同的 `scheme` 就可以运行不同的工程了。
 
-git flow
+![AnimationDragView](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/AnimationDragView/view%E6%8B%96%E5%8A%A8%E5%8A%A8%E7%94%BB.gif)
 
-start feature
+![DifferentCellDisplay](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/DifferentCellDisplay/Simulator%20Screen%20Shot%202016%E5%B9%B44%E6%9C%881%E6%97%A5%2011.25.53.png)
 
+![MoneySelect](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/MoneySelect/cunqian.gif)
 
-####  2019/04/15
-    
-    1. 把之前16年自定义的 CustomAnnotationView 至 iOSDevRepo/oc_example 里面，链接如下
+![QQ音乐播放器](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/QQ%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/qq-music.mp4)
 
-[高德地图自定义标注AnnotationView，滑动防止数据混乱](https://www.jianshu.com/p/a3b57ee2a095)
+![RefreshControl](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/RefreshControl/%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0%E6%8E%A7%E4%BB%B6.gif)
 
+![ScreenOrientation](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/ScreenOrientation/%E5%B1%8F%E5%B9%95%E6%97%8B%E8%BD%AC.gif)
 
+![StarEvaluation](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/StarEvaluation/%E4%BA%94%E6%98%9F%E5%A5%BD%E8%AF%84.mov)
 
-####  2019/04/12
-    
-    1. 添加完善的OKResponderCallback demo (基于策略模式和响应链的事件交互)
+![Waterflow_Example](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/Waterflow_Example/%E7%80%91%E5%B8%83%E6%B5%81.gif)
 
+![WeiboPublish](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/WeiboPublish/weibo.gif)
 
-####  2019/04/09
-    
-    1. 添加AutoCellHeight demo (cell高度跟据输入内容自动变化，当高度变化到某一个阈值时，高度不再变化)
+![自定义TabBar](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/%E8%87%AA%E5%AE%9A%E4%B9%89TabBar/%E9%97%B2%E9%B1%BC.gif)
 
-
-####  2019/03/03
-    
-    1. add "Corner" file
+![自定义searchBar](https://github.com/KeymonWong/iOS-StudyRepo/blob/develop/oc_demo/2016-2017Demo/%E8%87%AA%E5%AE%9A%E4%B9%89searchBar/searchbar.gif)
