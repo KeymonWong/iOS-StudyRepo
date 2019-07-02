@@ -43,7 +43,7 @@ class PulseAnimationView: UIView {
     
 
     func startAnimation() -> Void {
-        self.stopAnimation();
+        self.stopAnimation()
         
         //透明度动画
         let opacityAnimation = CABasicAnimation(keyPath: "opacity")
@@ -67,7 +67,7 @@ class PulseAnimationView: UIView {
         let groupAnimation = CAAnimationGroup()
         groupAnimation.animations = [opacityAnimation, spreadAnimation]
         groupAnimation.duration = 3.0 //持续时间
-        groupAnimation.autoreverses = false //是否循环
+//        groupAnimation.autoreverses = false //是否循环
         groupAnimation.repeatCount = HUGE //无限次循环
         pulseLayer.add(groupAnimation, forKey: nil)
     }
