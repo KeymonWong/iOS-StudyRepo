@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16160D8022CB4204008C6FB1 /* LoadingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16160D7F22CB4204008C6FB1 /* LoadingAnimationView.swift */; };
 		16C0923E2225655D0011F027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0923D2225655D0011F027 /* AppDelegate.swift */; };
 		16C092402225655D0011F027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0923F2225655D0011F027 /* ViewController.swift */; };
 		16C092432225655D0011F027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C092412225655D0011F027 /* Main.storyboard */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16C0923A2225655D0011F027 /* 脉冲动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "脉冲动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16160D7F22CB4204008C6FB1 /* LoadingAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimationView.swift; sourceTree = "<group>"; };
+		16C0923A2225655D0011F027 /* 组合动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "组合动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C0923D2225655D0011F027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C0923F2225655D0011F027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16C092422225655D0011F027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,10 +39,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16160D8322CB427B008C6FB1 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				16C092412225655D0011F027 /* Main.storyboard */,
+				16C092462225655E0011F027 /* LaunchScreen.storyboard */,
+				16C092492225655E0011F027 /* Info.plist */,
+			);
+			name = "Supporting File";
+			sourceTree = "<group>";
+		};
 		16C092312225655D0011F027 = {
 			isa = PBXGroup;
 			children = (
-				16C0923C2225655D0011F027 /* 脉冲动画 */,
+				16C0923C2225655D0011F027 /* 组合动画 */,
 				16C0923B2225655D0011F027 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +60,30 @@
 		16C0923B2225655D0011F027 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16C0923A2225655D0011F027 /* 脉冲动画.app */,
+				16C0923A2225655D0011F027 /* 组合动画.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		16C0923C2225655D0011F027 /* 脉冲动画 */ = {
+		16C0923C2225655D0011F027 /* 组合动画 */ = {
 			isa = PBXGroup;
 			children = (
 				16C0923D2225655D0011F027 /* AppDelegate.swift */,
 				16C0923F2225655D0011F027 /* ViewController.swift */,
 				16C0924F222565D10011F027 /* PulseAnimationView.swift */,
-				16C092412225655D0011F027 /* Main.storyboard */,
+				16160D7F22CB4204008C6FB1 /* LoadingAnimationView.swift */,
+				16160D8322CB427B008C6FB1 /* Supporting File */,
 				16C092442225655E0011F027 /* Assets.xcassets */,
-				16C092462225655E0011F027 /* LaunchScreen.storyboard */,
-				16C092492225655E0011F027 /* Info.plist */,
 			);
-			path = "脉冲动画";
+			path = "组合动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16C092392225655D0011F027 /* 脉冲动画 */ = {
+		16C092392225655D0011F027 /* 组合动画 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16C0924C2225655E0011F027 /* Build configuration list for PBXNativeTarget "脉冲动画" */;
+			buildConfigurationList = 16C0924C2225655E0011F027 /* Build configuration list for PBXNativeTarget "组合动画" */;
 			buildPhases = (
 				16C092362225655D0011F027 /* Sources */,
 				16C092372225655D0011F027 /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = "脉冲动画";
+			name = "组合动画";
 			productName = "脉冲动画";
-			productReference = 16C0923A2225655D0011F027 /* 脉冲动画.app */;
+			productReference = 16C0923A2225655D0011F027 /* 组合动画.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 16C092352225655D0011F027 /* Build configuration list for PBXProject "脉冲动画" */;
+			buildConfigurationList = 16C092352225655D0011F027 /* Build configuration list for PBXProject "组合动画" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16C092392225655D0011F027 /* 脉冲动画 */,
+				16C092392225655D0011F027 /* 组合动画 */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +151,7 @@
 			files = (
 				16C09250222565D10011F027 /* PulseAnimationView.swift in Sources */,
 				16C092402225655D0011F027 /* ViewController.swift in Sources */,
+				16160D8022CB4204008C6FB1 /* LoadingAnimationView.swift in Sources */,
 				16C0923E2225655D0011F027 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +300,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "脉冲动画/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/组合动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +320,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "脉冲动画/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/组合动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16C092352225655D0011F027 /* Build configuration list for PBXProject "脉冲动画" */ = {
+		16C092352225655D0011F027 /* Build configuration list for PBXProject "组合动画" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16C0924A2225655E0011F027 /* Debug */,
@@ -332,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16C0924C2225655E0011F027 /* Build configuration list for PBXNativeTarget "脉冲动画" */ = {
+		16C0924C2225655E0011F027 /* Build configuration list for PBXNativeTarget "组合动画" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16C0924D2225655E0011F027 /* Debug */,
