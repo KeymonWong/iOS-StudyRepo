@@ -10,8 +10,6 @@
 		167800012202EA880071DADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167800002202EA880071DADD /* Assets.xcassets */; };
 		167800042202EA880071DADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167800022202EA880071DADD /* LaunchScreen.storyboard */; };
 		167800072202EA880071DADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 167800062202EA880071DADD /* main.m */; };
-		167800112202EA890071DADD /* AutoCellHeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 167800102202EA890071DADD /* AutoCellHeightTests.m */; };
-		1678001C2202EA890071DADD /* AutoCellHeightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678001B2202EA890071DADD /* AutoCellHeightUITests.m */; };
 		1678002B220306E50071DADD /* AutoChangeHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678002A220306E50071DADD /* AutoChangeHeightCell.m */; };
 		1678FFF92202EA870071DADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678FFF82202EA870071DADD /* AppDelegate.m */; };
 		1678FFFC2202EA870071DADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678FFFB2202EA870071DADD /* ViewController.m */; };
@@ -44,11 +42,7 @@
 		167800052202EA880071DADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167800062202EA880071DADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1678000C2202EA890071DADD /* AutoCellHeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCellHeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		167800102202EA890071DADD /* AutoCellHeightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCellHeightTests.m; sourceTree = "<group>"; };
-		167800122202EA890071DADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167800172202EA890071DADD /* AutoCellHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCellHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1678001B2202EA890071DADD /* AutoCellHeightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCellHeightUITests.m; sourceTree = "<group>"; };
-		1678001D2202EA890071DADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16780029220306E50071DADD /* AutoChangeHeightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoChangeHeightCell.h; sourceTree = "<group>"; };
 		1678002A220306E50071DADD /* AutoChangeHeightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoChangeHeightCell.m; sourceTree = "<group>"; };
 		1678FFF42202EA870071DADD /* AutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,30 +83,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1678000F2202EA890071DADD /* AutoCellHeightTests */ = {
-			isa = PBXGroup;
-			children = (
-				167800102202EA890071DADD /* AutoCellHeightTests.m */,
-				167800122202EA890071DADD /* Info.plist */,
-			);
-			path = AutoCellHeightTests;
-			sourceTree = "<group>";
-		};
-		1678001A2202EA890071DADD /* AutoCellHeightUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1678001B2202EA890071DADD /* AutoCellHeightUITests.m */,
-				1678001D2202EA890071DADD /* Info.plist */,
-			);
-			path = AutoCellHeightUITests;
-			sourceTree = "<group>";
-		};
 		1678FFEB2202EA870071DADD = {
 			isa = PBXGroup;
 			children = (
 				1678FFF62202EA870071DADD /* AutoCellHeight */,
-				1678000F2202EA890071DADD /* AutoCellHeightTests */,
-				1678001A2202EA890071DADD /* AutoCellHeightUITests */,
 				1678FFF52202EA870071DADD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -289,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167800112202EA890071DADD /* AutoCellHeightTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1678001C2202EA890071DADD /* AutoCellHeightUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
