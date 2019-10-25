@@ -25,9 +25,12 @@ struct LandmarkListView: View {
                     Text("Favorites only")
                 }
                 
-                ForEach(landmarkData) { landmark in
+                ForEach(userData.landmarks) { landmark in
                     if !self.userData.showFavoritesOnly || landmark.isFavorite {
-                        NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
+                        NavigationLink(
+                            /// 通过 environmentObject(_:) 在 view树 上传递数据
+                            destination: LandmarkDetailView(landmark: landmark).environmentObject(self.userData)
+                        ) {
                             LandmarkRowView(landmark: landmark)
                         }
                     }
@@ -46,6 +49,7 @@ struct LandmarkListView_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
+        .environmentObject(UserData())
     }
 }
 #endif

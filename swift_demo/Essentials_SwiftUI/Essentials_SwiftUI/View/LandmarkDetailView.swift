@@ -16,7 +16,6 @@ struct LandmarkDetailView: View {
         userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
     
-    
     var body: some View {
         VStack {
             MapView(coor: landmark.locationCoor)
@@ -68,7 +67,8 @@ struct LandmarkDetailView: View {
 #if DEBUG
 struct LandmarkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetailView(landmark: landmarkData[0])
+        let userData = UserData()
+        return LandmarkDetailView(landmark: userData.landmarks[0]).environmentObject(userData)
     }
 }
 #endif

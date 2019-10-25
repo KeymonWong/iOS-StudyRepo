@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 import Combine
 
 /// SwiftUI subscribes to your observable object,
