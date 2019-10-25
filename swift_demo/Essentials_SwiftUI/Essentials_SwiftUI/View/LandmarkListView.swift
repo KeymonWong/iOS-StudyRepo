@@ -22,6 +22,7 @@ struct LandmarkListView: View {
     }
 }
 
+#if DEBUG
 struct LandmarkListView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
@@ -31,3 +32,4 @@ struct LandmarkListView_Previews: PreviewProvider {
         }
     }
 }
+#endif
