@@ -13,26 +13,10 @@
 		16608A8E2362E89B001E957D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16608A8D2362E89B001E957D /* Assets.xcassets */; };
 		16608A912362E89B001E957D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16608A902362E89B001E957D /* Preview Assets.xcassets */; };
 		16608A942362E89B001E957D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16608A922362E89B001E957D /* LaunchScreen.storyboard */; };
-		16608A9F2362E89C001E957D /* DrawAndAnimation_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16608A9E2362E89C001E957D /* DrawAndAnimation_SwiftUITests.swift */; };
-		16608AAA2362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16608AA92362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.swift */; };
+		16608AB82362E8E9001E957D /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16608AB72362E8E9001E957D /* Badge.swift */; };
+		16608ABB2362E951001E957D /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16608ABA2362E951001E957D /* Parameters.swift */; };
+		16608ABD2362FF79001E957D /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16608ABC2362FF79001E957D /* BadgeBackground.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		16608A9B2362E89C001E957D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 16608A7C2362E89A001E957D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 16608A832362E89A001E957D;
-			remoteInfo = DrawAndAnimation_SwiftUI;
-		};
-		16608AA62362E89C001E957D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 16608A7C2362E89A001E957D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 16608A832362E89A001E957D;
-			remoteInfo = DrawAndAnimation_SwiftUI;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		16608A842362E89A001E957D /* DrawAndAnimation_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawAndAnimation_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,30 +27,13 @@
 		16608A902362E89B001E957D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16608A932362E89B001E957D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16608A952362E89B001E957D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16608A9A2362E89C001E957D /* DrawAndAnimation_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawAndAnimation_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		16608A9E2362E89C001E957D /* DrawAndAnimation_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAndAnimation_SwiftUITests.swift; sourceTree = "<group>"; };
-		16608AA02362E89C001E957D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16608AA52362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawAndAnimation_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		16608AA92362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAndAnimation_SwiftUIUITests.swift; sourceTree = "<group>"; };
-		16608AAB2362E89C001E957D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16608AB72362E8E9001E957D /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		16608ABA2362E951001E957D /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		16608ABC2362FF79001E957D /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		16608A812362E89A001E957D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		16608A972362E89C001E957D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		16608AA22362E89C001E957D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				16608A862362E89A001E957D /* DrawAndAnimation_SwiftUI */,
-				16608A9D2362E89C001E957D /* DrawAndAnimation_SwiftUITests */,
-				16608AA82362E89C001E957D /* DrawAndAnimation_SwiftUIUITests */,
 				16608A852362E89A001E957D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				16608A842362E89A001E957D /* DrawAndAnimation_SwiftUI.app */,
-				16608A9A2362E89C001E957D /* DrawAndAnimation_SwiftUITests.xctest */,
-				16608AA52362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +65,7 @@
 				16608A872362E89A001E957D /* AppDelegate.swift */,
 				16608A892362E89A001E957D /* SceneDelegate.swift */,
 				16608A8B2362E89A001E957D /* ContentView.swift */,
+				16608AB92362E932001E957D /* Drawing */,
 				16608A8D2362E89B001E957D /* Assets.xcassets */,
 				16608A922362E89B001E957D /* LaunchScreen.storyboard */,
 				16608A952362E89B001E957D /* Info.plist */,
@@ -118,22 +82,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		16608A9D2362E89C001E957D /* DrawAndAnimation_SwiftUITests */ = {
+		16608AB92362E932001E957D /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				16608A9E2362E89C001E957D /* DrawAndAnimation_SwiftUITests.swift */,
-				16608AA02362E89C001E957D /* Info.plist */,
+				16608AB72362E8E9001E957D /* Badge.swift */,
+				16608ABC2362FF79001E957D /* BadgeBackground.swift */,
+				16608ABA2362E951001E957D /* Parameters.swift */,
 			);
-			path = DrawAndAnimation_SwiftUITests;
-			sourceTree = "<group>";
-		};
-		16608AA82362E89C001E957D /* DrawAndAnimation_SwiftUIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				16608AA92362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.swift */,
-				16608AAB2362E89C001E957D /* Info.plist */,
-			);
-			path = DrawAndAnimation_SwiftUIUITests;
+			path = Drawing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,42 +112,6 @@
 			productReference = 16608A842362E89A001E957D /* DrawAndAnimation_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		16608A992362E89C001E957D /* DrawAndAnimation_SwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 16608AB12362E89C001E957D /* Build configuration list for PBXNativeTarget "DrawAndAnimation_SwiftUITests" */;
-			buildPhases = (
-				16608A962362E89C001E957D /* Sources */,
-				16608A972362E89C001E957D /* Frameworks */,
-				16608A982362E89C001E957D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				16608A9C2362E89C001E957D /* PBXTargetDependency */,
-			);
-			name = DrawAndAnimation_SwiftUITests;
-			productName = DrawAndAnimation_SwiftUITests;
-			productReference = 16608A9A2362E89C001E957D /* DrawAndAnimation_SwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		16608AA42362E89C001E957D /* DrawAndAnimation_SwiftUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 16608AB42362E89C001E957D /* Build configuration list for PBXNativeTarget "DrawAndAnimation_SwiftUIUITests" */;
-			buildPhases = (
-				16608AA12362E89C001E957D /* Sources */,
-				16608AA22362E89C001E957D /* Frameworks */,
-				16608AA32362E89C001E957D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				16608AA72362E89C001E957D /* PBXTargetDependency */,
-			);
-			name = DrawAndAnimation_SwiftUIUITests;
-			productName = DrawAndAnimation_SwiftUIUITests;
-			productReference = 16608AA52362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,14 +124,6 @@
 				TargetAttributes = {
 					16608A832362E89A001E957D = {
 						CreatedOnToolsVersion = 11.0;
-					};
-					16608A992362E89C001E957D = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 16608A832362E89A001E957D;
-					};
-					16608AA42362E89C001E957D = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 16608A832362E89A001E957D;
 					};
 				};
 			};
@@ -229,8 +141,6 @@
 			projectRoot = "";
 			targets = (
 				16608A832362E89A001E957D /* DrawAndAnimation_SwiftUI */,
-				16608A992362E89C001E957D /* DrawAndAnimation_SwiftUITests */,
-				16608AA42362E89C001E957D /* DrawAndAnimation_SwiftUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,20 +156,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		16608A982362E89C001E957D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		16608AA32362E89C001E957D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,42 +163,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16608ABB2362E951001E957D /* Parameters.swift in Sources */,
+				16608ABD2362FF79001E957D /* BadgeBackground.swift in Sources */,
 				16608A882362E89A001E957D /* AppDelegate.swift in Sources */,
+				16608AB82362E8E9001E957D /* Badge.swift in Sources */,
 				16608A8A2362E89A001E957D /* SceneDelegate.swift in Sources */,
 				16608A8C2362E89A001E957D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		16608A962362E89C001E957D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				16608A9F2362E89C001E957D /* DrawAndAnimation_SwiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		16608AA12362E89C001E957D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				16608AAA2362E89C001E957D /* DrawAndAnimation_SwiftUIUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		16608A9C2362E89C001E957D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 16608A832362E89A001E957D /* DrawAndAnimation_SwiftUI */;
-			targetProxy = 16608A9B2362E89C001E957D /* PBXContainerItemProxy */;
-		};
-		16608AA72362E89C001E957D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 16608A832362E89A001E957D /* DrawAndAnimation_SwiftUI */;
-			targetProxy = 16608AA62362E89C001E957D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		16608A922362E89B001E957D /* LaunchScreen.storyboard */ = {
@@ -470,90 +340,6 @@
 			};
 			name = Release;
 		};
-		16608AB22362E89C001E957D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = DrawAndAnimation_SwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hqm.DrawAndAnimation-SwiftUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawAndAnimation_SwiftUI.app/DrawAndAnimation_SwiftUI";
-			};
-			name = Debug;
-		};
-		16608AB32362E89C001E957D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = DrawAndAnimation_SwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hqm.DrawAndAnimation-SwiftUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawAndAnimation_SwiftUI.app/DrawAndAnimation_SwiftUI";
-			};
-			name = Release;
-		};
-		16608AB52362E89C001E957D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = DrawAndAnimation_SwiftUIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hqm.DrawAndAnimation-SwiftUIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DrawAndAnimation_SwiftUI;
-			};
-			name = Debug;
-		};
-		16608AB62362E89C001E957D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RVS482PXM9;
-				INFOPLIST_FILE = DrawAndAnimation_SwiftUIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hqm.DrawAndAnimation-SwiftUIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DrawAndAnimation_SwiftUI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,24 +357,6 @@
 			buildConfigurations = (
 				16608AAF2362E89C001E957D /* Debug */,
 				16608AB02362E89C001E957D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		16608AB12362E89C001E957D /* Build configuration list for PBXNativeTarget "DrawAndAnimation_SwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				16608AB22362E89C001E957D /* Debug */,
-				16608AB32362E89C001E957D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		16608AB42362E89C001E957D /* Build configuration list for PBXNativeTarget "DrawAndAnimation_SwiftUIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				16608AB52362E89C001E957D /* Debug */,
-				16608AB62362E89C001E957D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
