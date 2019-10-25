@@ -18,7 +18,11 @@ struct LandmarkRowView: View {
             
             Spacer()
             
-            if 
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .imageScale(.medium)
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }

@@ -9,12 +9,28 @@
 import SwiftUI
 
 struct LandmarkListView: View {
+    /// This userData property gets its value automatically,
+    /// as long as the environmentObject(_:) modifier has been applied to a parent.
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
-        /// You can make your data identifiable in one of two ways: by passing along with your data a key path to a property that uniquely identifies each element, or by making your data type conform to the Identifiable protocol.
+        /// You can make your data identifiable in one of two ways:
+        /// by passing along with your data a key path to a property that uniquely identifies each element,
+        /// or by making your data type conform to the Identifiable protocol.
         NavigationView {
-            List(landmarkData) { landmark in
-                NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
-                    LandmarkRowView(landmark: landmark)
+            List {
+                /// Just like on @State properties,
+                /// you can access a binding to a member of the userData object by using the $ prefix.
+                Toggle(isOn: $userData.showFavoritesOnly) {
+                    Text("Favorites only")
+                }
+                
+                ForEach(landmarkData) { landmark in
+                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                        NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
+                            LandmarkRowView(landmark: landmark)
+                        }
+                    }
                 }
             }
             .navigationBarTitle(Text("Landmarks"))
