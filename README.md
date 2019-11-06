@@ -1,5 +1,11 @@
 ## iOSDevRepo
+####  2019/11/06
+添加工程 `MutipleScheme`，特点：
 
+    1. 可实现多环境开发：开发、测试、UAT、线上
+    2. 通过配置 Build Settings，可实现 App名称、App icon图跟据不同环境显示，同一个App多个环境在一个手机上共存
+
+    
 ####  2019/06/26
 
 整理 2016-2017 年的 demo，见oc_demo/2016-2017Demo，使用 `2016-2017Demo.xcworkspace` 管理多个工程，打开 `2016-2017Demo.xcworkspace` 选择不同的 `scheme` 就可以运行不同的工程了。
