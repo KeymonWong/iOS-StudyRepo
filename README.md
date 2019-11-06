@@ -1,6 +1,6 @@
 ## iOSDevRepo
 ####  2019/11/06
-添加工程 `MutipleScheme`，特点：
+添加工程 `MultipleScheme`，特点：
 
     1. 可实现多环境开发：开发、测试、UAT、线上
     2. 通过配置 Build Settings，可实现 App名称、App icon图跟据不同环境显示，同一个App多个环境在一个手机上共存
