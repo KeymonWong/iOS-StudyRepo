@@ -3,7 +3,7 @@
 //  Essentials_SwiftUI
 //
 //  Created by keymon on 2019/10/25.
-//  Copyright © 2019 olecx. All rights reserved.
+//  Copyright © 2019 okay. All rights reserved.
 //
 
 import Foundation
