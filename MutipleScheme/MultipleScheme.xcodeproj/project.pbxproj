@@ -48,10 +48,10 @@
 		16FC730D2372B3E8008A899C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16FC730F2372B3E8008A899C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16FC73102372B3E8008A899C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		16FC73162372B3E9008A899C /* MutipleSchemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutipleSchemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FC73162372B3E9008A899C /* MultipleSchemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleSchemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC731A2372B3E9008A899C /* MutipleSchemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutipleSchemeTests.m; sourceTree = "<group>"; };
 		16FC731C2372B3E9008A899C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16FC73212372B3E9008A899C /* MutipleSchemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutipleSchemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FC73212372B3E9008A899C /* MultipleSchemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleSchemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FC73252372B3E9008A899C /* MutipleSchemeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutipleSchemeUITests.m; sourceTree = "<group>"; };
 		16FC73272372B3E9008A899C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				16FC72FB2372B3E7008A899C /* 多环境.app */,
-				16FC73162372B3E9008A899C /* MutipleSchemeTests.xctest */,
-				16FC73212372B3E9008A899C /* MutipleSchemeUITests.xctest */,
+				16FC73162372B3E9008A899C /* MultipleSchemeTests.xctest */,
+				16FC73212372B3E9008A899C /* MultipleSchemeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16FC72FA2372B3E7008A899C /* MutipleScheme */ = {
+		16FC72FA2372B3E7008A899C /* MultipleScheme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16FC732A2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MutipleScheme" */;
+			buildConfigurationList = 16FC732A2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MultipleScheme" */;
 			buildPhases = (
 				16FC72F72372B3E7008A899C /* Sources */,
 				16FC72F82372B3E7008A899C /* Frameworks */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = MutipleScheme;
+			name = MultipleScheme;
 			productName = MutipleScheme;
 			productReference = 16FC72FB2372B3E7008A899C /* 多环境.app */;
 			productType = "com.apple.product-type.application";
 		};
-		16FC73152372B3E9008A899C /* MutipleSchemeTests */ = {
+		16FC73152372B3E9008A899C /* MultipleSchemeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16FC732D2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MutipleSchemeTests" */;
+			buildConfigurationList = 16FC732D2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MultipleSchemeTests" */;
 			buildPhases = (
 				16FC73122372B3E9008A899C /* Sources */,
 				16FC73132372B3E9008A899C /* Frameworks */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				16FC73182372B3E9008A899C /* PBXTargetDependency */,
 			);
-			name = MutipleSchemeTests;
+			name = MultipleSchemeTests;
 			productName = MutipleSchemeTests;
-			productReference = 16FC73162372B3E9008A899C /* MutipleSchemeTests.xctest */;
+			productReference = 16FC73162372B3E9008A899C /* MultipleSchemeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		16FC73202372B3E9008A899C /* MutipleSchemeUITests */ = {
+		16FC73202372B3E9008A899C /* MultipleSchemeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16FC73302372B3E9008A899C /* Build configuration list for PBXNativeTarget "MutipleSchemeUITests" */;
+			buildConfigurationList = 16FC73302372B3E9008A899C /* Build configuration list for PBXNativeTarget "MultipleSchemeUITests" */;
 			buildPhases = (
 				16FC731D2372B3E9008A899C /* Sources */,
 				16FC731E2372B3E9008A899C /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				16FC73232372B3E9008A899C /* PBXTargetDependency */,
 			);
-			name = MutipleSchemeUITests;
+			name = MultipleSchemeUITests;
 			productName = MutipleSchemeUITests;
-			productReference = 16FC73212372B3E9008A899C /* MutipleSchemeUITests.xctest */;
+			productReference = 16FC73212372B3E9008A899C /* MultipleSchemeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 16FC72F62372B3E7008A899C /* Build configuration list for PBXProject "MutipleScheme" */;
+			buildConfigurationList = 16FC72F62372B3E7008A899C /* Build configuration list for PBXProject "MultipleScheme" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,9 +228,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16FC72FA2372B3E7008A899C /* MutipleScheme */,
-				16FC73152372B3E9008A899C /* MutipleSchemeTests */,
-				16FC73202372B3E9008A899C /* MutipleSchemeUITests */,
+				16FC72FA2372B3E7008A899C /* MultipleScheme */,
+				16FC73152372B3E9008A899C /* MultipleSchemeTests */,
+				16FC73202372B3E9008A899C /* MultipleSchemeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,12 +295,12 @@
 /* Begin PBXTargetDependency section */
 		16FC73182372B3E9008A899C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 16FC72FA2372B3E7008A899C /* MutipleScheme */;
+			target = 16FC72FA2372B3E7008A899C /* MultipleScheme */;
 			targetProxy = 16FC73172372B3E9008A899C /* PBXContainerItemProxy */;
 		};
 		16FC73232372B3E9008A899C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 16FC72FA2372B3E7008A899C /* MutipleScheme */;
+			target = 16FC72FA2372B3E7008A899C /* MultipleScheme */;
 			targetProxy = 16FC73222372B3E9008A899C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -495,7 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hqm.MutipleSchemeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutipleScheme.app/MutipleScheme";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleScheme.app/MultipleScheme";
 			};
 			name = Debug;
 		};
@@ -515,7 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hqm.MutipleSchemeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutipleScheme.app/MutipleScheme";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleScheme.app/MultipleScheme";
 			};
 			name = Release;
 		};
@@ -652,7 +652,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hqm.MutipleSchemeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutipleScheme.app/MutipleScheme";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleScheme.app/MultipleScheme";
 			};
 			name = UAT;
 		};
@@ -772,7 +772,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hqm.MutipleSchemeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutipleScheme.app/MutipleScheme";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleScheme.app/MultipleScheme";
 			};
 			name = TEST;
 		};
@@ -891,7 +891,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hqm.MutipleSchemeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutipleScheme.app/MutipleScheme";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleScheme.app/MultipleScheme";
 			};
 			name = DEV;
 		};
@@ -916,7 +916,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16FC72F62372B3E7008A899C /* Build configuration list for PBXProject "MutipleScheme" */ = {
+		16FC72F62372B3E7008A899C /* Build configuration list for PBXProject "MultipleScheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16FC73282372B3E9008A899C /* Debug */,
@@ -928,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16FC732A2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MutipleScheme" */ = {
+		16FC732A2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MultipleScheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16FC732B2372B3E9008A899C /* Debug */,
@@ -940,7 +940,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16FC732D2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MutipleSchemeTests" */ = {
+		16FC732D2372B3E9008A899C /* Build configuration list for PBXNativeTarget "MultipleSchemeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16FC732E2372B3E9008A899C /* Debug */,
@@ -952,7 +952,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16FC73302372B3E9008A899C /* Build configuration list for PBXNativeTarget "MutipleSchemeUITests" */ = {
+		16FC73302372B3E9008A899C /* Build configuration list for PBXNativeTarget "MultipleSchemeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16FC73312372B3E9008A899C /* Debug */,

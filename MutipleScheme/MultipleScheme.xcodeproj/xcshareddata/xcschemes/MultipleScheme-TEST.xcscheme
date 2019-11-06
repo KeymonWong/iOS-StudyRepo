@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "16FC72FA2372B3E7008A899C"
-               BuildableName = "MutipleScheme.app"
-               BlueprintName = "MutipleScheme"
-               ReferencedContainer = "container:MutipleScheme.xcodeproj">
+               BuildableName = "&#x591a;&#x73af;&#x5883;.app"
+               BlueprintName = "MultipleScheme"
+               ReferencedContainer = "container:MultipleScheme.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,7 +31,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "UAT"
+      buildConfiguration = "TEST"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16FC72FA2372B3E7008A899C"
-            BuildableName = "MutipleScheme.app"
-            BlueprintName = "MutipleScheme"
-            ReferencedContainer = "container:MutipleScheme.xcodeproj">
+            BuildableName = "&#x591a;&#x73af;&#x5883;.app"
+            BlueprintName = "MultipleScheme"
+            ReferencedContainer = "container:MultipleScheme.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16FC72FA2372B3E7008A899C"
-            BuildableName = "MutipleScheme.app"
-            BlueprintName = "MutipleScheme"
-            ReferencedContainer = "container:MutipleScheme.xcodeproj">
+            BuildableName = "&#x591a;&#x73af;&#x5883;.app"
+            BlueprintName = "MultipleScheme"
+            ReferencedContainer = "container:MultipleScheme.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -72,7 +72,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "UAT"
+      buildConfiguration = "TEST"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
