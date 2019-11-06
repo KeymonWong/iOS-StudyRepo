@@ -3,7 +3,7 @@
 //  DrawAndAnimation_SwiftUI
 //
 //  Created by keymon on 2019/11/5.
-//  Copyright © 2019 olecx. All rights reserved.
+//  Copyright © 2019 ok. All rights reserved.
 //
 
 import Foundation
