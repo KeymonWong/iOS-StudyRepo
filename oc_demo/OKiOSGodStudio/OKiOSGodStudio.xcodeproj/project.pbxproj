@@ -14,6 +14,11 @@
 		164DC11C2382C67B0037A46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164DC11B2382C67B0037A46C /* Assets.xcassets */; };
 		164DC11F2382C67B0037A46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164DC11D2382C67B0037A46C /* LaunchScreen.storyboard */; };
 		164DC1222382C67B0037A46C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DC1212382C67B0037A46C /* main.m */; };
+		164DC132238396890037A46C /* OKShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DC131238396890037A46C /* OKShakeViewController.m */; };
+		164DC135238396BB0037A46C /* OKQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DC134238396BB0037A46C /* OKQRCodeViewController.m */; };
+		164DC1392383979A0037A46C /* shake_match.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 164DC1382383979A0037A46C /* shake_match.mp3 */; };
+		164DC13C238397AB0037A46C /* shake_sound_male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 164DC13A238397A00037A46C /* shake_sound_male.mp3 */; };
+		164DC13E2383BEE80037A46C /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 164DC13D2383BEE80037A46C /* list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,13 @@
 		164DC11E2382C67B0037A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		164DC1202382C67B0037A46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		164DC1212382C67B0037A46C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		164DC130238396890037A46C /* OKShakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKShakeViewController.h; sourceTree = "<group>"; };
+		164DC131238396890037A46C /* OKShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKShakeViewController.m; sourceTree = "<group>"; };
+		164DC133238396BB0037A46C /* OKQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKQRCodeViewController.h; sourceTree = "<group>"; };
+		164DC134238396BB0037A46C /* OKQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKQRCodeViewController.m; sourceTree = "<group>"; };
+		164DC1382383979A0037A46C /* shake_match.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shake_match.mp3; sourceTree = "<group>"; };
+		164DC13A238397A00037A46C /* shake_sound_male.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shake_sound_male.mp3; sourceTree = "<group>"; };
+		164DC13D2383BEE80037A46C /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +75,9 @@
 			children = (
 				164DC1282382CC730037A46C /* AppDelegate */,
 				164DC12C2382CCEC0037A46C /* Root */,
-				164DC12D2382CD020037A46C /* New Group */,
+				164DC12D2382CD020037A46C /* Classes */,
 				164DC12A2382CCA30037A46C /* Resources */,
-				164DC1292382CC8B0037A46C /* Supporting File */,
+				164DC1422383C1290037A46C /* Supporting File */,
 			);
 			path = OKiOSGodStudio;
 			sourceTree = "<group>";
@@ -81,20 +93,11 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		164DC1292382CC8B0037A46C /* Supporting File */ = {
-			isa = PBXGroup;
-			children = (
-				164DC1182382C6790037A46C /* Main.storyboard */,
-				164DC11D2382C67B0037A46C /* LaunchScreen.storyboard */,
-				164DC1202382C67B0037A46C /* Info.plist */,
-				164DC1212382C67B0037A46C /* main.m */,
-			);
-			path = "Supporting File";
-			sourceTree = "<group>";
-		};
 		164DC12A2382CCA30037A46C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				164DC137238396FA0037A46C /* Video */,
+				164DC136238396F20037A46C /* Audio */,
 				164DC11B2382C67B0037A46C /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -105,15 +108,63 @@
 			children = (
 				164DC1152382C6790037A46C /* RootViewController.h */,
 				164DC1162382C6790037A46C /* RootViewController.m */,
+				164DC13D2383BEE80037A46C /* list.json */,
 			);
 			path = Root;
 			sourceTree = "<group>";
 		};
-		164DC12D2382CD020037A46C /* New Group */ = {
+		164DC12D2382CD020037A46C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				164DC12F238396140037A46C /* 二维码扫描 */,
+				164DC12E238396070037A46C /* 摇一摇 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		164DC12E238396070037A46C /* 摇一摇 */ = {
+			isa = PBXGroup;
+			children = (
+				164DC130238396890037A46C /* OKShakeViewController.h */,
+				164DC131238396890037A46C /* OKShakeViewController.m */,
+			);
+			path = "摇一摇";
+			sourceTree = "<group>";
+		};
+		164DC12F238396140037A46C /* 二维码扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				164DC133238396BB0037A46C /* OKQRCodeViewController.h */,
+				164DC134238396BB0037A46C /* OKQRCodeViewController.m */,
+			);
+			path = "二维码扫描";
+			sourceTree = "<group>";
+		};
+		164DC136238396F20037A46C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				164DC13A238397A00037A46C /* shake_sound_male.mp3 */,
+				164DC1382383979A0037A46C /* shake_match.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		164DC137238396FA0037A46C /* Video */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Video;
+			sourceTree = "<group>";
+		};
+		164DC1422383C1290037A46C /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				164DC1212382C67B0037A46C /* main.m */,
+				164DC1202382C67B0037A46C /* Info.plist */,
+				164DC11D2382C67B0037A46C /* LaunchScreen.storyboard */,
+				164DC1182382C6790037A46C /* Main.storyboard */,
+			);
+			name = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				164DC11F2382C67B0037A46C /* LaunchScreen.storyboard in Resources */,
+				164DC1392383979A0037A46C /* shake_match.mp3 in Resources */,
 				164DC11C2382C67B0037A46C /* Assets.xcassets in Resources */,
+				164DC13C238397AB0037A46C /* shake_sound_male.mp3 in Resources */,
 				164DC11A2382C6790037A46C /* Main.storyboard in Resources */,
+				164DC13E2383BEE80037A46C /* list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,10 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164DC135238396BB0037A46C /* OKQRCodeViewController.m in Sources */,
 				164DC1172382C6790037A46C /* RootViewController.m in Sources */,
 				164DC1112382C6790037A46C /* AppDelegate.m in Sources */,
 				164DC1222382C67B0037A46C /* main.m in Sources */,
 				164DC1142382C6790037A46C /* SceneDelegate.m in Sources */,
+				164DC132238396890037A46C /* OKShakeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

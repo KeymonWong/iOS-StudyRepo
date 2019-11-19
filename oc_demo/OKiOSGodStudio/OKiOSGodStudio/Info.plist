@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>上帝工场需要访问你的媒体，以便更好体验下一步交互</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>上帝工场需要访问你的照片库，以便更好体验下一步交互</string>
+	<key>NSContactsUsageDescription</key>
+	<string>上帝工场需要访问你的通讯录，以便更好体验下一步交互</string>
+	<key>NSCameraUsageDescription</key>
+	<string>上帝工场需要访问你的相机，以便更好体验下一步交互</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
