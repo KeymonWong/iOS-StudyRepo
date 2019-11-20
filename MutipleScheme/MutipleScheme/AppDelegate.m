@@ -8,6 +8,27 @@
 
 #import "AppDelegate.h"
 
+///当前日期字符串
+#define DATE_STRING \
+({NSDateFormatter *fmt = [[NSDateFormatter alloc] init];\
+[fmt setDateFormat:@"YYYY-MM-dd hh:mm:ss"];\
+[fmt stringFromDate:[NSDate date]];})
+
+///------ 替换NSLog使用，debug模式下可以打印很多方法名、行信息(方便查找)，release下不会打印 ------
+#if DEBUG
+    //-- 区分设备和模拟器,
+    //解决Product -> Scheme -> Run -> Arguments -> OS_ACTIVITY_MODE为disable时，真机下 Xcode Debugger 不打印的bug ---
+    #if TARGET_OS_IPHONE
+        /*iPhone Device*/
+        #define DLog(format, ...) printf("%s:Dev: %s [Line %d]\n%s\n\n", [DATE_STRING UTF8String], __PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String])
+    #else
+        /*iPhone Simulator*/
+        #define DLog(format, ...) NSLog((@":Sim: %s [Line %d]\n%@\n\n"), __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:format, ##__VA_ARGS__])
+    #endif
+#else
+    #define DLog(...)
+#endif
+
 @interface AppDelegate ()
 
 @end
@@ -19,13 +40,17 @@
     
     
 #if APP_ENV == 1
-    NSLog(@"开发环境");
+    DLog(@"开发环境");
 #elif APP_ENV == 2
-    NSLog(@"测试环境");
+    DLog(@"测试环境");
 #elif APP_ENV == 3
-    NSLog(@"UAT环境");
+    DLog(@"UAT环境");
+#elif APP_ENV == 4
+    //基于 project 中 Release 创建的配置，打的包不会打印控制台日志信息
+    //上面的1、2、3基于 project 中Debug创建的配置，会打印控制台日志信息
+    DLog(@"Pro环境");
 #else
-    NSLog(@"正式环境");
+    DLog(@"正式环境");
 #endif
     
     return YES;
