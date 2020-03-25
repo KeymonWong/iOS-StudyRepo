@@ -28,6 +28,7 @@
     return [OKSingletonB sharedInstance];
 }
 
+/*
 - (id)copyWithZone:(NSZone *)zone {
     // 下述都可以
     return self;
@@ -38,5 +39,15 @@
     return self;
 //    return [OKSingletonB sharedInstance];
 }
+ */
+
+- (id)copy {
+    return [OKSingletonB sharedInstance];
+}
+
+- (id)mutableCopy {
+    return [OKSingletonB sharedInstance];
+}
+
 
 @end
