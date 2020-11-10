@@ -3,7 +3,7 @@
 //  ListAndNavigation
 //
 //  Created by keymon on 2019/10/23.
-//  Copyright © 2019 olecx. All rights reserved.
+//  Copyright © 2019 okay. All rights reserved.
 //
 
 import SwiftUI
@@ -18,13 +18,15 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var park: String
     var category: Category
+    var isFeatured: Bool
+    var isFavorite: Bool
     
     var locationCoor: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
     }
     
     enum Category: String, CaseIterable, Codable, Hashable {
-        case featured = "Featured"
+        case featured = "Mountains"
         case lakes = "Lakes"
         case rivers = "Rivers"
     }

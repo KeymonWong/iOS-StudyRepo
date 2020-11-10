@@ -1,9 +1,9 @@
 //
 //  ContentView.swift
-//  Essentials_SwiftUI
+//  DrawAndAnimation_SwiftUI
 //
-//  Created by keymon on 2019/10/23.
-//  Copyright © 2019 olecx. All rights reserved.
+//  Created by keymon on 2019/10/25.
+//  Copyright © 2019 ok. All rights reserved.
 //
 
 import SwiftUI

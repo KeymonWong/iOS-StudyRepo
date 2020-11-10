@@ -3,7 +3,7 @@
 //  Essentials_SwiftUI
 //
 //  Created by keymon on 2019/10/23.
-//  Copyright © 2019 olecx. All rights reserved.
+//  Copyright © 2019 okay. All rights reserved.
 //
 
 import UIKit
@@ -25,7 +25,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: LandmarkListView())
+            window.rootViewController = UIHostingController(
+                rootView: LandmarkListView().environmentObject(UserData())
+            )
             self.window = window
             window.makeKeyAndVisible()
         }
